@@ -1,8 +1,11 @@
-Curent Version: 1.0
+Curent Version: 1.1
 Setup instructions
 -------------------
 1. Now import core.xml via wordpress importer, Tools > Import
 
+#1.1
+1. added backend-menu module
+2. added content-types module
 
 In case of updating:
 
