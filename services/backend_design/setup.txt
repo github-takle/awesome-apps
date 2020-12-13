@@ -6,6 +6,50 @@ Setup instructions
 
 2. Now import backend_design.xml via wordpress importer, Tools > Import
 
+How to Use
+
+create a module "backend-menu" in core and put a code similar to this
+
+```
+[templates.add menus]
+  [template.set_array menu-items]
+    
+    //** Photo / Scan Copy array of menus **//
+  	[photocopy-scan link='#' chckbox="yes" title='Menu Item 1' class="photo-scan-copy" icon='{url.site}wp-content/uploads/2020/05/photocopy-scan.png']
+    	[child-nav]
+        [photo-scan-copy link='{url.site}photo-scan-copy/' title='All Copies' class='photo-scan-copy' target='' /]
+        [new-request link='{url.site}photo-scan-copy/new-request' title='New Request' class='photo-scan-copy' target='_blank' /]
+        [resolved link='{url.site}photo-scan-copy/resolved' title='Resolved' class='photo-scan-copy' target='_blank' /]
+        [xyz link='{url.site}photo-scan-copy/#' title='Payment' class='photo-scan-copy' target='_blank' /]
+      [/child-nav]
+    [/photocopy-scan]
+    
+    //** Prospectus array of menus **//
+    [prospectus link='#' chckbox="yes" title='Menu Item 1' class='prospectus-manage' icon='https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-html5-m.png']
+    	[child-nav]
+        [manage-prospectus link='{url.site}manage-prospectus/' title='All Prospectus' class='prospectus-manage' target='' /]
+        [add link='{url.site}manage-prospectus/add' title='Add New' class='prospectus-manage' target='_blank' /]
+      [/child-nav]
+    [/prospectus]
+    
+    //** Settings array of menus **//
+  	[setting link='#' chckbox="yes" title='Menu Item 3' class="settings" target='' icon='https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-bitbucket-m.png' ]
+    	[child-nav]
+      	[settings link='{url.site}settings/' title='All App Settings' class='settings' target='' /] 
+        [fee link='{url.site}settings/#' title='Fees' class='settings' target='_blank' /]
+        [late-fees link='{url.site}settings/#' title='Late Fees' class='settings' target='_blank' /]
+        [user-roles link='{url.site}settings/user-roles' title='User Roles' class='settings' target='_blank' /]
+        [application-ids link='{url.site}admission-manage/application-ids' title='Application Ids' class='settings' target='_blank' /]
+        [form-visibility link='{url.site}settings/#' title='Admission Form Visibility' class='settings' target='_blank' /]
+        [payments link='{url.site}settings/#' title='Payment Settings' class='settings' target='_blank' /]
+      [/child-nav]
+    [/setting]
+   
+  [/template.set_array]
+  //** template return **//
+  [template.return template.menu-items /]
+[/templates.add]
+```
 
 In case of updating:
 

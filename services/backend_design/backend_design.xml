@@ -1406,7 +1406,7 @@ i.fa{
 		<content:encoded><![CDATA[[templates.add main]
 	
 	//**Template Menus of array**//
-  [this_collection.menu-array.arr_collection  set="template.menus" /]
+   [core.backend-menu.menus set="template.menus" /]
   
   <div class="menubar pad-y-4">
   	//**Search bar**//
