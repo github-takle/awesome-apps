@@ -1,4 +1,4 @@
-Curent Version: 1.0
+Curent Version: 1.1
 Setup instructions
 -------------------
 
@@ -14,3 +14,6 @@ Some Issues
 ----------------
 1. Check if 'settings' post in config have duplicate meta fields for values, remove the duplicate meta keys.
 2. If you get the error saying @gray-light or any other variable not defined, then check if in "core->register" module exists.
+
+Release 
+1. Added support for editor styles for gutenberg, to increase the defualt width of the editor
