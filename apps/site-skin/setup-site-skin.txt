@@ -1,4 +1,4 @@
-Curent Version: 1.1
+Curent Version: 1.2
 Setup instructions
 -------------------
 
@@ -15,5 +15,10 @@ Some Issues
 1. Check if 'settings' post in config have duplicate meta fields for values, remove the duplicate meta keys.
 2. If you get the error saying @gray-light or any other variable not defined, then check if in "core->register" module exists.
 
-Release 
+Release 1.2
+1. Added additional padding & margin classes
+2. Added floating form classes
+3. Updated animation classes.
+
+Release 1.1
 1. Added support for editor styles for gutenberg, to increase the defualt width of the editor
