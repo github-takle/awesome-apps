@@ -1,0 +1,15 @@
+Patch for release notes
+
+1. Add following file in plot/config/menu module at line number 9
+
+[env.set_array menus.release-notes title='Release Notes' class='' icon='check' icon-color='gray-white' /]
+
+2. In the same module find the following line and replace it with line given below.
+replace ( can be found at line number 5)
+
+[env.set_array menus.reports title='Reports' class='' icon='user-stories' icon-color='gray-white' /]
+
+with 
+
+[env.set_array menus.reports title='Reports' class='' icon='calendar' icon-color='gray-white' /]
+

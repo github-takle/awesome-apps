@@ -8463,10 +8463,11 @@ and
 [env.set_array menus.user-stories title='User Stories' class='' icon='user-stories' icon-color='gray-white' /]
 [env.set_array menus.tasks title='Tasks' class='' icon='tasks' icon-color='gray-white' /]
 [env.set_array menus.notes title='Notes' class='' icon='notes' icon-color='gray-white' /]
-[env.set_array menus.reports title='Reports' class='' icon='user-stories' icon-color='gray-white' /]
+[env.set_array menus.reports title='Reports' class='' icon='calendar' icon-color='gray-white' /]
 [env.set_array menus.reports.children.new link='/plot/task-worked-upon' title='Task Worked Upon' class='' target='' /]
 [env.set_array menus.reports.children.new link='/plot/all-activity' title='All Activity List' class='' target='' /]
 [env.set_array menus.reports.children.new link='/plot/task-timeline' title='Tasks Timeline View' class='' target='' /]
+[env.set_array menus.release-notes title='Release Notes' class='' icon='check' icon-color='gray-white' /]
 
 [env.set_array menus.add-user-story title='Add User Story' class='' icon='add-new' icon-color='gray-white' /]
 
@@ -14388,7 +14389,339 @@ i.font-size-giant {
 		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 		<wp:meta_value><![CDATA[5]]></wp:meta_value>
 		</wp:postmeta>
-							</item>		
+							</item>	
+<item>
+		<title>release_note</title>
+		<link>http://nxt.wpoets.com/?post_type=plot_service&#038;p=862492</link>
+		<pubDate>Sun, 03 Jan 2021 12:13:11 +0000</pubDate>
+		<dc:creator><![CDATA[Amit]]></dc:creator>
+		<guid isPermaLink="false">http://nxt.wpoets.com/?post_type=plot_service&#038;p=862492</guid>
+		<description></description>
+		<content:encoded><![CDATA[[templates.add add]
+
+  [template.set_array ack status="error" int_reason="release_title is not provided." reason="title is required." /]
+  [template.return template.ack empty='{template.release_title}' /]
+	
+  [template.set_array ack status="error" int_reason="release_note is not provided." reason="Release note is required." /]
+  [template.return template.ack empty='{template.release_note}' /]
+  
+  
+ 
+  [template.set note_id="RELN{unique_number}" /]
+
+  [template.set_array meta_arr.new meta_key="release_note_id" meta_value="{template.note_id}" coll_type="release_note" /]
+ 
+  [template.set_array meta_arr.new meta_key="release_title" meta_value="{template.release_title}" coll_type="release_note" /]
+  [template.set_array meta_arr.new meta_key="release_note" meta_value="{template.release_note}" coll_type="release_note" /]
+  
+  [date.create now date_format='Y-m-d H:i:s' set=template.current_dt /]
+  [template.set_array meta_arr.new meta_key="note_created_by" meta_value="{current_user.user_email}" coll_type="release_note" /]
+  [template.set_array meta_arr.new meta_key="note_created_datetime" meta_value="{template.current_dt}" coll_type="release_note" /]
+  
+  [db.meta.update_object_meta meta="{template.meta_arr}" meta_table="plot" object_id="{template.note_id}" coll_id='release' set='template.ack' /]
+
+  [template.set ack=""/]
+  [template.set_array ack status="success" int_reason="note added successfully!" note_id="{template.note_id}" /]
+  [template.return template.ack /]
+[/templates.add]
+
+[templates.add single]
+  [db.meta.select_meta_key_value_pair meta_table="plot" coll_id="{template.release_note_id}" set="template.note_meta" /]
+  [template.return template.note_meta /]
+[/templates.add]
+
+
+[templates.add list]
+
+  [env.set search="{template.search}" /]
+  
+  [module.set_array query]
+  [pagesize][template.pagesize default=20 /][/pagesize]
+  [pageno][template.pageno default=1 /][/pageno]
+   [with]
+       [sql]
+        SELECT object_id as data_id FROM plot WHERE  coll_id="release" AND coll_type="release_note" AND meta_key="release_note_id"
+       [/sql]
+      [filter new]
+        [sql raw]
+           select [module.previous_query_no /].*, meta_value as created_datetime from [module.previous_query_no /] join plot on [module.previous_query_no /].data_id = plot.object_id where  meta_key='note_created_datetime'
+        [/sql]
+      [/filter]
+      [filter new not_empty="{{env.get search}}"]
+        [sql raw]
+          select [module.previous_query_no /].* from plot join [module.previous_query_no /] on 
+          [module.previous_query_no /].data_id=plot.object_id and coll_type="release_note"
+          where meta_key IN ("note_title","note_description") and meta_value LIKE '%[env.get search /]%' 
+          group by data_id
+        [/sql]
+      [/filter] 
+    [/with]
+    [transform ref_id=data_id /]
+       [meta new]
+         [table]plot[/table]
+         [meta_keys]release_note_id,release_title,release_note,note_created_datetime,modified_on,note_created_by[/meta_keys]
+         [id_field]object_id[/id_field]
+       [/meta]
+    [order]
+      created_datetime DESC
+    [/order]
+  [/module.set_array]
+  [db.meta_query query="{module.query}" set="template.get_releases" /]
+  [template.return template.get_releases /]
+[/templates.add]
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>862492</wp:post_id>
+		<wp:post_date><![CDATA[2021-01-03 12:13:11]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2021-01-03 12:13:11]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[release_note]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[plot_service]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+														<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+	<item>
+		<title>release-notes</title>
+		<link>http://nxt.wpoets.com/?post_type=m_plot&#038;p=862480</link>
+		<pubDate>Fri, 01 Jan 2021 16:12:56 +0000</pubDate>
+		<dc:creator><![CDATA[Amit]]></dc:creator>
+		<guid isPermaLink="false">http://nxt.wpoets.com/?post_type=m_plot&#038;p=862480</guid>
+		<description></description>
+		<content:encoded><![CDATA[[templates.add main]
+[css.style]
+ .release-notes{ 
+    ul,ol{
+      list-style: none;
+      padding:0;
+      list-style-type: "→ ";
+      list-style-position: outside;
+      padding-left: 25px;
+        ::marker, {
+          color: @brand-primary;
+        }
+
+    }
+    .relese-note-form{
+      position:fixed;
+    }
+    .release-line{
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 50%;
+          width: 2px;
+          height: 100%;
+          background: #ccc;
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          top: ~"calc(50% - 9px)";
+          left: ~"calc(50% - 9px)";
+          width: 20px;
+          height: 20px;
+          background: #ccc;
+          border-radius: 50%;
+        }
+    }
+    .note{
+    		word-break: break-word;
+    }
+    .first-circle{
+        width: 40px;
+        height: 40px;
+        background: #ccc;
+        position: absolute;
+        left: ~"calc(50% - 20px)";
+        top: -20px;
+        border-radius: 50%;
+    }
+    .last-circle{
+        width: 40px;
+        height: 40px;
+        background: #ccc;
+        position: absolute;
+        left: ~"calc(50% - 20px)";
+        bottom: -20px;;
+        border-radius: 50%;
+    }
+ } 
+ .add-release-note {
+    position: fixed;
+    top: 0;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    left: 0;
+    z-index: 99999;
+	}
+  .add-note-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+      &:hover {
+          transform: scale(1.1);
+      }
+  }
+
+  .close-release-note {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      font-size: 25px;
+      color: #ccc;
+      font-weight: bold;
+      padding: 5px;
+      cursor: pointer;
+      &:hover {
+          color: #888;
+      }
+  }
+[/css.style]
+[env.set app.page_title="Release Notes - Plot" /]
+  <div class="body-content-wrapper">
+  	<div class="justify-content-between ">
+  		<h1 class="font-bold font-size-largest br-bottom pad-y-2 mar-b-6">Release Notes</h1>
+    </div> 
+ 		<section class="row release-notes justify-content-center">
+     <div class='col-md-10 pad-y-6'>
+     	[plot.release_note.list o.set='module.releases' /]
+  
+      [loop.@release  module.releases.rows]
+      
+        <article class="pad-x-4">
+          <div class="row gap-md items-start">
+            <!-- metadata -->
+            <div class="changelog__metadata col-md-4 col-xl-3 pad-y-6 align-self-center animated fadeInLeft">
+              <h2 class="no-margin font-bold">[aw2.get @release.item.release_title /]</h2>
+              <time class="font-size-small font-light" datetime="[aw2.get @release.item.note_created_datetime /]">[aw2.get @release.item.note_created_datetime date_format="F d, Y"/]</time>
+            </div>
+						<div class="col-md-1 release-line is-none is-md-block animated fadeIn slow">
+            		[if.true @release.first]
+            		<div class="first-circle"></div>
+                [/if.true]
+                [if.true @release.last]
+            		<div class="last-circle"></div>
+                [/if.true]
+            </div>
+            <!-- content -->
+            <div class="col-md-7 col-xl-8 pad-y-6">
+              <div class="pad-6 brand-white-bg br-20 note animated fadeInRight">
+                [aw2.get @release.item.release_note /]
+              </div>
+            </div>
+          </div>
+        </article>
+        
+      [/loop.@release] 
+      
+     </div>
+    </section>
+    
+  </div>
+	<div class='add-release-note row no-margin pad-4 justify-content-center align-items-start is-none'>
+    <div class='relese-note-form col-md-8 col-lg-6 pad-6 brand-white-bg animated fadeIn'>
+    		<i class="icon-close close-release-note"></i>
+        <h2 class="font-bold br-bottom pad-y-2 no-padding-top mar-b-5">Add Release Note</h2>
+       	<form action="" class="add-release-form" novalidate>  
+            <div class="row">
+               	<div class="col-12">
+                    [form_control.text label="Release Title" id="release_title" placeholder="Title" required="yes" /] 
+              	</div>
+              	<div class="col-12">
+                [form_control.trumbowyg_editor label="Release Note" placeholder="Release Note"
+                                               textarea_name="release_note" 
+                                               editor_name="release_note" required="yes" /]
+              	</div>
+           </div>
+           <button type="submit" id="add-feedback" value="" class="btn btn-primary width-100">Save</button> 
+        	 <div class="feedback-res"></div>
+      </form>
+
+      [session_ticket.create nonce=yes set=module.ticket_id time=600 /]
+      [session_ticket.set_activity {module.ticket_id} collection='{module.collection}' module='{module.slug}.save_release_note' /]
+
+      <script type=spa/axn
+              axn='form_upload.ajax'
+              bind='submit'
+              bind_selector="form.add-release-form" 
+              disable_selector=".submit"
+              route_ajax='t/[module.get ticket_id /]'></script>
+    </div> 
+  </div>
+  <div class="add-note-btn">
+  		<i class="box-shadow br-50 brand-primary-bg brand-white icon-notes pad-3" style="font-size: 25px;"></i>
+  </div>
+  <script type="spa/axn" axn="core.run_script">
+  		$(".add-note-btn").click(function(){
+      		$(".add-release-note").removeClass("is-none");
+      });
+      $(".close-release-note").click(function(){
+      		$(".add-release-note").addClass("is-none");
+      });
+  </script>
+[/templates.add]
+[templates.add save_release_note]
+
+  [plot.release_note.add release_title='{{request.get release_title m.stripslashes_deep=yes}}' release_note='{{request.get release_note m.stripslashes_deep=yes}}' set="template.res" /]
+
+   //** Activity log **//
+  [template.set metas_act.activity_note="Release Note <em>(<a href='{app.path}/release-notes'>{request.release_title}</a>)</em> was added." /]
+  [plot.activity.log object_id="{request.task_id}" coll_type="note" metas="{template.metas_act}" set="template.activity" /]
+	
+  
+  //** set response message **//
+    [if.equal lhs="{template.res.status}" rhs="success"]
+      [template.set alert_class="alert-success" /]
+      [template.set alert_msg="<strong>Success!</strong> Release note added." /]
+      <script type="spa/axn" axn=page.update route_ajax='release-notes'></script> 
+    [/if.equal]
+    [if.equal  lhs="{template.res.status}" rhs="error"]
+      [template.set alert_class="alert-danger" /]
+      [template.set alert_msg="<strong>Error!</strong> {template.res.reason}. Try again." /]
+    [/if.equal]
+    
+    <template axn=selector.update selector='div.feedback-res' get='me.html'>
+    	[form_control.alert alert_class="{template.alert_class}" alert_msg="{template.alert_msg}" /]
+    </template>  
+    
+     
+
+    
+[/templates.add]]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>862480</wp:post_id>
+		<wp:post_date><![CDATA[2021-01-01 16:12:56]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2021-01-01 16:12:56]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[release-notes]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[m_plot]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+														<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+										
 						
 		</channel>
 </rss>
