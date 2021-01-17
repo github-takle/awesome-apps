@@ -1,0 +1,37 @@
+Patch for Reports 
+
+1. In the database run the follwoing query for plot table
+
+ALTER TABLE `plot`
+ADD INDEX `coll_type_meta_key` (`coll_type`, `meta_key`),
+DROP INDEX `meta_key`,
+DROP INDEX `coll_id`;
+
+2. In Plot Service(wp-admin/edit.php?post_type=plot_service) - edit 'search-filter'  module and add following lines, after line number 6 or 7.
+
+[this_collection.user_story.list o.set='module.stories' /]
+
+[loop.@story module.stories]   
+	[module.set_array stories_list.new label='{@story.item.story_title}' value='{@story.item.story_id}'/]
+[/loop.@story]
+[module.set stories='' /]
+
+3. In the same 'search-filter' module find the the follwoing line  (around line number 15/16)
+ 
+  [users type='select' label = "Users" options="{module.users}" /]
+
+and add following two lines after it
+
+[developers type='select' label = "Users" options="{module.users}" multiple=yes /]
+[user_stories type='select' label = "User Stories" options="{module.stories_list}" multiple=yes /]
+  
+  
+
+4. Add following file in plot/config/menu module at line number 5 
+
+[env.set_array menus.reports.children.new link='/plot/daily-task-status' title='Daily Task Status' class='' target='' /]
+[env.set_array menus.reports.children.new link='/plot/task-worked-upon' title='Task Worked Upon' class='' target='' /]
+[env.set_array menus.reports.children.new link='/plot/userwise-timespent-on-tasks' title='Time Spent - User Wise Breakup' class='' target='' /]
+[env.set_array menus.reports.children.new link='/plot/userwise-daywise-timespent-on-tasks' title='Time Spent - Day Wise Breakup' class='' target='' /]
+
+make sure task worked upon link is not twice (delete the old one if it exists)
