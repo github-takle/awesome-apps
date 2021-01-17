@@ -24,7 +24,7 @@ and add following two lines after it
 
 [developers type='select' label = "Users" options="{module.users}" multiple=yes /]
 [user_stories type='select' label = "User Stories" options="{module.stories_list}" multiple=yes /]
-  
+[select_date type = "date" label = "Status Date"/]  
   
 
 4. Add following file in plot/config/menu module at line number 5 

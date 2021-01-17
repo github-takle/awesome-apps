@@ -2021,6 +2021,7 @@
   [users type='select' label = "Users" options="{module.users}" /]
   [developers type='select' label = "Users" options="{module.users}" multiple=yes /]
   [user_stories type='select' label = "User Stories" options="{module.stories_list}" multiple=yes /]
+  [select_date type = "date" label = "Status Date"/]
   
   [select_period type = "select_period" label = "Select Period" /]
   [to_date type = "date" label = "To Date"/]
