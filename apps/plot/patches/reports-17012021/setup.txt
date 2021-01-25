@@ -7,6 +7,8 @@ ADD INDEX `coll_type_meta_key` (`coll_type`, `meta_key`),
 DROP INDEX `meta_key`,
 DROP INDEX `coll_id`;
 
+ALTER TABLE `plot` ADD INDEX `object_id_coll_type_meta_key` (`object_id`, `coll_type`, `meta_key`);
+
 2. In Plot Service(wp-admin/edit.php?post_type=plot_service) - edit 'search-filter'  module and add following lines, after line number 6 or 7.
 
 [this_collection.user_story.list o.set='module.stories' /]

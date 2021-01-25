@@ -35,6 +35,7 @@ Following services has been released
 10. search_service
 11. single_service
 12. ui
+13. db2
 
 
 ## We're Hiring!
