@@ -44,6 +44,27 @@ once you have deleted this code, save the scripts module.
 2. Go to Service -> Form Control Service ( url wp-admin/edit.php?post_type=form_control ) and delete & remove from thrash the 'trumbowyg_editor' module.
 3. Go to Plot -> modules  and delete & remove from thrash the 'note' module.
 4. Import the notes-28012021-patch.xml file.
+5. Go to Plot -> modules  and edit 'common-css', find following (around line 562)
+
+  /* Set the styles for "Paragraph". */
+    .document-editor .ck-content p {
+        font-size: 1em;
+        line-height: 1.63em;
+        padding-top: .5em;
+        margin-bottom: 1.13em;
+    }
+
+
+and repalce it with 
+
+  /* Set the styles for "Paragraph". */
+    .document-editor .ck-content p {
+        font-size: 1em;
+        line-height: 1.63em;
+        padding-top: .5em;
+        margin-bottom: .5em;
+    }
+
 
 Verify
 -----

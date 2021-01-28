@@ -9708,6 +9708,14 @@ and
         background: rgba(0,0,0,0.5);
         z-index: 9999;
     }
+	.ck-content .image>figcaption {
+       min-height: 30px;
+    }
+    
+    .ck-content h1{
+		padding-bottom: .2em;
+		border-bottom: 1px solid #e9e9e9;
+    }
 [/css.style]
  
   [template.set note_id = {qs.0} /]
@@ -12571,7 +12579,7 @@ body{
         font-size: 1em;
         line-height: 1.63em;
         padding-top: .5em;
-        margin-bottom: 1.13em;
+        margin-bottom: 0.5em;
     }
 
     /* Make the block quoted text serif with some additional spacing. */
