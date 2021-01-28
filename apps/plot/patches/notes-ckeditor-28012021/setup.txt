@@ -1,0 +1,51 @@
+Patch for Notes 
+
+1. Go to plot -> config -> scripts and remove the following code (it should be around line number 73)
+
+````
+<script type="spa/axn" axn=core.run_script>
+  spa.ckeditor5={};
+  spa.ckeditor5.prerequisites={};
+  
+  spa.ckeditor5.prerequisites.cdn_js_files='ckeditor5/16.0.0/decoupled-document/ckeditor.js';
+  
+  spa.ckeditor5.init=function(o){}
+   
+  spa.ckeditor5.run=function(o){
+    
+    var editor = o.el.attr('editor');
+    var toolbar = o.el.attr('toolbar');
+    var upload_path = o.el.attr('upload_url');
+    
+    DecoupledEditor
+      .create( document.querySelector( editor ),{
+          simpleUpload: {
+               uploadUrl: upload_path,
+               headers: { }
+          },
+        	toolbar: {
+            viewportTopOffset: 100
+          }
+      } )
+      .then( editor => {
+          spa.noteEditor = editor;
+          const toolbarContainer = document.querySelector( toolbar );
+          toolbarContainer.appendChild( editor.ui.view.toolbar.element );
+      } )
+      .catch( error => {
+          console.error( error );
+      } );  
+  }
+</script>
+````
+
+once you have deleted this code, save the scripts module.
+
+2. Go to Service -> Form Control Service ( url wp-admin/edit.php?post_type=form_control ) and delete & remove from thrash the 'trumbowyg_editor' module.
+3. Go to Plot -> modules  and delete & remove from thrash the 'note' module.
+4. Import the notes-28012021-patch.xml file.
+
+Verify
+-----
+1. goto /plot/notes and check for any note it should show the proper editor
+2. goto plot/tasks and pick a task, it should show proper comment editor (with indent buttons)

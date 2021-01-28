@@ -8186,41 +8186,7 @@ and
     });
   	
 </script>
-
-<script type="spa/axn" axn=core.run_script>
-  spa.ckeditor5={};
-  spa.ckeditor5.prerequisites={};
-  
-  spa.ckeditor5.prerequisites.cdn_js_files='ckeditor5/12.4.0/decoupled-document/ckeditor.js';
-  
-  spa.ckeditor5.init=function(o){}
-   
-  spa.ckeditor5.run=function(o){
-    
-    var editor = o.el.attr('editor');
-    var toolbar = o.el.attr('toolbar');
-    var upload_path = o.el.attr('upload_url');
-    
-    DecoupledEditor
-      .create( document.querySelector( editor ),{
-          simpleUpload: {
-               uploadUrl: upload_path,
-               headers: { }
-          },
-        	toolbar: {
-            viewportTopOffset: 100
-          }
-      } )
-      .then( editor => {
-          spa.noteEditor = editor;
-          const toolbarContainer = document.querySelector( toolbar );
-          toolbarContainer.appendChild( editor.ui.view.toolbar.element );
-      } )
-      .catch( error => {
-          console.error( error );
-      } );  
-  }
-</script>]]></content:encoded>
+]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>858267</wp:post_id>
 		<wp:post_date><![CDATA[2019-07-03 06:47:48]]></wp:post_date>
@@ -9716,6 +9682,32 @@ and
     .filter-icon {
         display: none !important;
     }
+    .document-editor{
+    	max-height: 500px;
+   		display: flex;
+    	flex-flow: column nowrap;
+    }
+      
+   .document-editor__editable-container {
+       overflow-y: scroll;
+    } 
+
+    .document-editor__toolbar{
+    	top:0;
+    }
+    body .body-content-wrapper{
+    	padding-top:15px;
+    	padding-bottom:10px;
+    }
+    form.add-new-tag {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        z-index: 9999;
+    }
 [/css.style]
  
   [template.set note_id = {qs.0} /]
@@ -9733,38 +9725,30 @@ and
    [env.set app.page_title="{template.note_meta.note_title} - Plot" /]
   
   <div class="body-content-wrapper" id='note_[template.note_id /]'>
-      [template.set_array crumbs.new title='Dashboard' url="{app.path /}/" route_ajax='home'/]
-      [template.set_array crumbs.new title='Notes' url='{app.path}/notes' route_ajax='notes'/]
-      [template.set_array crumbs.new title='{template.note_meta.note_title}' url='' /]
-      [plot.card.breadcrumbs crumbs="{template.crumbs}"/]
-     
+    <div class="is-flex justify-content-between">
+    		<div class="breadcrumb">
+        [template.set_array crumbs.new title='Dashboard' url="{app.path /}/" route_ajax='home'/]
+        [template.set_array crumbs.new title='Notes' url='{app.path}/notes' route_ajax='notes'/]
+        [template.set_array crumbs.new title='{template.note_meta.note_title}' url='' /]
+        [plot.card.breadcrumbs crumbs="{template.crumbs}"/]
+        </div>
+       	<div class="pad-x-4">                  
+              <div class="is-none is-md-flex align-items-center mar-b-4">
+                  <span class="font-bold font-size-smaller pad-x-4">
+                    User Story: <a href='[env.get app.path /]/user-story/[template.note_meta.user_story_id /]' class="font-light brand-fourth is-inline-block" target='_blank' rel="noopener noreferrer">[template.note_meta.user_story_title /]</a>
+                  </span>
+                  <span class="no-margin font-bold font-size-smaller">
+                    Task: <a href='[env.get app.path /]/task/[template.note_meta.task_id /]' class="font-light brand-fourth is-inline-block" target='_blank' rel="noopener noreferrer">[template.note_meta.task_title /]</a>
+                  </span>
+              </div>
+        </div>
+      </div>
     <section roll="notes-single" class="notes-single">
       <div class="row">
         <div class="col-12">
           <div class="brand-white-bg simple-box-shadow">
-            <div class="is-flex br-bottom">
-                <div class="col-6 is-flex align-items-center pad-4">                  
-                    <div class="pad-x-2">
-                        <p class="mar-b-1 font-bold font-size-smaller">
-                        	User Story: <a href='[env.get app.path /]/user-story/[template.note_meta.user_story_id /]' class="font-light brand-fourth is-inline-block" target='_blank' rel="noopener noreferrer">[template.note_meta.user_story_title /]</a>
-                        </p>
-                        <p class="no-margin font-bold font-size-smaller">
-                        	Task: <a href='[env.get app.path /]/task/[template.note_meta.task_id /]' class="font-light brand-fourth is-inline-block" target='_blank' rel="noopener noreferrer">[template.note_meta.task_title /]</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-6 pad-4 text-right">
-                	 <div class="pad-x-2">
-                		 <label class="font-bold no-margin font-size-smallest">Note Type:</label>
-                     <div class="font-size-smallest">
-                        <span class="brand-info-bg brand-white notes-status inline pad-x-2 text-uppercase status-[template.note_meta.note_type /]">[template.note_meta.note_type /]</span>
-                     </div>    
-                    </div>
-                </div>
-            </div>
             <div>
-              <div class="pad-x-6 pad-y-4">
-              	<h2>[template.note_meta.note_title /]</h2>
+              <div class="">
                 <div class="document-editor">
                   <div class="document-editor__toolbar"></div>
                   <div class="document-editor__editable-container invisible">
@@ -9774,28 +9758,37 @@ and
                   </div>
                 </div>
                   
-                  <script type="spa/axn" axn='ckeditor5.run' editor='.document-editor__editable' toolbar='.document-editor__toolbar' upload_url='[aw2.get app.path]/[module.slug /].upload-images?note_id=[template.note_id /]'></script>
+                  <script type="spa/axn" axn='ckeditor5.run' editor='.document-editor__editable' toolbar='.document-editor__toolbar' upload_url='[aw2.get app.path]/[module.slug /].upload-images?note_id=[template.note_id /]' note_title='[template.note_meta.note_title /]' save_callback='spa.noteEditor.save'></script>
               </div>
-               <div class="br-top font-size-smallest is-flex justify-content-between pad-x-6 pad-y-5 tags">
-               		<div>
+               <div class="justify-content-between br-top font-size-smallest row pad-x-6 tags no-margin">
+                  <div class="order-1 order-md-0 col-md-6 no-padding">
                   	[loop.@t template.note_meta.tags_label.comma]
                       <span class="br br-5 pad-x-2 pad-y-1 gray mar-b-1 mar-t-1 is-inline-block mar-x-1">[aw2.get @t.item /]</span>
                     [/loop.@t]
                     <span class="br br-5 pad-x-2 pad-y-1 gray mar-b-1 mar-t-1 is-inline-block add-tag pointer ">+</span>
                   </div>
-                  <div class="align-items-center is-flex is-relative">                      
-                      <span class="editor-text-formatting active-toolbar mar-x-2">[plot.icon.text-formatting color="gray" /]</span>
-               
-                      <span class="editor-save mar-x-2" title='save'>[plot.icon.save color="gray" /]</span>
-                      <div class="loader-save" style="display:none;"></div> 
+                  <div class="col-md-6 no-padding align-items-center is-flex justify-content-between justify-content-md-end is-relative mar-t-1">    
+                  		 <div class="pad-x-2">
+                           <div class="font-size-smallest">
+                              <span class="brand-info-bg brand-white notes-status inline pad-x-2 text-uppercase status-[template.note_meta.note_type /]">[template.note_meta.note_type /]</span>
+                       		</div>    
+                      </div>
+                      <div class="actions">
+                          <span class="editor-save mar-x-2" title='save'>[plot.icon.save color="gray" /]</span>
+                          <div class="loader-save" style="display:none;"></div> 
+                      </div>
                   </div>
                 </div>
-                <form class="add-new-tag brand-white-bg is-none">
-                  <div class="pad-x-2">
+                <form class="add-new-tag row align-items-center justify-content-center no-margin is-none">
+                  <div class="col-md-6 col-xl-4 brand-white-bg mar-t-4 mar-x-4 pad-6">
+                  	<i class="icon-close add-tag pointer" style=" position: absolute; top: 0; right: 0; padding: 3px;"></i>
+                    <div class="gap-4"></div>
                     <div class="form-group">
-                      <input name="new_tag" type="text" placeholder="Add Tag" class="form-control col-4" required>
+                      <input name="new_tag" type="text" placeholder="Add Tag" class="form-control" required>
                     </div>
-                    <button type="submit" id="add-tag" value="" class="br-none brand-primary brand-white-bg pointer text-uppercase">Add Tag</button>
+                    <div class="text-right">
+                    	<button type="submit" id="add-tag" value="" class="btn btn-primary">Add Tag</button>
+                    </div>
                   </div>
                   <div class="gap-5"></div>
                 </form>
@@ -9818,7 +9811,14 @@ and
   [session_ticket.set_activity {module.save_form} app='{app.slug}' module='{module.slug}.update_note_content' /]
   [session_ticket.set {module.save_form} field='update_note_id' value='{template.note_meta.note_id}' /]
   <script type="spa/axn" axn="core.run_script">
-    $('.add-tag').click(function(){
+   
+  var tags = jQuery('.tags').height();
+  var header = jQuery('.header').height();
+  var doc_height = jQuery(window).height();
+  var max_height = doc_height - tags -header -65;
+  jQuery('.document-editor').css('max-height',max_height+'px');
+   
+   $('.add-tag').click(function(){
       $('.add-new-tag').toggleClass('is-none');
     });
     
@@ -9835,24 +9835,29 @@ and
 	
     spa.noteEditor={};
     spa.noteEditor.isReadOnly = false;
-    [if.not_equal lhs='{module.heartbeatRes.status}' rhs='error']
-      $('.editor-save').click(function(){
-        if(spa.noteEditor.isReadOnly)
+    spa.noteEditor.save = function(){
+      if(spa.noteEditor.isReadOnly)
           return false;
 
         spa.isAnyTaskInProgress = true;
         $('.loader-save').show();
-        spa.route.run({
+        return spa.route.run({
           route_ajax: 't/[module.save_form /]',
           block:{
             params:{
-              content: $('.ck-content').html() || ''
+              content: spa.ckeditor5.editor.getData() || ''
             }
           }
         }).then(function(){
           $('.loader-save').hide();
           spa.isAnyTaskInProgress = false;
         });
+    
+    }
+    
+    [if.not_equal lhs='{module.heartbeatRes.status}' rhs='error']
+      $('.editor-save').click(function(){
+      		spa.noteEditor.save();
       });
     [/if.not_equal]
       
