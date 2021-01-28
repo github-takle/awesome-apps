@@ -14684,7 +14684,7 @@ i.font-size-giant {
               axn='form_upload.ajax'
               bind='submit'
               bind_selector="form.add-release-form" 
-              disable_selector=".submit"
+              disable_selector="#add-feedback"
               route_ajax='t/[module.get ticket_id /]'></script>
     </div> 
   </div>

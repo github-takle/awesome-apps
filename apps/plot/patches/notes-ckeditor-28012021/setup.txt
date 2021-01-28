@@ -64,7 +64,23 @@ and repalce it with
         padding-top: .5em;
         margin-bottom: .5em;
     }
+6. Go to Plot -> modules and edit 'release-notes', find following (around line 161)
 
+ <script type=spa/axn
+              axn='form_upload.ajax'
+              bind='submit'
+              bind_selector="form.add-release-form" 
+              disable_selector=".submit"
+              route_ajax='t/[module.get ticket_id /]'></script>
+			  
+and replace it with following code
+
+   <script type=spa/axn
+              axn='form_upload.ajax'
+              bind='submit'
+              bind_selector="form.add-release-form" 
+              disable_selector="#add-feedback"
+              route_ajax='t/[module.get ticket_id /]'></script>			  
 
 Verify
 -----
