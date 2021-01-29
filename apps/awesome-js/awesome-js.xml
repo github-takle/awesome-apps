@@ -247,7 +247,7 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
 
   jQuery( document ).ready(function( $ ) {
     $.ajax({
-      url: '[env.get settings.cdn /]spa/spa.v2.min.js',
+      url: '[env.get settings.cdn /]spa/spa.v3.min.js',
       dataType: "script",
       cache: true,
       success: function() {
