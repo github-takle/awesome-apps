@@ -330,7 +330,7 @@ if(x.hashnav.initialized&&x.params.hashnav)if(x.params.replaceState&&window.hist
 
 const staticAssets = [
   '[aw2.get url.home /]site-skin/css/awesome-css',
-  '[env.get settings.cdn /]spa/spa.v2.min.js'
+  '[env.get settings.cdn /]spa/spa.v3.min.js'
 ];
 
 self.addEventListener('install', async function () {
