@@ -1,0 +1,6 @@
+Curent Version: 1.0
+Setup instructions
+-------------------
+
+1. Import error-log-full-pack.xml via wordpress importer.
+2. You may have to do it twice, due to limitation of WordPress.
