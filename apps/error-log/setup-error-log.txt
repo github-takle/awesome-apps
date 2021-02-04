@@ -2,5 +2,10 @@ Curent Version: 1.0
 Setup instructions
 -------------------
 
-1. Import error-log-full-pack.xml via wordpress importer.
-2. You may have to do it twice, due to limitation of WordPress.
+1. Goto Awesome Core -> services module and add following lines, and save 
+
+[services.add db2 service_label='DB2 Services' post_type='db_2' desc='database services' /]
+[services.add search2 service_label='Search2' post_type='search_2' desc='Search 2' service=yes/]
+
+2. Import error-log-full-pack.xml via wordpress importer.
+3. You may have to do it twice, due to limitation of WordPress.
