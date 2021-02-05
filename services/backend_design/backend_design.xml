@@ -44,21 +44,12 @@
 		<link>https://awxdocs.com/?awesome_core=backend-menu</link>
 		<pubDate>Wed, 03 Feb 2021 10:17:52 +0000</pubDate>
 		<dc:creator><![CDATA[amit]]></dc:creator>
-		<guid isPermaLink="false">https://awxdocs.com/?post_type=awesome_core&#038;p=1231113</guid>
+		<guid isPermaLink="false">http://nxt.wpoets.com/?post_type=awesome_core&#038;p=881510</guid>
 		<description></description>
 		<content:encoded><![CDATA[[templates.add main]
   [template.set_array navigation]
 
-	 [plot link='#' chckbox="yes" title='Plot' class="plot" icon='']
-    	[child-nav]
-        [user-stories link='{url.site}plot/user-stories' title='User Stories' class='plot' target='' /]
-        [tasks link='{url.site}plot/tasks' title='Tasks' class='plot' target='_blank' /]
-        [notes link='{url.site}plot/notes' title='Notes' class='plot' target='_blank' /]
-        [dashboard link='{url.site}bashboard' title='Dashboard' class='plot' target='_blank' /]
-      [/child-nav]
-    [/plot]
-    
-    [samples link='#' chckbox="yes" title='Samples' class="samples" icon='{url.site}wp-content/uploads/2020/05/photocopy-scan.png']
+    [samples link='#' title='Samples' class="samples" icon='{url.site}wp-content/uploads/2020/05/photocopy-scan.png']
     	[child-nav]
         [moods link='{url.site}samples/moodboard' title='Moodboard' class='samples' target='' /]
         [echarts link='{url.site}samples/echarts' title='ECharts' class='samples' target='_blank' /]
@@ -66,14 +57,13 @@
     [/samples]
     
     //** Error Log **//
-    [error-log link='{url.site}error-log' chckbox="yes" title='Error Logs' class='error-log' icon='{url.site}wp-content/uploads/2020/05/Prospectus.png' /]
+    [error-log link='{url.site}error-log' title='Error Logs' class='error-log' icon='' /]
+    [plot link='{url.site}plot' title='Plot' class='plot' icon='{url.site}wp-content/uploads/2020/05/Prospectus.png' /]
   	
     //** Settings array of menus **//
-  	[setting link='#' chckbox="yes" title='Settings' class="settings" target='' icon='{url.site}wp-content/uploads/2020/05/settings.png' ]
-    	[child-nav]
-      	[settings link='{url.site}settings/' title='All App Settings' class='settings' target='' /] 
-        [plot link='{url.site}settings/plot' title='Plot' class='settings' target='' /]
-        [samples link='{url.site}settings/samples' title='Samples' class='settings' target='_blank' /]
+  	[setting link='#' title='Settings' class="settings" target='' icon='{url.site}wp-content/uploads/2020/05/settings.png' ]
+      [child-nav]
+      	[settings link='{url.site}settings/home/settings' title='All App Settings' class='settings' target='' /] 
       [/child-nav]
     [/setting]
    

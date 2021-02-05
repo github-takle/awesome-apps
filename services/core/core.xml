@@ -263,7 +263,7 @@
 		<guid isPermaLink="false">http://dc.wordpoets.com/?post_type=awesome_core&#038;p=558650</guid>
 		<description></description>
 		<content:encoded><![CDATA[[templates.add settings]
-	//** Tabs: Will create 2 tabs... General Setting & Maintaneance settings **//
+	//** Tabs: Will create 3 tabs... General Setting, Social Setting & Maintaneance settings **//
 	[env.set_array settings_navigation]
 		[navs general-settings form_name="general-settings" label="General Setting" default_form="yes" /]
 		[navs social-settings form_name="social-settings" label="Social Setting" default_form="no" /]
