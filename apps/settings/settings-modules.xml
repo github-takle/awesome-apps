@@ -189,9 +189,9 @@
         }
     }
     .app-menu-wrapper .app-list li.active{
-    	background: #294858;
       a{
       	color:#fff;
+        background: #294858;
       }
     }
     .app-menu-wrapper .app-list li.active:after {
@@ -230,6 +230,37 @@
      .nav-tabs>li.active>span{
      	padding: 9px 15px
      }
+     .tab-form-wrapper{
+     		box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+     }
+     
+     fieldset {
+        display: block;
+        margin-left: 2px;
+        margin-right: 2px;
+        margin-bottom: 20px;
+        padding: 35px 25px;
+        border: 1px solid @gray-dark;
+        background-color: rgba(0,0,0,0.01);
+      }
+     legend{ 
+        display: block;
+        width: auto;
+        margin-bottom: -1rem !important;
+        line-height: inherit;
+        color: inherit;
+        white-space: normal;
+        background-color: #fff;
+        border: 1px solid @gray-dark;
+        border-radius: 10px;
+        padding: 5px 22px;
+        font-size: 17px;
+       span{
+          color: @brand-primary;
+          font-weight: bold;
+       }
+     }
+     
   [/css.style]
 
   //** Get APP where post content not null**//
@@ -269,67 +300,67 @@
 
       //** Right Content area of App Settings**//
       <div class="col-md-10">
-        <h3 class="text-center"> Edit Settings </h3>
+      	<h3 class="text-center font-bold mar-b-4"> Edit Settings </h3>
+      	
+            [env.set settings_navigation='' /]
 
-					[env.set settings_navigation='' /]
+            [templates.run get_form_config app_name="{qs.0}" config_array="{qs.1}" /]
 
-					[templates.run get_form_config app_name="{qs.0}" config_array="{qs.1}" /]
-
-          [template.set form_array_name="{qs.1}" /]
-          [loop.eachNav env.settings_navigation.navs]
-            [if.equal lhs="{eachNav.item.default_form}" rhs="yes" empty="{qs.1}"]
-              [template.set form_array_name="{eachNav.key}" /]
-            [/if.equal]
-          [/loop.eachNav]
+            [template.set form_array_name="{qs.1}" /]
+            [loop.eachNav env.settings_navigation.navs]
+              [if.equal lhs="{eachNav.item.default_form}" rhs="yes" empty="{qs.1}"]
+                [template.set form_array_name="{eachNav.key}" /]
+              [/if.equal]
+            [/loop.eachNav]
 
 
-//**
-If only one tab... do not show
-[if.greater_than lhs="{env.settings_navigation.navs.count}" rhs="1" not_empty="{settings_navigation}"] **//
-					<div class="settings-menu-tabs">
-            <ul class="nav nav-tabs">
-              [loop.eachNav env.settings_navigation.navs]
-              	[if.not_equal rhs="{template.form_array_name}" lhs="{eachNav.key}"]
-                <li class=''>
-                  <a href="/[aw2.get app.slug /]/[aw2.get app.active.module /]/[aw2.get qs.0 /]/[aw2.get eachNav.key /]/">[aw2.get eachNav.item.label /]</a>
-                </li>
-                [/if.not_equal]
-                [if.else]
-                <li class='active'>
-                  <span style='display: inline-block;'>[aw2.get eachNav.item.label /]</span>
-                </li>
-                [/if.else]
-              [/loop.eachNav]
-            </ul>
+  //**
+  If only one tab... do not show
+  [if.greater_than lhs="{env.settings_navigation.navs.count}" rhs="1" not_empty="{settings_navigation}"] **//
+            <div class="settings-menu-tabs">
+              <ul class="nav nav-tabs">
+                [loop.eachNav env.settings_navigation.navs]
+                  [if.not_equal rhs="{template.form_array_name}" lhs="{eachNav.key}"]
+                  <li class=''>
+                    <a href="/[aw2.get app.slug /]/[aw2.get app.active.module /]/[aw2.get qs.0 /]/[aw2.get eachNav.key /]/">[aw2.get eachNav.item.label /]</a>
+                  </li>
+                  [/if.not_equal]
+                  [if.else]
+                  <li class='active'>
+                    <span style='display: inline-block;'>[aw2.get eachNav.item.label /]</span>
+                  </li>
+                  [/if.else]
+                [/loop.eachNav]
+              </ul>
+            </div>
+          //** [/if.greater_than] **//
+				<div class="tab-form-wrapper pad-6">
+          <div class="form-content">
+            <div class="gap-6"></div>
+
+            [if.not_empty template.form_array_name]
+              [env.get {template.form_array_name} set="template.config_array" /]
+
+              [template.set_array extra_params  
+                      post_id="{{aw2.get env.postdata.ID}}" 
+                      app="{qs.0}" 
+                      config_array="{template.form_array_name}" /]
+
+              [aw_form.create 
+                  form-config='{template.config_array}' 
+                  collection_type='m_settings' 
+                  submit_to='home.save_setting' 
+                  extra_params='{template.extra_params}' 
+                /]
+            [/if.not_empty]
+            [if.else]
+              [if.equal lhs="{qs.0}" rhs=""]
+                <center>Select App from left side</center>
+              [/if.equal]
+            [/if.else]
+
           </div>
-        //** [/if.greater_than] **//
-
-        <div class="form-content">
-        	<div class="gap-6"></div>
-
-          [if.not_empty template.form_array_name]
-          	[env.get {template.form_array_name} set="template.config_array" /]
-
-            [template.set_array extra_params  
-                    post_id="{{aw2.get env.postdata.ID}}" 
-                    app="{qs.0}" 
-                    config_array="{template.form_array_name}" /]
-                
-						[aw_form.create 
-                form-config='{template.config_array}' 
-                collection_type='m_settings' 
-                submit_to='home.save_setting' 
-                extra_params='{template.extra_params}' 
-							/]
-          [/if.not_empty]
-          [if.else]
-          	[if.equal lhs="{qs.0}" rhs=""]
-          		<center>Select App from left side</center>
-            [/if.equal]
-          [/if.else]
-
         </div>
-  			<div class="gap-4"></div>
       </div>
     </div>
   </div>
@@ -413,6 +444,7 @@ If only one tab... do not show
     
 		[template.set app_name='settings' c.cond={template.app_name} c.eq='settings'/]
 [/templates.add]
+
 ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>867866</wp:post_id>
