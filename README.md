@@ -16,7 +16,8 @@ Following apps has been released
 3. Samples
 4. Plot
 5. Settings
-6. Content Builder - WIP
+6. Error Log
+7. Content Builder - WIP
 
 
 ## Awesome Services
@@ -36,6 +37,7 @@ Following services has been released
 11. single_service
 12. ui
 13. db2
+14. backend_design
 
 
 ## We're Hiring!
