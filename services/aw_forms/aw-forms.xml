@@ -52,23 +52,15 @@
 
 	[this_collection.css /]
 
-	[if.equal lhs="{module.form-config}" rhs=""]
-      [if.empty module.form_config_service]
-        [template.set error_message]
-        <h4 class='text-center brand-danger mar-t-5'>Form config service not provided!</h4>
-        [/template.set]
-        [template.return template.error_message /]
-      [/if.empty]
+	[content.run c.empty="module.form-config"]
   
-      //** Short of above if condition
-        [template.return template.error_array empty='{module.form_config_service}' /]
-      **//
-  
-      [if.not_empty module.form_config_service]
-        [service.run {module.form_config_service} set="module.form-config" /]
-      [/if.not_empty]
-	[/if.equal]
-
+  	[template.return content c.empty="module.form_config_service"]
+    	<h4 class='text-center brand-danger mar-t-5'>Form config service not provided!</h4>
+    [/template.return]
+  	
+    [service.run {module.form_config_service} o.set="module.form-config" /]
+    
+	[/content.run]
 
   [if.empty module.form-config.groups]
   	[template.set error]
@@ -91,17 +83,27 @@
       [/loop.@gr]
 
 			<input type='hidden' name='form_id' value='[aw2.get qs.0 /]'>
-      <div class="all-button">
-      	[if.equal lhs='{module.form-config.prev_button}' rhs='yes']
-          <button data-safe_id='[app.safe_id /]' type="button" class="btn btn-gray-outline [if.empty module.prev_class]prev-step [/if.empty][if.else][module.prev_class /][/if.else] font-medium text-uppercase font-size-base text-uppercase float-left">Prev step</button>
-        [/if.equal]
-      	[if.equal lhs='{module.form-config.next_button}' rhs='yes']
-          <button data-safe_id='[app.safe_id /]' type="submit" class="[module.token /]-submit float-right btn btn-primary desktop next-form-submit text-uppercase">Next step</button>
-        [/if.equal]
-        [if.equal lhs='{module.form-config.submit_button}' rhs='yes']
-        	<button data-safe_id='[app.safe_id /]' type="submit" class="[module.token /]-submit float-right btn btn-primary desktop form-submit text-uppercase">Submit</button>
-        [/if.equal]
-      </div>
+
+      [if.not_empty module.button]
+      	<div class="gap-3"></div>
+        <div class="all-button row justify-content-center">
+            <button data-safe_id='[app.safe_id /]' type="submit" 
+            				class="[module.token /]-submit float-right btn btn-primary desktop form-submit text-uppercase">[module.get button /]</button>
+        </div>
+      [/if.not_empty]
+      [if.empty module.button]
+          <div class="all-button">
+            [if.equal lhs='{module.form-config.prev_button}' rhs='yes']
+              <button data-safe_id='[app.safe_id /]' type="button" class="btn btn-gray-outline [if.not_empty module.prev_class][module.prev_class /] [/if.not_empty][if.else]prev-step[/if.else] font-medium text-uppercase font-size-base text-uppercase float-left">Prev step</button>
+            [/if.equal]
+            [if.equal lhs='{module.form-config.next_button}' rhs='yes']
+              <button data-safe_id='[app.safe_id /]' type="submit" class="[module.token /]-submit float-right btn btn-primary desktop next-form-submit text-uppercase">Next step</button>
+            [/if.equal]
+            [if.equal lhs='{module.form-config.submit_button}' rhs='yes']
+              <button data-safe_id='[app.safe_id /]' type="submit" class="[module.token /]-submit float-right btn btn-primary desktop form-submit text-uppercase">Submit</button>
+            [/if.equal]
+          </div>
+      [/if.empty]
       <div class="gap-8 is-md-none"></div>
       <div class="is-fixed mobile is-md-none brand-white-bg width-100 pad-x-2 text-center" style="bottom: 0; left:0; z-index: 9;">
           <button data-safe_id='[app.safe_id /]' type="submit" class="[module.token /]-submit btn btn-primary profile-btns edit-profile-submit mar-t-2 mar-b-2">Submit</button>
@@ -110,15 +112,12 @@
     </form>
  //** [/html.trusted] **//
 
-
-  //** To generate session ticket **//
+ //** To generate session ticket **//
   [template.set submit_to="{module.submit_to}" not_empty="{module.submit_to}" /]
-  [if.empty submit_to]
+  [if.empty template.submit_to]
   	[php.explode p1="." p2="{module.form-config.save_handler}" p3="1" set="template.save_handler_exploded" /]
-    [if.not_equal lhs="{template.save_handler_exploded.1}"]
-    	[module.set collection_type="{template.save_handler_exploded.0}" /]
-    	[template.set submit_to="{template.save_handler_exploded.1}" /]
-    [/if.not_equal]
+    [module.set collection_type="{template.save_handler_exploded.0}" c.not_empty='{template.save_handler_exploded.1}'/]
+    [template.set submit_to="{template.save_handler_exploded.1}" c.not_empty='{template.save_handler_exploded.1}'/]
   [/if.empty]
 																																																				  
 
@@ -256,7 +255,7 @@
   	<fieldset>
   		<legend>
       	[if.not_empty template.data.label]
-          <span class="group-title font-size-large gray">
+          <span class="group-title font-bold">
             [template.data.label /]
           </span>
         [/if.not_empty]
@@ -335,6 +334,7 @@
 	//** TODO: attributes should be dynamic, so not need to edit this when new attribute introduced **//
 	[service.run {template.service_name} id={@field.key}
     label="{@field.item.label}"
+    name="{@field.item.name}"
     parent_class="{@field.item.parent_class}"
     in_class="{@field.item.in_class}"
     class="{@field.item.class}" 
@@ -355,6 +355,10 @@
     checked="{@field.item.checked}" 
     readonly="{@field.item.readonly}" 
     meta_type="{@field.item.meta_type}" 
+    title="{@field.item.title}" 
+    text="{@field.item.text}" 
+    extras="{@field.item.extras}" 
+    extra_params="{module.extra_params}"  
     /]
 [/templates.add]]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
