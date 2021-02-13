@@ -312,6 +312,7 @@
              <li class='[if.equal rhs="settings" lhs="{qs.0}"]active[/if.equal]'>
                 <a href="[aw2.get app.path /]/[aw2.get app.active.module /]/settings/">Core</a>
               </li>
+            [module.set active_app_label='Core' c.cond='settings' c.eq='{qs.0}' /]  
             [loop.eachApp apps]
               [php.in_array p1="{eachApp.item.collection.config.post_type}" p2="{settings_app}" set="app_setting_exists" /]
               [if.true app_setting_exists]
@@ -320,6 +321,7 @@
                     [aw2.get eachApp.item.name /]
                   </a>
                 </li>
+                [module.set active_app_label='{eachApp.item.name}' c.cond='s:{eachApp.key}' c.eq='s:{qs.0}' /]
               [/if.true]
             [/loop.eachApp]
           </ul>
@@ -328,7 +330,7 @@
 
       //** Right Content area of App Settings**//
       <div class="col-md-10">
-      	<h3 class="text-center font-bold mar-b-4"> Edit Settings </h3>
+      	<h2 class="text-center font-bold mar-b-4"> [module.get active_app_label /] Settings </h2>
       	
             [env.set settings_navigation='' /]
 
