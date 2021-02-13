@@ -1,4 +1,4 @@
-Curent Version: 1.2
+Curent Version: 1.3
 Setup instructions
 -------------------
 
@@ -14,6 +14,9 @@ Some Issues
 ----------------
 1. Check if 'settings' post in config have duplicate meta fields for values, remove the duplicate meta keys.
 2. If you get the error saying @gray-light or any other variable not defined, then check if in "core->register" module exists.
+
+Release 1.3
+1. Added Code for showing Settings screen in Settings App
 
 Release 1.2
 1. Added additional padding & margin classes
