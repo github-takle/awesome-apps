@@ -37,7 +37,7 @@
 	<wp:base_blog_url>https://alpha.wordpoets.com</wp:base_blog_url>
 
 		<wp:author><wp:author_id>8</wp:author_id><wp:author_login><![CDATA[praveen]]></wp:author_login><wp:author_email><![CDATA[praveen.g@amiworks.com]]></wp:author_email><wp:author_display_name><![CDATA[Praveen Gupta]]></wp:author_display_name><wp:author_first_name><![CDATA[Praveen]]></wp:author_first_name><wp:author_last_name><![CDATA[Gupta]]></wp:author_last_name></wp:author>
-
+		<wp:author><wp:author_id>5</wp:author_id><wp:author_login><![CDATA[dhiraj]]></wp:author_login><wp:author_email><![CDATA[dhirajakumar@amiworks.com]]></wp:author_email><wp:author_display_name><![CDATA[dhiraj]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
 				
 	<item>
 		<title>backend-menu</title>
@@ -93,11 +93,12 @@
 		<wp:meta_value><![CDATA[2]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
-<item>
+		
+		<item>
 		<title>layout</title>
 		<link>https://awxdocs.com/?post_type=backend_service&#038;p=867719</link>
 		<pubDate>Thu, 21 May 2020 05:27:02 +0000</pubDate>
-		<dc:creator><![CDATA[praveen]]></dc:creator>
+		<dc:creator><![CDATA[]]></dc:creator>
 		<guid isPermaLink="false">http://ilsnxt.wordpoets.com/?post_type=backend_service&#038;p=867719</guid>
 		<description></description>
 		<content:encoded><![CDATA[<html>
@@ -109,6 +110,7 @@
     <title>[aw2.get app.name /]</title>
     <link rel="stylesheet" href="[aw2.get url.home /]site-skin/css/awesome-css">
     <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type='text/javascript' src="[aw2.get url.home /]/awesome-js/js/purify-js"></script>
     <script type='text/javascript' src='[aw2.get url.home /]/awesome-js/js/lightbox-js' defer></script>
     
     [loop.@a apps]
@@ -196,14 +198,14 @@
 		<wp:is_sticky>0</wp:is_sticky>
 														<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_lock]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1612425208:2]]></wp:meta_value>
+		<wp:meta_value><![CDATA[1613362497:5]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
 		<title>backend-js</title>
 		<link>https://awxdocs.com/?post_type=backend_service&#038;p=867721</link>
 		<pubDate>Thu, 21 May 2020 05:28:22 +0000</pubDate>
-		<dc:creator><![CDATA[praveen]]></dc:creator>
+		<dc:creator><![CDATA[]]></dc:creator>
 		<guid isPermaLink="false">http://ilsnxt.wordpoets.com/?post_type=backend_service&#038;p=867721</guid>
 		<description></description>
 		<content:encoded><![CDATA[<script type="spa/axn" axn="core.run_script">
@@ -343,7 +345,7 @@
 		<title>backend-css</title>
 		<link>https://awxdocs.com/?post_type=backend_service&#038;p=867723</link>
 		<pubDate>Thu, 21 May 2020 05:47:49 +0000</pubDate>
-		<dc:creator><![CDATA[praveen]]></dc:creator>
+		<dc:creator><![CDATA[]]></dc:creator>
 		<guid isPermaLink="false">http://ilsnxt.wordpoets.com/?post_type=backend_service&#038;p=867723</guid>
 		<description></description>
 		<content:encoded><![CDATA[[css.style]
@@ -1383,7 +1385,7 @@ i.fa{
         }
         .sub-menu{
             display:none;
-            background: #747474;
+            background: @gray;
             li a{
                 font-size: 14px;
                 padding-left: 30px;
@@ -1429,14 +1431,14 @@ i.fa{
 		<wp:is_sticky>0</wp:is_sticky>
 														<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_lock]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1612415769:2]]></wp:meta_value>
+		<wp:meta_value><![CDATA[1613362966:5]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
 		<title>side-bar-menu</title>
 		<link>https://awxdocs.com/?post_type=backend_service&#038;p=867725</link>
 		<pubDate>Thu, 21 May 2020 05:48:20 +0000</pubDate>
-		<dc:creator><![CDATA[praveen]]></dc:creator>
+		<dc:creator><![CDATA[]]></dc:creator>
 		<guid isPermaLink="false">http://ilsnxt.wordpoets.com/?post_type=backend_service&#038;p=867725</guid>
 		<description></description>
 		<content:encoded><![CDATA[[templates.add main]
@@ -1505,11 +1507,527 @@ i.fa{
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_lock]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1612428425:2]]></wp:meta_value>
+		<wp:meta_value><![CDATA[1613362500:5]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title>layout-one</title>
+		<link>https://awxdocs.com/?post_type=backend_service&#038;p=1231354</link>
+		<pubDate>Fri, 12 Feb 2021 12:04:21 +0000</pubDate>
+		<dc:creator><![CDATA[dhiraj]]></dc:creator>
+		<guid isPermaLink="false">https://awxdocs.com/?post_type=backend_service&#038;p=1231354</guid>
+		<description></description>
+		<content:encoded><![CDATA[<html>
+	<head>
+    <meta charset="utf-8" />
+  	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>[aw2.get app.name /]</title>
+   	<link rel="stylesheet" href="[aw2.get url.home /]site-skin/css/awesome-css/v1">	
+   	<link rel="stylesheet" href="https://cdn.getawesomestudio.com/lib/font-awesome/4.7.0/css/font-awesome.css">
+		<script type='text/javascript' src='[aw2.get url.home /]awesome-js/js/all-js/v1'></script>
+    [css.style] 
+    .overflow-hidden{
+    		overflow: hidden;
+    }
+    i.fa{
+    	font-family: 'FontAwesome' !important;
+    }
+    [role="group-details"] header h3 {
+        border-bottom: 3px solid #eee;
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+    }
+    .module-wrapper {
+      padding: 50px;
+  	}
+    .SumoSelect {
+        width: 100%;
+    }
+    .form-group {
+        margin-bottom: 0.5rem;
+        .col-md-4.text-right{
+        		@media only screen and (max-width: 767px){
+                text-align: left !important;
+            }
+        }
+        @media only screen and (max-width: 767px){
+            margin-bottom: 1rem;
+        }
+		}
+		.form-group .flatpickr-wrapper {
+        display: block;
+    }
+    html body {
+    		max-width: 100%;
+        font-size: 15px;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 9px 30px;
+        min-height: auto;
+    }
+    .mobile-header{
+    		position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 4px 17px 3px rgba(0,0,0,.15);
+        z-index: 999;
+    }
+    .form-group.has-error{
+        .help-block{
+            color: @brand-danger;
+        }
+        input, textarea,.SumoSelect>.CaptionCont{
+            border-color: @brand-danger
+        }
+    }
+    .top-strip{
+    	  padding: 10px 50px;
+        @media only screen and (max-width: 767px) {
+          padding: 15px 25px;
+    	}
+    }
+    .user-details{
+    		padding-right: 50px;
+        
+        .user-menu-icon{
+         	position: absolute;
+          top: 0;
+          right: 0;
+          cursor: pointer;
+        }
+        ul.user-menus {
+            list-style-type: none;
+            position: absolute;
+            right: 0;
+            top: 100%;
+            background: #fff;
+            padding: 0;
+            margin: 0;
+            margin-top: 22px;
+            min-width: 200px;
+            box-shadow: 0px 3px 8px rgba(0,0,0, 0.3);
+            z-index: 9999;
+            display: none;
+            
+            li a {
+                padding: 12px 15px;
+                display: block;
+                border-bottom: 1px solid #ddd;
+   					 		font-weight: bold;
+            }
+            &:before {
+              content: '';
+              position: absolute;
+              right: 6px;
+              top: -12px;
+              width: 10px;
+              border-bottom: 12px solid #fff;
+              border-left: 12px solid transparent;
+              border-right: 12px solid transparent;
+            }
+        }
+    }
+		.main-container>.row>.content-wrapper {
+        min-height: 100vh;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -30px;
+            width: 30px;
+            height: 30px;
+            background: #fff;
+        }
+    }
+
+    .change-user-role {
+    		display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        z-index: 99999;
+        overflow: auto;
+        .close-change-role{
+        		cursor: pointer;
+        }
+    }
+    
+    .sidebar-toggle {
+        width: 35px;
+        height: 35px;
+        padding: 3px;
+    }
+    
+    @media only screen and (min-width: 992px) {
+    			.desktop-logo-wrapper{
+          	height: 102px;
+            background: #fff;
+            .desktop-logo{
+            		max-height: 62px;
+                max-width: 100%;
+            }
+          }
+    			.content-header{
+          	position: -webkit-sticky;
+          	position: sticky;
+            top: 0;
+            z-index: 999;
+            -webkit-box-shadow: 0 9px 15px 0 rgba(0,0,0,.05);
+            -moz-box-shadow: 0 9px 15px 0 rgba(0,0,0,.05);
+            box-shadow: 0 9px 15px 0 rgba(0,0,0,.05);
+          }
+          .side-menu-wrapper{
+          		position: fixed;
+              left: 0;
+              top: 0;
+              height: 100vh;
+              z-index: 1000;
+              overflow: hidden;
+              overflow-y: auto;
+              width: 300px;
+              transition: width 0.3s ease-in-out;
+              -webkit-box-shadow: 0 9px 15px 0 rgba(0,0,0,.05);
+            	-moz-box-shadow: 0 9px 15px 0 rgba(0,0,0,.05);
+           		box-shadow: 0 9px 15px 0 rgba(0,0,0,.05);
+
+              &::-webkit-scrollbar {
+                width: 7px;
+              }
+
+              &::-webkit-scrollbar-track {
+                background: #f1f1f1; 
+              }
+
+              &::-webkit-scrollbar-thumb {
+                background: #888; 
+              }
+
+              &::-webkit-scrollbar-thumb:hover {
+                background: #555; 
+              }
+              .careers-img{
+              		width:90px;
+                  transition: width 0.4s ease-in-out;
+              }
+              .topmenu{
+              	white-space: nowrap;
+              }
+          }
+          .content-wrapper{
+              max-width: ~"calc(100% - 300px)";
+              transition: max-width 0.3s ease-in-out;
+          }
+          .hide-menu{
+
+          		.topmenu ul li.has-submenu .submenu.menu-open {
+                  display: none;
+              }
+              .side-menu-wrapper:hover .topmenu ul li.has-submenu .submenu.menu-open {
+                  display: block;
+              }
+              .side-menu-wrapper{
+                  width: 80px;
+                  a{
+                  		opacity: 0;
+                  }
+                  &:hover{
+                  	width: 300px;
+                    a{
+                    		opacity: 1;
+                    }
+                  }
+              }
+              .content-wrapper{
+                  max-width: ~"calc(100% - 80px)";
+              }
+          }
+  	}
+    @media only screen and (max-width: 991px) {
+          .side-menu-wrapper{
+              width: 100%;
+              white-space: nowrap;
+          }
+          .side-menus {
+              display: none;
+              position: fixed;
+              top: 60px;
+              left: 0;
+              width: 100%;
+              height: ~"calc(100vh - 60px)";
+              z-index: 999;
+              overflow-y: auto;
+              background-color: @brand-primary;
+          }
+  	}
+    
+	[/css.style] 
+</head>
+	<body class="gray-white-bg">   
+   
+  <template get='[app.path /]/' axn=core.set set='settings.path'></template>
+  	<div class="container-fluid main-container">
+  		<div class="row justify-content-end">
+
+        <div class="no-padding side-menu-wrapper gray-darker-bg">
+          <div class="mobile-header logo pad-y-2 brand-primary-bg pad-x-4 is-lg-none is-flex justify-content-between align-items-center">
+             [if.not_empty settings.backend-logo]
+                <img src="[env.settings.backend-logo/]"  class="logo-img img-responsive">
+              [/if.not_empty]  
+              [if.else]
+                [wp.get option.blogname /]
+              [/if.else]
+            <i class="menu-icon icon-close icon-menu font-size-largest brand-white"></i>
+          </div>
+          <div class="side-menus">
+            <div class="logo pad-y-5 pad-x-4 is-none is-lg-flex flex-wrap desktop-logo-wrapper">
+              [if.not_empty settings.backend-logo]
+                <img src="[env.settings.backend-logo/]"  class="logo-img desktop-logo">
+              [/if.not_empty]  
+              [if.else]
+                [wp.get option.blogname /]
+              [/if.else]
+            </div>
+              <div class="gap-6"></div>
+              [this_collection.side-bar-menu-one menu='{module.menu}'/]
+              <div class="gap-3"></div>
+          </div>
+        </div>
+
+        <div class="col content-wrapper no-padding" >
+            <div class="gap-10 is-lg-none"></div>
+            <div class="gap-6 is-lg-none"></div>
+            <section class="brand-white-bg justify-content-between row top-strip align-items-center content-header">
+              <div class="col-md-6 order-1 order-md-0 mar-t-5 no-margin-md font-size-smaller is-flex">
+              	<i class="br-50 brand-primary-bg brand-white font-size-large icon-menu is-lg-block is-none mar-x-4 no-margin-left sidebar-toggle text-center"></i>                                
+              </div>
+                <div class="col-md-6 order-0 order-md-1 is-flex justify-content-md-end align-items-center is-relative user-details">
+                	<div class="user-img pad-x-4 no-padding-left">
+                  <img src="[php.get_avatar_url p1='{current_user.ID}' /]" style="width: 40px;" class="br-50">
+              		</div>
+                  <div>
+                      <p class="font-bold font-size-smaller no-margin text-capitalize">[aw2.get current_user.display_name /]</p> 
+                  </div>
+                </div>
+              </section>	
+              <main>
+               <div class="module-wrapper"> 
+             	   [app.run active_module /]
+               </div>
+             </main>
+        </div>
+    	</div>
+    </div>
+
+   	<script type="spa/axn" axn="core.run_script">
+      $(".submenu-icon").click(function(e){
+      	e.preventDefault();
+        e.stopPropagation();
+        if(!$(this).parent().siblings(".submenu").hasClass("menu-open"))
+        {
+          $(".topmenu .submenu").removeClass("menu-open");
+          $(".topmenu .has-submenu").removeClass("active-menu");
+          $(".topmenu .submenu-icon").addClass("fa-chevron-down")
+        }
+        $(this).toggleClass("fa-chevron-down").parent().siblings(".submenu").toggleClass("menu-open");
+        $(this).parents("li").toggleClass("active-menu");
+      });
+      $(".mobile-header .menu-icon").click(function(){
+					$(".side-menus").slideToggle();
+          $(this).toggleClass("icon-menu");
+          $("html").toggleClass("overflow-hidden");
+      });
+      
+      $(".user-details .user-menu-icon").click(function(){
+					$(".user-menus").fadeToggle();
+      });
+      
+      
+      $(".sidebar-toggle").click(function(){
+          $(".main-container").toggleClass("hide-menu");
+          $(this).toggleClass("icon-more-vert");
+      });
+
+  	</script>
+	</body>
+</html>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1231354</wp:post_id>
+		<wp:post_date><![CDATA[2021-02-12 12:04:21]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2021-02-12 12:04:21]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[layout-one]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[backend_service]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+														<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_lock]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1613362484:5]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+		<wp:meta_value><![CDATA[5]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title>side-bar-menu-one</title>
+		<link>https://awxdocs.com/?post_type=backend_service&#038;p=1231383</link>
+		<pubDate>Fri, 12 Feb 2021 12:51:07 +0000</pubDate>
+		<dc:creator><![CDATA[dhiraj]]></dc:creator>
+		<guid isPermaLink="false">https://awxdocs.com/?post_type=backend_service&#038;p=1231383</guid>
+		<description></description>
+		<content:encoded><![CDATA[[templates.add main]
+
+	[core.backend-menu  o.set="template.menus" c.empty='{module.menu}'/]
+  [module.menu  o.set="template.menus" c.not_empty='{module.menu}'/]
+  
+ [css.style]
+ 		html, html body{
+    	overflow-x: initial;
+    }
+    .topmenu{
+        font-size: 15px;
+				ul{
+        		list-style-type: none;
+            padding: 0;
+            li{
+            		position: relative;
+                color: rgba(255,255,255,0.9);
+                .menu-icon{
+                    margin: 0 20px;
+                    padding-top: 15px;
+                    width: 30px;
+                    height: 30px;
+                    box-sizing: content-box;
+                }
+                
+            		a{
+                		display: block;
+                		padding: 15px 20px;
+                    position: relative;
+                    z-index: 1;
+                    color: rgba(255,255,255,0.9);
+                    transition: all 0.3s ease-in-out;
+                    font-size: 14px;
+                }
+                >i{
+                	transition: all 0.3s ease-in-out;
+                }
+                &.active-menu, &:hover{
+                	i{
+                  	color: @brand-primary;
+                  }
+                  >a{
+                      color: @brand-primary;
+                  }
+                }
+                &.active-menu{
+                		background: darken(@gray-darker, 5%);
+                }
+                &.has-submenu{
+                    .submenu-icon{
+                      position: absolute;
+                      right: 0;
+                      top: 0;
+                      padding: 19px 15px;
+                    }
+                    li{
+                    		a{
+                        		padding-left: 70px;
+                            &:hover{
+                        			background: lighten(@gray-darker, 5%);
+                        		}
+                        }
+                        &:last-child{
+                        	border-bottom: none;
+                        }
+                        &.active-menu a{
+                        		background: lighten(@gray-darker, 5%);
+                        }
+                    }
+                    .submenu{
+                    		display: none;
+                        background: lighten(@gray-darker, 5%);
+                        &.menu-open{
+                        		display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+ [/css.style]
+
+ 
+  <div class="topmenu">
+  
+  	<ul class="main-menus">
+    [loop.@menu template.menus]
+        [if.user_can_access link='{@menu.item.link}' o.set='template.user_allowed'/]
+        [if.true template.user_allowed]
+          [if.empty @menu.item.child-nav]
+             <li class="[if.equal lhs='{{php.site_url}}{server_variables.REQUEST_URI}' rhs='{@menu.item.link}'] active-menu[/if.equal]">
+               <div class="menu-icon float-left"><img src="[aw2.get @menu.item.icon default='{{php.site_url/}}/wp-content/uploads/2020/12/dashboard-icon.svg'/]" class="img-responsive"></div>
+               <a href="[aw2.get @menu.item.link /]" title='[aw2.get @menu.item.title /]' target='[aw2.get @menu.item.target /]' rel="noopener">
+                 <span class="menu-title">[aw2.get @menu.item.title /] [template.badge /]</span>
+               </a>
+             </li>
+          [/if.empty]
+          [if.not_empty @menu.item.child-nav]
+            <li class="has-submenu">
+            		<div class="menu-icon float-left"><img src="[aw2.get @menu.item.icon default='{{php.site_url/}}/wp-content/uploads/2020/12/dashboard-icon.svg'/]" class="img-responsive"></div>
+               	<a href="[aw2.get @menu.item.link default='#' /]">
+                 <span class="menu-title">[aw2.get @menu.item.title /]</span>
+                 <i class="fa fa-chevron-up brand-white submenu-icon fa-chevron-down"></i>
+               	</a>
+                <ul class="submenu">
+                  [loop.@child @menu.item.child-nav]
+                      <li class="[aw2.get @child.item.class /] [if.equal lhs='{{php.site_url}}{server_variables.REQUEST_URI}' rhs='{@child.item.link}'] active-menu[/if.equal]">
+                        <a href="[aw2.get @child.item.link /]" target="[aw2.get @submenu.item.target/]" rel="noopener">
+                            [aw2.get @child.item.title /] [template.badge /]
+                          </a> 
+                      </li>
+                  [/loop.@child] 
+              </ul>
+            </li>
+        	[/if.not_empty]
+        [/if.true]
+    [/loop.@menu] 
+   	</ul>
+  </div>
+[/templates.add]]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1231383</wp:post_id>
+		<wp:post_date><![CDATA[2021-02-12 12:51:07]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2021-02-12 12:51:07]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[side-bar-menu-one]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[backend_service]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+														<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_lock]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1613378778:2]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+		<wp:meta_value><![CDATA[5]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 				
-		
 				
 				</channel>
 </rss>
