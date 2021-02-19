@@ -9,3 +9,9 @@ Setup instructions
 
 2. Import error-log-full-pack.xml via wordpress importer.
 3. You may have to do it twice, due to limitation of WordPress.
+
+
+Dependency
+1. Search 2 service
+2. DB2 service
+3. Backend Design Service
