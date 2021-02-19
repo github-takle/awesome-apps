@@ -212,7 +212,7 @@ for (i = 0; i < 6; i++) {
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
 														</item>
-					<item>
+			<item>
 		<title>datatable</title>
 		<link>https://awxdocs.com/?post_type=search_2&#038;p=673949</link>
 		<pubDate>Sat, 17 Nov 2018 05:04:24 +0000</pubDate>
@@ -250,11 +250,15 @@ for (i = 0; i < 6; i++) {
 
   [if.equal lhs="{form_data.bulk_action}" rhs="yes"]
     [modules.run {form_data.module} template='{form_data.template}' post_type="{form_data.post_type}" selected_data="{form_data.selected_data}" set="template.ack" /]
-
-    //**show alert message**//
+	
+  [template.return content]
+  	[template.ack /]
+  [/template.return]
+    //**show alert message
     [manage_service.alert msg="{template.ack.reason}" msg_type="{template.ack.status}" set="template.msg" /]
 
     <script type="spa/axn" axn="core.run_script" alert="[template.msg/]" data-safe_id='[app.safe_id /]'></script>
+    **//
   [/if.equal]
   
   [aw2.set_array search found_pages='{module.dataset.found_pages}' found_rows='{module.dataset.found_rows}' /]
@@ -287,8 +291,8 @@ for (i = 0; i < 6; i++) {
   	<section role=table>
     
     	[loop.@action search.handlers.datatable.bulk_action]
-          <button type="button" class="btn btn-fifth" role="bulk-action" data-module="[aw2.get @action.item.module /]" data-template="[aw2.get @action.item.template /]" data-post_type="[aw2.get @action.item.post_type /]" data-safe_id="[app.safe_id/]">[aw2.get @action.item.label default="Send Data" /]</button> 		
-        [/loop.@action]
+          <button type="button" class="btn btn-fifth [env.@action.item.class /]" role="bulk-action" data-module="[aw2.get @action.item.module /]" data-template="[aw2.get @action.item.template /]" data-post_type="[aw2.get @action.item.post_type /]" data-safe_id="[app.safe_id/]" data-sub_handler='[request2.submit_handler/]' data-pageno="[request2.pageno/]">[aw2.get @action.item.label default="Send Data" /]</button> 		
+      [/loop.@action]
     	
     	[if.not_empty search.handlers.datatable.bulk_action]
         	<script type=spa/axn axn='core.run_script' data-safe_id='[app.safe_id /]'>
@@ -315,7 +319,7 @@ for (i = 0; i < 6; i++) {
                 var module = o.block.target.attr('data-module');
                 var template = o.block.target.attr('data-template');
                 var post_type = o.block.target.attr('data-post_type');
-                
+                var pageno= o.block.target.attr('data-pageno');
                 $( "input[name='bulkaction[]']:checked" ).each(function() {
                 	selected.push($(this).val());
                 });
@@ -327,7 +331,7 @@ for (i = 0; i < 6; i++) {
                 form.attr('module',module);
                 form.attr('template',template);
               	form.attr('post_type',post_type);
-                
+                form.attr('pageno',pageno);
                 form.attr('search_id',search_id);
                 form.attr('new_query','no');
 				
@@ -423,7 +427,12 @@ for (i = 0; i < 6; i++) {
 		<wp:post_type><![CDATA[search_2]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-														</item>
+														<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_lock]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1613622804:3]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					
 					<item>
 		<title>handler-scripts</title>
 		<link>https://awxdocs.com/?post_type=search_2&#038;p=673950</link>
@@ -459,6 +468,7 @@ for (i = 0; i < 6; i++) {
     	form.attr('pageno',1);
     	form.attr('search_id',search_id);
     	form.attr('new_query','yes');
+		form.attr('bulk_action','no');
     	form.submit();
     </script>
   [/loop.@i]
@@ -656,12 +666,25 @@ for (i = 0; i < 6; i++) {
 		<description></description>
 		<content:encoded><![CDATA[[templates.add main]
  
+   [module.set table="{search.table}" /]
+  [module.set query="{search.query}" /]
+  
+  [module.set column="{module.table.column}" /]
+  [module.set query.pageno="{form_data.pageno}" default=1 /]
+  [module.set query.query_count="yes" /]
+[module.set query.only_query='yes'/]
+  [module.set query.max_count="{module.handler.max_count}" c.not_empty=module.handler.max_count /]
+
+
+
+  [db2.meta_query2 query="{module.query}" o.set="module.dataset" /]
+
   [html.trusted]
   <template axn=selector.update selector='#[aw2.get form_data.search_id /]  [role=results]' get='me.html' data-safe_id='[app.safe_id /]'>
+
 	[modules.run {module.handler.module_slug} template="{module.handler.tpl}"/]
   </template>
-  [/html.trusted]
-[/templates.add]]]></content:encoded>
+  [/html.trusted]]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>673954</wp:post_id>
 		<wp:post_date><![CDATA[2018-11-17 05:32:57]]></wp:post_date>
@@ -3700,8 +3723,9 @@ and
 		<wp:meta_value><![CDATA[p-errlog-app]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
-				
-					<item>
+		
+			
+		<item>
 		<title>layout</title>
 		<link>https://awxdocs.com/?post_type=c-errlog-app&#038;p=1230948</link>
 		<pubDate>Fri, 29 Jan 2021 12:27:30 +0000</pubDate>
@@ -3728,7 +3752,7 @@ and
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_lock]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1612158020:2]]></wp:meta_value>
+		<wp:meta_value><![CDATA[1613124270:2]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -3745,9 +3769,32 @@ and
 
 [templates.conf o.set=module.db_name/]
 
-
-
 [templates.add main]
+[env.set app.page_title="Error Log - {{wp.get option.blogname}}" /]
+<style>
+.listbt{
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 3px;
+    min-width:24px;
+    min-height:22px;
+    display: inline-block;
+    text-align:center;
+}
+.listbt:hover{
+	 opacity: 0.5;
+}
+.collapse.in {
+    display: none;
+}
+body .collapse.show{
+	display:block;
+}
+.table tbody tr:hover{
+background: #eee;
+}
+</style>
+
 	[modules.ui.menu mod='{module.slug}'/]
     
   [mysqli.fetch.rows o.set=template.status_options_data]
@@ -3775,8 +3822,27 @@ and
  [template.set tbl.class="table-bordered font-size-smallest brand-white-bg" /] 
  [modules.ui.table args="{template.tbl}" o.set=template.tbl_html /] 
 
+   [mysqli.fetch.rows o.set=template.app_name_options_data]
+		 SELECT CONCAT(post_type , " (", count(1), ")")  as label,post_type  as value FROM [module.db_name/]  where post_type !='' group by post_type 
+ 	[/mysqli.fetch.rows]
+  [template.app_name_options_data.rows o.set=template.app_name_options/]
+    
+  [mysqli.fetch.rows o.set=template.number_of_time_data]
+		 SELECT CONCAT(no_of_times , " (", count(1), ")") as label,no_of_times  as value FROM [module.db_name/]  group by no_of_times 
+ 	[/mysqli.fetch.rows]
+  [template.number_of_time_data.rows o.set=template.number_of_time_options/]
   
   
+  [template.set_array order_options.new label="created_date ASC" value="created_date ASC"/]
+  [template.set_array order_options.new label="created_date DESC" value="created_date DESC"/]
+  [template.set_array order_options.new label="modified_date ASC" value="modified_date ASC"/]
+  [template.set_array order_options.new label="modified_date DESC" value="modified_date DESC"/]
+  [template.set_array order_options.new label="no_of_times ASC" value="no_of_times ASC"/]
+  [template.set_array order_options.new label="no_of_times DESC" value="no_of_times DESC"/]
+   [template.set_array order_options.new label="ID ASC" value="id ASC"/]
+  [template.set_array order_options.new label="ID DESC" value="id DESC"/]
+    
+    
   [mysqli.fetch.row o.set=template.raw]
 		SELECT * FROM [module.db_name/] limit 1	
  	[/mysqli.fetch.row]
@@ -3784,44 +3850,83 @@ and
     [module.set_array args]
         [atts mod='{module.slug}'/]    
           [handlers]
-              [fasttable handler=datatable label="Fast(300)" max_count=300][/fasttable]
-              [datatable][/datatable]
-              [csv filename='reconcile.csv'][/csv]
+              [fasttable handler=datatable label="<i class='fa fa-check'></i> Fast(300)" max_count=300][/fasttable]
+              [datatable label="<i class='fa fa-table'></i> All Data (Slow)"]
+              	[bulk_action bulk_delete label='Bulk Delete Issues' post_type="{module.collection.post_type}" module="{module.slug}" template="delete_issues "/]	 
+                [bulk_action bulk_markdone label='Bulk Mark Done' post_type="{module.collection.post_type}" module="{module.slug}" template="mark_done_issues "/]	 
+                [bulk_action bulk_reopen label='Bulk Reopen' post_type="{module.collection.post_type}" module="{module.slug}" template="bulk_reopen "/]
+              [/datatable]
+              [csv label="<i class='fa fa-download'></i> Download CSV" filename='reconcile.csv'][/csv]
           [/handlers]       
           [sections]
-           [custom title="Custom Filters" open="yes"]
+          [filter2 title="Search Filters" open="no"]
+		        	[html] 
+              		<div class="col-md-4">
+			          		[form_control.text id="error_code" label='Error code' /]
+			            </div>
+              [/html]
+		        [/filter2]
+           [custom title="Filters" open="yes"]
 		        	[html]
 			          	<div class="col-md-4">
-			          		[form_control2.select id="status" label='Status'  options_array="{template.status_options}"/]
+			          		[form_control.select id="status" label='Status'  options_array="{template.status_options}"/]
 			            </div>
                   <div class="col-md-4">
-			          		[form_control2.select id="exception_type" label='Exception Type'  options_array="{template.exception_type_options}" multiple='yes'/]
+			          		[form_control.select id="exception_type" label='Exception Type'  options_array="{template.exception_type_options}" multiple='yes'/]
 			            </div>
-                   <div class="col-md-4">
-			          		[form_control2.text id="error_code" label='Error code' /]
+                   
+                  <div class="col-md-4">
+			          		[form_control.select id="app_name" label='App Name'  options_array="{template.app_name_options}" multiple='yes'/]
+			            </div>               
+                  
+                  <div class="col-md-4">
+			          		[form_control.select id="number_of_time" label='Error Hit Count'  options_array="{template.number_of_time_options}" multiple='no'/]
 			            </div>
 		          [/html]
 		        [/custom]
+            
+            [ordering title="Ordering" open="yes"]
+		        	[html] 
+              		<div class="col-md-4">
+			          		[form_control.select id="order_1" label='Order 1'  options_array="{template.order_options}" multiple='no'/]
+                  </div> 
+                  <div class="col-md-4">
+                    [form_control.select id="order_2" label='Order 2'  options_array="{template.order_options}" multiple='no'/]
+                     </div>
+                     <div class="col-md-4">
+                     [form_control.select id="order_3" label='Order 3'  options_array="{template.order_options}" multiple='no'/]
+			            </div>
+              [/html]
+		        [/ordering]
 				[/sections]
     [/module.set_array]
 
 
 [module.set_raw temp_column]
+[column new label='ID' meta_key='data_id'  /]
   [column new label='Action']
                 [calc raw]
+                <ul class='no-padding' style='min-width:100px;'>
+                
+                        <li class='inline'>
+                 	<a href="[env.app.path/]/single-error/[env.row.ID /]" class='listbt brand-info-bg brand-white' target="_blank" rel="noopener" title='View Bug Details'><i class='fa fa-eye brand-white'></i> </a>  </li>
+                
+                
+                  <li class='inline'> <a href="javascript::void(0);" class='listbt brand-warning-bg brand-white' data-confirmation="Are you sure You want to trash this issue" axn='route.run' bind='click' route_ajax='[env.search.mod /].update_status' data-pid="[env.row.ID /]" data-do_act="trash" title='Delete Error'><i class="fa fa-trash brand-white"></i> </a>
+                 </li>
+         
+                
                 
                   [if.equal lhs="{env.row.status}" rhs="Done"]
-                   <button class="btn btn-danger btn-xs" data-confirmation="Are you sure You want re-Open this issue" axn='route.run' bind='click' route_ajax='[env.search.mod /].update_status' data-pid="[env.row.ID /]" data-do_act="reopen">Re-Open</button> 
+                   <li class='inline'><a href="javascript::void(0);" class="listbt brand-primary-bg brand-white" data-confirmation="Are you sure You want re-Open this issue" axn='route.run' bind='click' route_ajax='[env.search.mod /].update_status' data-pid="[env.row.ID /]" data-do_act="reopen" title='Re-Open This Issue'><i class="fa fa-folder-open brand-white" aria-hidden="true"></i></a> </li>
                   [/if.equal]
                  
                    [if.not_equal lhs="{env.row.status}" rhs="Done"]
-                   <button class="btn btn-success btn-xs" data-confirmation="Are you sure You want to mask this issue as Resloved " axn='route.run' bind='click' route_ajax='[env.search.mod /].update_status' data-pid="[env.row.ID /]" data-do_act="done">Mark Done</button>  
+                   <li class='inline'>
+                   <a href="javascript::void(0);" class='listbt brand-success-bg brand-white' data-confirmation="Are you sure You want to mask this issue as Resloved " axn='route.run' bind='click' route_ajax='[env.search.mod /].update_status' data-pid="[env.row.ID /]" data-do_act="done" title='Mark As Done'><i class='fa fa-check brand-white'></i></a>  </li>
                    [/if.not_equal]
-                <div class='gap-1'></div>
-                   <button class="btn btn-warning btn-xs" data-confirmation="Are you sure You want to trash this issue" axn='route.run' bind='click' route_ajax='[env.search.mod /].update_status' data-pid="[env.row.ID /]" data-do_act="trash"><i class="fa fa-trash"></i> </button>
-                 <div class='gap-1'></div>
-                 	<a href="[env.app.path/]/single-error/[env.row.ID /]" class='btn btn-primary btn-xs' target="_blank" rel="noopener">View</a>  
-                   
+                
+                  </ul>
                    
                 [/calc]
             [/column]
@@ -3847,6 +3952,18 @@ and
       select pquery.* from [esc.table module.previous_query_no /] AS pquery WHERE id ="[env.form_data.error_code/]"
    [/sql]
  [/filter]
+ 
+   [filter new not_empty="{form_data.app_name}"]
+    [sql raw]
+      select pquery.* from [esc.table module.previous_query_no /] AS pquery WHERE post_type in ([env.form_data.app_name.comma.quote_comma/])
+   [/sql]
+ [/filter]
+ 
+    [filter new not_empty="{form_data.number_of_time}"]
+    [sql raw]
+      select pquery.* from [esc.table module.previous_query_no /] AS pquery WHERE number_of_time = "[env.form_data.number_of_time/]"
+   [/sql]
+ [/filter]
 [/module.set_raw]
 
 [module.set_raw call_stack]
@@ -3868,18 +3985,30 @@ and
 [/module.set_raw]
 
 
+[module.set_raw order]
+	[order not_empty="{form_data.order_1}{form_data.order_2}{form_data.order_3}"]
+     [do.@i]
+        [env.form_data.order_1 o.set=form_data.order_str.new c.not_empty="env.form_data.order_1"/]
+        [env.form_data.order_2 o.set=form_data.order_str.new c.not_empty="env.form_data.order_2"/]
+        [env.form_data.order_3 o.set=form_data.order_str.new c.not_empty="env.form_data.order_3"/]   
+        [env.form_data.order_str.comma not_empty="{form_data.order_str.count}"/]
+     [/do.@i]
+ [/order]
+[/module.set_raw]
+
 
     [module.set args.after_submit]
         [query]  
+        
           [pagesize]100[/pagesize]         
             [with]
                [sql]
-                  SELECT * FROM [module.db_name/]  
+                  SELECT *, id as data_id FROM [module.db_name/]  
                 [/sql]  
                 [module.temp_filter/]           
             [/with]     
-            [order]modified_date ASC[/order]
-						
+           [module.order/]
+	
         [/query]
         [table]
             [module.temp_column/]
@@ -3902,9 +4031,11 @@ and
     [/module.set]
 
 
+
      [do.@build_page]    
-          //****render html content***//
+         <div class='gap-2'></div>
           <h2 class='text-center'>Awesome Exceptions</h2>
+          <div class='gap-2'></div>
           [template.tbl_html/]
           [template.html/]
           [search2.views args={module.args}/]
@@ -3944,10 +4075,72 @@ and
     [/aw2.case_else]
   [/aw2.switch]     
 
- 
-
 [/templates.add]
 
+
+[templates.add delete_issues]
+	[template.set req='{request}'/]
+	//****getting sublan_ids from request***//
+    [template.set ids="{template.req.selected_data}"/]   
+        
+     [template.return content empty="{template.ids}"]
+    	 <script type="spa/axn" axn="core.run_script" alert="Select atleast one entry " data-safe_id='[app.safe_id /]'></script>
+    [/template.return]
+    
+    [mysqli.multi.cud o.set=template.data]
+      Delete from [module.db_name/] where id in ([template.ids.comma.quote_comma/]);
+    [/mysqli.multi.cud] 
+      
+     [template.return content]
+    	 <script type="spa/axn" axn="core.run_script" alert="Yahoo, selected entries deleted" data-safe_id='[app.safe_id /]'>
+       $("#[template.req.submit_handler/]").trigger( "click" );
+       </script>
+    [/template.return]    
+    
+[/templates.add]
+
+[templates.add mark_done_issues]
+
+	[template.set req='{request}'/]
+	//****getting sublan_ids from request***//
+    [template.set ids="{template.req.selected_data}"/]   
+        
+     [template.return content empty="{template.ids}"]
+    	 <script type="spa/axn" axn="core.run_script" alert="Select atleast one entry" data-safe_id='[app.safe_id /]'></script>
+    [/template.return]
+    
+    [mysqli.multi.cud o.set=template.data]
+      update [module.db_name/] set status='Done' where id in ([template.ids.comma.quote_comma/]);
+    [/mysqli.multi.cud] 
+      
+     [template.return content]
+    	 <script type="spa/axn" axn="core.run_script" alert="Yahoo, selected entries updated" data-safe_id='[app.safe_id /]'>
+       $("#[template.req.submit_handler/]").trigger( "click" );
+       </script>
+    [/template.return]    
+    
+[/templates.add]
+
+[templates.add bulk_reopen]
+	[template.set req='{request}'/]
+	//****getting sublan_ids from request***//
+    [template.set ids="{template.req.selected_data}"/]   
+    
+    [template.return content empty="{template.ids}"]
+    	 <script type="spa/axn" axn="core.run_script" alert="Select atleast one entry" data-safe_id='[app.safe_id /]'></script>
+    [/template.return]
+    
+     
+    [mysqli.multi.cud o.set=template.data]
+      update [module.db_name/] set status='active' where id in ([template.ids.comma.quote_comma/]);
+    [/mysqli.multi.cud] 
+    
+    [template.return content]
+    	 <script type="spa/axn" axn="core.run_script" alert="Yahoo, selected entries updated" data-safe_id='[app.safe_id /]'>
+       $("#[template.req.submit_handler/]").trigger( "click" );
+       </script>
+    [/template.return]    
+[/templates.add]
 ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>1230953</wp:post_id>
@@ -3968,7 +4161,7 @@ and
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_edit_lock]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1612265117:2]]></wp:meta_value>
+		<wp:meta_value><![CDATA[1613622365:3]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -4165,6 +4358,7 @@ and
 	[mysqli.fetch.row o.set=template.data]
 		select * from [module.db_name/] where ID="[template.err_id/]"
   [/mysqli.fetch.row]
+   [env.set app.page_title="Error Number {template.err_id} - {{wp.get option.blogname}}" /]
   [template.data.row o.set=module.data/]
   
     [template.return service="modules.ui.trusted_msg" msg="Error Id Not Found!" c.empty=module.data/]
@@ -4202,6 +4396,7 @@ and
   [template.set_array table.column.new label="ID" meta_key="ID"/]  
   [template.set_array table.column.new label="Status" meta_key="status"/]
   [template.set_array table.column.new label="Message" meta_key="message"/]
+  [template.set_array table.column.new label="Module URL" meta_key="link"/]
 	[template.set table.class="table-bordered font-size-smallest brand-white-bg" /] 
 	[modules.ui.table args="{template.table}" set=template.html /] 
   <h5>Basic Details:</h5>
@@ -4295,7 +4490,6 @@ and
     </tr>
     </table>
 [/templates.add]
-
 ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>1231046</wp:post_id>
@@ -4318,7 +4512,12 @@ and
 		<wp:meta_key><![CDATA[_wp_old_slug]]></wp:meta_key>
 		<wp:meta_value><![CDATA[single-error-check]]></wp:meta_value>
 		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_lock]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1613105214:2]]></wp:meta_value>
+		</wp:postmeta>
 							</item>
+			
 					<item>
 		<title>activity-submit</title>
 		<link>https://awxdocs.com/?post_type=search_2&#038;p=673957</link>
@@ -4963,7 +5162,7 @@ and
     [/template.set]
 
     //*****render the section part*****//
-    [form_control2.section id="columns" html={template.html} 
+    [form_control.section id="columns" html={template.html} 
     title="{env.@section.item.title default='Columns'}" open="{env.@section.item.open default='yes'}"/] 
     
 [/templates.add]
@@ -4981,7 +5180,7 @@ and
     [/template.set]
 
     //*****render the section part*****//
-    [form_control2.section id="filters" html={template.html} 
+    [form_control.section id="filters" html={template.html} 
     title="{env.@section.item.title default='Filters'}" open="{env.@section.item.open default='yes'}"/] 
     
 [/templates.add]
@@ -4992,7 +5191,7 @@ and
     [templates.search.period params={env.@section.item} o.set=template.html/]
 
     //*****render the section part*****//
-    [form_control2.section id="period" html={template.html} 
+    [form_control.section id="period" html={template.html} 
     title="{env.@section.item.title default='Period'}" open="{env.@section.item.open default='yes'}" /] 
     
 [/templates.add]
@@ -5009,7 +5208,7 @@ and
     [/template.set]
 
     //*****render the section part*****//
-    [form_control2.section id="order" html={template.html} 
+    [form_control.section id="order" html={template.html} 
     title="{env.@section.item.title default='Order'}" open="{env.@section.item.open default='yes'}"/]
     
 [/templates.add]
@@ -5021,7 +5220,7 @@ and
     [templates.search.fields params={env.@section.item} o.set=template.html/]
 
     //*****render the section part*****//
-    [form_control2.section id="search" html={template.html} 
+    [form_control.section id="search" html={template.html} 
     title="{env.@section.item.title default='Search'}" open="{env.@section.item.open default='yes'}"/] 
 [/templates.add]
 
@@ -5036,7 +5235,7 @@ and
     [/template.set]
   
     //*****render the section part*****//
-    [form_control2.section id="{env.@section.item.id default='custom'}" html={template.html} 
+    [form_control.section id="{env.@section.item.id default='custom'}" html={template.html} 
     title="{env.@section.item.title default='Custom'}" open="{env.@section.item.open default='yes'}"/] 
 [/templates.add]
 
