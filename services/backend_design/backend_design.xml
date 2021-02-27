@@ -398,26 +398,7 @@
 .table-sm td {
   padding: 0.3rem;
 }
-//******* table-data font-size changed 13px to 14px*********//
-.dataTables_wrapper table.dataTable td{
-	    font-size: 14px !important;
-      text-transform: capitalize;
-}
-//** if page review rating then make it in lowercase **//
-//** task - https://www.mangalamjobs.com/plot/task/tsk16601386695267187635493 **//
-.page-review-rating .dataTables_wrapper table.dataTable td:nth-child(1),
-.page-review-rating .dataTables_wrapper table.dataTable td:nth-child(2){
-    width: 25%;
-    word-break: break-all;
-}
-.page-review-rating .dataTables_wrapper table.dataTable td:nth-child(5){
-    width: 30%;
-}
-.page-review-rating .dataTables_wrapper table.dataTable td:nth-child(2) {
-    text-transform: lowercase;
-    width: 25%;
-}
-//** if page review rating then make it in lowercase - end **//
+
 .table-bordered {
   border: 1px solid #dee2e6;
 }
@@ -1271,7 +1252,7 @@ i.fa{
   }
   .dataTables_wrapper table.dataTable th, .dataTables_wrapper table.dataTable td{
       padding: 10px 20px;
-      font-size: 13px;
+
   }
   .dataTables_wrapper table.dataTable th{
       white-space: nowrap;
