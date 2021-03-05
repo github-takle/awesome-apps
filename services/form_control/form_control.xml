@@ -16,70 +16,70 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	
+  
 <rss version="2.0"
-	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:wp="http://wordpress.org/export/1.2/"
+  xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:wp="http://wordpress.org/export/1.2/"
 >
 
 <channel>
-	<title>WPoets</title>
-	<link>https://wpoets.com</link>
-	<description>Your Web Experts</description>
-	<pubDate>Sun, 15 Dec 2019 14:16:47 +0000</pubDate>
-	<language>en-US</language>
-	<wp:wxr_version>1.2</wp:wxr_version>
-	<wp:base_site_url>https://wpoets.com</wp:base_site_url>
-	<wp:base_blog_url>https://wpoets.com</wp:base_blog_url>
+  <title>WPoets</title>
+  <link>https://wpoets.com</link>
+  <description>Your Web Experts</description>
+  <pubDate>Sun, 15 Dec 2019 14:16:47 +0000</pubDate>
+  <language>en-US</language>
+  <wp:wxr_version>1.2</wp:wxr_version>
+  <wp:base_site_url>https://wpoets.com</wp:base_site_url>
+  <wp:base_blog_url>https://wpoets.com</wp:base_blog_url>
 
-	<wp:author><wp:author_id>5</wp:author_id><wp:author_login><![CDATA[wpoid_web]]></wp:author_login><wp:author_email><![CDATA[amit@wpoets.com]]></wp:author_email><wp:author_display_name><![CDATA[Amit]]></wp:author_display_name><wp:author_first_name><![CDATA[Amit]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
+  <wp:author><wp:author_id>5</wp:author_id><wp:author_login><![CDATA[wpoid_web]]></wp:author_login><wp:author_email><![CDATA[amit@wpoets.com]]></wp:author_email><wp:author_display_name><![CDATA[Amit]]></wp:author_display_name><wp:author_first_name><![CDATA[Amit]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
 
-				
-	
+        
+  
 
-		<item>
-		<title>button</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=368</link>
-		<pubDate>Wed, 14 Feb 2018 04:30:58 +0000</pubDate>
-		<dc:creator><![CDATA[]]></dc:creator>
-		<guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=368</guid>
-		<description></description>
-		<content:encoded><![CDATA[
-				
-				<button
+    <item>
+    <title>button</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=368</link>
+    <pubDate>Wed, 14 Feb 2018 04:30:58 +0000</pubDate>
+    <dc:creator><![CDATA[]]></dc:creator>
+    <guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=368</guid>
+    <description></description>
+    <content:encoded><![CDATA[
+        
+        <button
 type="[module.get type/]"
 class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty module.icon_class]<i class="fa [module.icon_class/]"></i>&nbsp;[/if.not_empty][module.get value/]
-</button>				]]></content:encoded>
-		<excerpt:encoded><![CDATA[
-				
-								]]></excerpt:encoded>
-		<wp:post_id>368</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-14 04:30:58]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-14 04:30:58]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[button]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title>checkbox</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=369</link>
-		<pubDate>Wed, 14 Feb 2018 04:30:58 +0000</pubDate>
-		<dc:creator><![CDATA[]]></dc:creator>
-		<guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=369</guid>
-		<description></description>
-		<content:encoded><![CDATA[//************ Build the Args *************************//
+</button>       ]]></content:encoded>
+    <excerpt:encoded><![CDATA[
+        
+                ]]></excerpt:encoded>
+    <wp:post_id>368</wp:post_id>
+    <wp:post_date><![CDATA[2018-02-14 04:30:58]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-02-14 04:30:58]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[button]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            </item>
+          <item>
+    <title>checkbox</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=369</link>
+    <pubDate>Wed, 14 Feb 2018 04:30:58 +0000</pubDate>
+    <dc:creator><![CDATA[]]></dc:creator>
+    <guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=369</guid>
+    <description></description>
+    <content:encoded><![CDATA[//************ Build the Args *************************//
 
 [module.set attr]
-	[loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
+  [loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
 [/module.set]
 [aw2.get function.str_replace p1="$spacer" p2=" " p3="{module.attr}" set="module.attr_string"/]
 
@@ -101,70 +101,70 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 [module.set checkboxname cond="{module.single}" equal="true"][module.get id /][/module.set]
 
 
-	<div class="form-group">
-		[if.not_empty module.label]
-		<div class='[module.get label_classes.space /]'>
-			<label for="[module.get id /]">[module.get label /]</label>
-		</div>			
-		[/if.not_empty]
-		
-		[if.equal lhs='{module.args.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
-		<div class="[module.get checkbox_type default='mt-checkbox-list'/]">
-			[loop.@option module.options_array]
-			<label class="mt-checkbox  [module.get class/] [module.get outline default=''/] [if.contains haystack="{module.disabled}" needle="{@option.item.value}"]mt-checkbox-disabled[/if.contains]"> [aw2.get @option.item.label /]
-				<input 
-                	[if.empty @option.item.name]
-					name="[module.checkboxname /]" 
+  <div class="form-group">
+    [if.not_empty module.label]
+    <div class='[module.get label_classes.space /]'>
+      <label for="[module.get id /]">[module.get label /]</label>
+    </div>      
+    [/if.not_empty]
+    
+    [if.equal lhs='{module.args.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
+    <div class="[module.get checkbox_type default='mt-checkbox-list'/]">
+      [loop.@option module.options_array]
+      <label class="mt-checkbox  [module.get class/] [module.get outline default=''/] [if.contains haystack="{module.disabled}" needle="{@option.item.value}"]mt-checkbox-disabled[/if.contains]"> [aw2.get @option.item.label /]
+        <input 
+                  [if.empty @option.item.name]
+          name="[module.checkboxname /]" 
                     [/if.empty]
                     [if.else]
                     name="[aw2.get @option.item.name/]"
                     [/if.else]
-					value="[aw2.get @option.item.value /]" 
-					type="checkbox" 
+          value="[aw2.get @option.item.value /]" 
+          type="checkbox" 
           id="[module.get id/]"
-					class="[module.get class/]"
-					[if.contains haystack="{module.value}" needle="{@option.item.value}"]checked[/if.contains]
-					[if.contains haystack="{module.required}" needle="{@option.item.value}"]required=""[/if.contains]
-					[aw2.get module.attr_string/]
-				>
-				<span class="[module.get class/]"></span>
-			</label>
-			[/loop.@option]
-		</div>
-		
-		<div class="help-block"></div>
-		
-		[if.equal lhs='{module.args.form_type}' rhs='horizontal']</div>[/if.equal]
-		
-	</div>]]></content:encoded>
-		<excerpt:encoded><![CDATA[
-				
-								]]></excerpt:encoded>
-		<wp:post_id>369</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-14 04:30:58]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-14 04:30:58]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[checkbox]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title>date</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=370</link>
-		<pubDate>Wed, 14 Feb 2018 04:30:58 +0000</pubDate>
-		<dc:creator><![CDATA[]]></dc:creator>
-		<guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=370</guid>
-		<description></description>
-		<content:encoded><![CDATA[	
+          class="[module.get class/]"
+          [if.contains haystack="{module.value}" needle="{@option.item.value}"]checked[/if.contains]
+          [if.contains haystack="{module.required}" needle="{@option.item.value}"]required=""[/if.contains]
+          [aw2.get module.attr_string/]
+        >
+        <span class="[module.get class/]"></span>
+      </label>
+      [/loop.@option]
+    </div>
+    
+    <div class="help-block"></div>
+    
+    [if.equal lhs='{module.args.form_type}' rhs='horizontal']</div>[/if.equal]
+    
+  </div>]]></content:encoded>
+    <excerpt:encoded><![CDATA[
+        
+                ]]></excerpt:encoded>
+    <wp:post_id>369</wp:post_id>
+    <wp:post_date><![CDATA[2018-02-14 04:30:58]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-02-14 04:30:58]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[checkbox]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            </item>
+          <item>
+    <title>date</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=370</link>
+    <pubDate>Wed, 14 Feb 2018 04:30:58 +0000</pubDate>
+    <dc:creator><![CDATA[]]></dc:creator>
+    <guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=370</guid>
+    <description></description>
+    <content:encoded><![CDATA[  
 [module.set pickerid={token} /]
 
 [module.set attr]
-	[loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
+  [loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
 [/module.set]
 [aw2.get function.str_replace p1="$spacer" p2=" " p3="{module.attr}" set="module.attr_string"/]
 
@@ -177,78 +177,78 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 [module.set col.bs3='{module.control_class}' not_empty='{module.control_class}' /]
 [module.set col.bs3='{module.args.bs3_control_class}' not_empty='{module.args.bs3_control_class}' /]  
 [if.not_empty module.post]
-	[module.get post.{module.post_field} set=module.value not_empty='{module.post_field}' /]
-	[module.get post.meta.{module.meta_key} set=module.value not_empty='{module.meta_key}' /]
-	[module.get post.taxonomy.slugs.{module.taxonomy}.comma set=module.value not_empty='{module.taxonomy}' /]
+  [module.get post.{module.post_field} set=module.value not_empty='{module.post_field}' /]
+  [module.get post.meta.{module.meta_key} set=module.value not_empty='{module.meta_key}' /]
+  [module.get post.taxonomy.slugs.{module.taxonomy}.comma set=module.value not_empty='{module.taxonomy}' /]
 [/if.not_empty]
 
-	<div class="form-group row">
-    	[debug.ignore]
+  <div class="form-group row">
+      [debug.ignore]
           <input type=hidden id='[module.id /]' name='[module.id/]'  value="[module.value date_format='Ymd'/]"  [module.attr_string/]/>
         [/debug.ignore]
         
-		[if.not_empty module.label]
-		<div class='[module.get label_classes.space /] col-12'>
-			<label for="[module.id /]">[module.label /][if.equal rhs="{module.required}" lhs="yes"]<span class='text-danger'>*</span>[/if.equal] </label>
-		</div>			
-		[/if.not_empty]
-		
-		[if.equal lhs='{module.args.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
-		
-		<div class="input-group col-12 date no-padding [module.get control_classes.space /]" id="[module.get pickerid /]" name="[module.get pickerid /]">
-			<input 
-				type="[module.get input_type/]" 
-				placeholder="[module.get placeholder default='{module.label}'/]" 
-				class="form-control input-md getdate [module.get class /]" 
-				value='[module.get value date_format="Y-m-d"/]'  
+    [if.not_empty module.label]
+    <div class='[module.get label_classes.space /] col-12'>
+      <label for="[module.id /]">[module.label /][if.equal rhs="{module.required}" lhs="yes"]<span class='text-danger'>*</span>[/if.equal] </label>
+    </div>      
+    [/if.not_empty]
+    
+    [if.equal lhs='{module.args.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
+    
+    <div class="input-group col-12 date no-padding [module.get control_classes.space /]" id="[module.get pickerid /]" name="[module.get pickerid /]">
+      <input 
+        type="[module.get input_type/]" 
+        placeholder="[module.get placeholder default='{module.label}'/]" 
+        class="form-control input-md getdate [module.get class /]" 
+        value='[module.get value date_format="Y-m-d"/]'  
                 name="[module.id/]"
                 data-input
-				[if.equal lhs="{module.required}" rhs="yes"]
+        [if.equal lhs="{module.required}" rhs="yes"]
                 required 
                 msg-required="<i class='icon icon-warning'></i> [module.get label /] is required!"
                 [/if.equal]/>
-		</div>
-		<div class="help-block"></div>
-		[if.equal lhs='{module.args.form_type}' rhs='horizontal']</div>[/if.equal]
-		</div>
+    </div>
+    <div class="help-block"></div>
+    [if.equal lhs='{module.args.form_type}' rhs='horizontal']</div>[/if.equal]
+    </div>
   <script type=spa/axn axn=core.run_script 
-					 css_files='https://cdn.getawesomestudio.com/lib/flatpickr/4.5.0/flatpickr.min.css' 
+           css_files='https://cdn.getawesomestudio.com/lib/flatpickr/4.5.0/flatpickr.min.css' 
                      js_files='https://cdn.getawesomestudio.com/lib/flatpickr/4.5.0/flatpickr.min.js'>
      flatpickr(".getdate", {
-     		altInput: true,
+        altInput: true,
             altFormat: "Y-m-d"
      });
   </script> 
 
-				]]></content:encoded>
-		<excerpt:encoded><![CDATA[
-				
-								]]></excerpt:encoded>
-		<wp:post_id>370</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-14 04:30:58]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-14 04:30:58]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[date]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title>email</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=371</link>
-		<pubDate>Wed, 14 Feb 2018 04:30:58 +0000</pubDate>
-		<dc:creator><![CDATA[]]></dc:creator>
-		<guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=371</guid>
-		<description></description>
-		<content:encoded><![CDATA[				
-				//************ Build the Args *************************//
+        ]]></content:encoded>
+    <excerpt:encoded><![CDATA[
+        
+                ]]></excerpt:encoded>
+    <wp:post_id>370</wp:post_id>
+    <wp:post_date><![CDATA[2018-02-14 04:30:58]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-02-14 04:30:58]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[date]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            </item>
+          <item>
+    <title>email</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=371</link>
+    <pubDate>Wed, 14 Feb 2018 04:30:58 +0000</pubDate>
+    <dc:creator><![CDATA[]]></dc:creator>
+    <guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=371</guid>
+    <description></description>
+    <content:encoded><![CDATA[        
+        //************ Build the Args *************************//
 
 [module.set attr]
-	[loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
+  [loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
 [/module.set]
 [php.str_replace p1="$spacer" p2=" " p3="{module.attr}" set="module.attr_string"/]
 
@@ -270,91 +270,91 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 [module.set control_classes.new='input-group' not_empty='{module.button_text}' /]
 
 <div class="form-group row">
-	[if.not_empty module.label]
-	<div class='[module.get label_classes.space /]'>
-		<label for="[module.get id /]">
-		  [module.get label /]
-		  [if.equal lhs="{module.required}" rhs="yes"]
-		    <span class='text-danger'>*</span>
-		  [/if.equal]
-		</label>
-	</div>			
-	[/if.not_empty]
-	
-	[if.equal lhs='{module.args.form_type}' rhs='horizontal']
-	  <div class="[module.get col.space/]"> 
-	[/if.equal] 
-	<div class="[module.get control_classes.space /] input-field col-12 no-padding">
-		[if.not_empty module.prepend_icon]
-			<span class="input-group-addon">
-				<i class="fa [module.get prepend_icon /]"></i>
-			</span>
-		[/if.not_empty]
-		[if.not_empty module.prepend_inline_icon]
-			<i class="fa [module.get prepend_inline_icon /]"></i>
-		[/if.not_empty]
-		[if.not_empty module.append_inline_icon]
-			<i class="fa [module.get append_inline_icon /]"></i>
-		[/if.not_empty]
-		
-		<input 
-			id="[module.get id /]" 
-			name="[module.get id /]" 
-			type="email" 
-			placeholder="[module.get placeholder default='{module.label}'/]" 
-			class="form-control input-md [aw2.get module.class /]" 
-			value='[module.get value /]'  
-			[if.equal lhs="{module.required}" rhs="yes"]required[/if.equal]
-			[if.equal lhs="{module.readonly}" rhs="yes"]readonly[/if.equal]				
-			[module.get attr_string/] 
-			msg-required="<i class='icon icon-warning'></i> [module.get label /] is required!"
-			msg-email="<i class='icon icon-warning'></i> [module.get label /] is not valid!"
-		/>
-		
-		[if.not_empty module.append_icon]
-			<span class="input-group-addon">
-				<i class="fa [module.get append_icon /]"></i>
-			</span>
-		[/if.not_empty]
-	</div>
-	<i>[module.get help-block /]</i>
-	<div class="help-block"></div>
-		
-	[if.equal lhs='{module.args.form_type}' rhs='horizontal']
-	   </div>
-	  <div class="col-md-12"></div>
-	[/if.equal]
-	
-</div>				]]></content:encoded>
-		<excerpt:encoded><![CDATA[
-				
-								]]></excerpt:encoded>
-		<wp:post_id>371</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-14 04:30:58]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-14 04:30:58]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[email]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title>group_select</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=372</link>
-		<pubDate>Wed, 14 Feb 2018 04:30:58 +0000</pubDate>
-		<dc:creator><![CDATA[]]></dc:creator>
-		<guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=372</guid>
-		<description></description>
-		<content:encoded><![CDATA[
-				
-				//************ Build the Args *************************//
+  [if.not_empty module.label]
+  <div class='[module.get label_classes.space /]'>
+    <label for="[module.get id /]">
+      [module.get label /]
+      [if.equal lhs="{module.required}" rhs="yes"]
+        <span class='text-danger'>*</span>
+      [/if.equal]
+    </label>
+  </div>      
+  [/if.not_empty]
+  
+  [if.equal lhs='{module.args.form_type}' rhs='horizontal']
+    <div class="[module.get col.space/]"> 
+  [/if.equal] 
+  <div class="[module.get control_classes.space /] input-field col-12 no-padding">
+    [if.not_empty module.prepend_icon]
+      <span class="input-group-addon">
+        <i class="fa [module.get prepend_icon /]"></i>
+      </span>
+    [/if.not_empty]
+    [if.not_empty module.prepend_inline_icon]
+      <i class="fa [module.get prepend_inline_icon /]"></i>
+    [/if.not_empty]
+    [if.not_empty module.append_inline_icon]
+      <i class="fa [module.get append_inline_icon /]"></i>
+    [/if.not_empty]
+    
+    <input 
+      id="[module.get id /]" 
+      name="[module.get id /]" 
+      type="email" 
+      placeholder="[module.get placeholder default='{module.label}'/]" 
+      class="form-control input-md [aw2.get module.class /]" 
+      value='[module.get value /]'  
+      [if.equal lhs="{module.required}" rhs="yes"]required[/if.equal]
+      [if.equal lhs="{module.readonly}" rhs="yes"]readonly[/if.equal]       
+      [module.get attr_string/] 
+      msg-required="<i class='icon icon-warning'></i> [module.get label /] is required!"
+      msg-email="<i class='icon icon-warning'></i> [module.get label /] is not valid!"
+    />
+    
+    [if.not_empty module.append_icon]
+      <span class="input-group-addon">
+        <i class="fa [module.get append_icon /]"></i>
+      </span>
+    [/if.not_empty]
+  </div>
+  <i>[module.get help-block /]</i>
+  <div class="help-block"></div>
+    
+  [if.equal lhs='{module.args.form_type}' rhs='horizontal']
+     </div>
+    <div class="col-md-12"></div>
+  [/if.equal]
+  
+</div>        ]]></content:encoded>
+    <excerpt:encoded><![CDATA[
+        
+                ]]></excerpt:encoded>
+    <wp:post_id>371</wp:post_id>
+    <wp:post_date><![CDATA[2018-02-14 04:30:58]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-02-14 04:30:58]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[email]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            </item>
+          <item>
+    <title>group_select</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=372</link>
+    <pubDate>Wed, 14 Feb 2018 04:30:58 +0000</pubDate>
+    <dc:creator><![CDATA[]]></dc:creator>
+    <guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=372</guid>
+    <description></description>
+    <content:encoded><![CDATA[
+        
+        //************ Build the Args *************************//
 
 [module.set attr]
-	[loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
+  [loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
 [/module.set]
 [aw2.get function.str_replace p1="$spacer" p2=" " p3="{module.attr}" set="module.attr_string"/]
 
@@ -372,114 +372,114 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 [module.set control_classes.new='input-group' not_empty='{module.append_icon}' /]
 [module.set control_classes.new='input-group' not_empty='{module.button_text}' /]
 
-	<div class="form-group">
-		[if.not_empty module.label]
-		<div class='[module.get label_classes.space /]'>
-			<label for="[module.get id /]">
-			  [module.get label /][if.equal lhs="{module.required}" rhs="yes"]
-			    <span class='text-danger'>*</span>
-			  [/if.equal]
-			</label>
-		</div>			
-		[/if.not_empty]
-		
-		[if.equal lhs='{module.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
-		<div class="[module.get control_classes.space /]">
-			<select 
-				id="[module.get id /]" 
-				[if.equal  lhs="{module.multiple}" rhs="yes"]
-					name="[module.get id /][]"
-				[/if.equal]
-				[if.else]
-					name="[module.get id /]"
-				[/if.else]				
-				[if.equal lhs="{module.multiple}" rhs="yes"]multiple[/if.equal]
-				class="form-control selectpicker [module.get class /]"					
-				[if.equal lhs="{module.required}" rhs="yes"]required[/if.equal] 
-				[module.get attr_string/]
-				placeholder="[aw2.get module.placeholder default='{module.label}'/]" 
-			>
-			<option value="" selected>Select [module.get label/]</option>
-			[loop.@opt module.options_array]	
-				<option value="[aw2.get @opt.item.value /]" [if.contains haystack="{module.value}" needle="{@opt.item.value}"]selected[/if.contains]>[aw2.get @opt.item.label /]</option>
-			[/loop.@opt]
-			</select>
-		</div>
-		<div class="help-block"></div>
-		
-		[if.equal lhs='{module.form_type}' rhs='horizontal']</div>[/if.equal]
-		
-	</div>				]]></content:encoded>
-		<excerpt:encoded><![CDATA[
-				
-								]]></excerpt:encoded>
-		<wp:post_id>372</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-14 04:30:58]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-14 04:30:58]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[group_select]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title>hidden</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=373</link>
-		<pubDate>Wed, 14 Feb 2018 04:30:58 +0000</pubDate>
-		<dc:creator><![CDATA[]]></dc:creator>
-		<guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=373</guid>
-		<description></description>
-		<content:encoded><![CDATA[
-				
-				//************ Build the Args *************************//
+  <div class="form-group">
+    [if.not_empty module.label]
+    <div class='[module.get label_classes.space /]'>
+      <label for="[module.get id /]">
+        [module.get label /][if.equal lhs="{module.required}" rhs="yes"]
+          <span class='text-danger'>*</span>
+        [/if.equal]
+      </label>
+    </div>      
+    [/if.not_empty]
+    
+    [if.equal lhs='{module.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
+    <div class="[module.get control_classes.space /]">
+      <select 
+        id="[module.get id /]" 
+        [if.equal  lhs="{module.multiple}" rhs="yes"]
+          name="[module.get id /][]"
+        [/if.equal]
+        [if.else]
+          name="[module.get id /]"
+        [/if.else]        
+        [if.equal lhs="{module.multiple}" rhs="yes"]multiple[/if.equal]
+        class="form-control selectpicker [module.get class /]"          
+        [if.equal lhs="{module.required}" rhs="yes"]required[/if.equal] 
+        [module.get attr_string/]
+        placeholder="[aw2.get module.placeholder default='{module.label}'/]" 
+      >
+      <option value="" selected>Select [module.get label/]</option>
+      [loop.@opt module.options_array]  
+        <option value="[aw2.get @opt.item.value /]" [if.contains haystack="{module.value}" needle="{@opt.item.value}"]selected[/if.contains]>[aw2.get @opt.item.label /]</option>
+      [/loop.@opt]
+      </select>
+    </div>
+    <div class="help-block"></div>
+    
+    [if.equal lhs='{module.form_type}' rhs='horizontal']</div>[/if.equal]
+    
+  </div>        ]]></content:encoded>
+    <excerpt:encoded><![CDATA[
+        
+                ]]></excerpt:encoded>
+    <wp:post_id>372</wp:post_id>
+    <wp:post_date><![CDATA[2018-02-14 04:30:58]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-02-14 04:30:58]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[group_select]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            </item>
+          <item>
+    <title>hidden</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=373</link>
+    <pubDate>Wed, 14 Feb 2018 04:30:58 +0000</pubDate>
+    <dc:creator><![CDATA[]]></dc:creator>
+    <guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=373</guid>
+    <description></description>
+    <content:encoded><![CDATA[
+        
+        //************ Build the Args *************************//
 
 [module.set attr]
-	[loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
+  [loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
 [/module.set]
 [aw2.get function.str_replace p1="$spacer" p2=" " p3="{module.attr}" set="module.attr_string"/]
 
-	<input 
-			id="[module.get id /]" 
-			name="[module.get id /]" 
-			type="hidden" 
-			class="form-control input-md [module.get class /]" 
-			value='[module.get value /]'  
-			honeypot=""
-			[module.get attr_string/] 
-		/>
-				]]></content:encoded>
-		<excerpt:encoded><![CDATA[
-				
-								]]></excerpt:encoded>
-		<wp:post_id>373</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-14 04:30:58]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-14 04:30:58]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[hidden]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title>label</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=374</link>
-		<pubDate>Wed, 14 Feb 2018 04:30:59 +0000</pubDate>
-		<dc:creator><![CDATA[]]></dc:creator>
-		<guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=374</guid>
-		<description></description>
-		<content:encoded><![CDATA[				
-				//************ Build the Args *************************//
+  <input 
+      id="[module.get id /]" 
+      name="[module.get id /]" 
+      type="hidden" 
+      class="form-control input-md [module.get class /]" 
+      value='[module.get value /]'  
+      honeypot=""
+      [module.get attr_string/] 
+    />
+        ]]></content:encoded>
+    <excerpt:encoded><![CDATA[
+        
+                ]]></excerpt:encoded>
+    <wp:post_id>373</wp:post_id>
+    <wp:post_date><![CDATA[2018-02-14 04:30:58]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-02-14 04:30:58]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[hidden]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            </item>
+          <item>
+    <title>label</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=374</link>
+    <pubDate>Wed, 14 Feb 2018 04:30:59 +0000</pubDate>
+    <dc:creator><![CDATA[]]></dc:creator>
+    <guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=374</guid>
+    <description></description>
+    <content:encoded><![CDATA[        
+        //************ Build the Args *************************//
 
 [module.set attr]
-	[loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
+  [loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
 [/module.set]
 [aw2.get function.str_replace p1="$spacer" p2=" " p3="{module.attr}" set="module.attr_string"/]
 
@@ -500,20 +500,20 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 //*****to hide a label when no value is present****//
 [if.empty module.value][/if.empty]
 [if.and cond={module.hide_no_val} equal="true"]
-	[module.set hide_class="hide"/]
+  [module.set hide_class="hide"/]
 [/if.and]
 
 <div class="form-group [module.hide_class/] row">
       [if.not_empty module.label]
       <div class='[module.get label_classes.space /] col-12 no-padding'>
           <label for="[module.get id /]">[module.get label /]</label>
-      </div>			
+      </div>      
       [/if.not_empty]
 
       [if.equal lhs='{module.args.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
       <div class="[module.get control_classes.space /] form-control-static">
           [if.empty module.href]
-          	<p>[module.get value /]</p>
+            <p>[module.get value /]</p>
           [/if.empty]
           [if.else]
               <a href="[module.href/][module.get value /]" target="_blank" rel="noopener noreferrer">
@@ -527,35 +527,35 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
       <div class="col-md-12"></div>
       [/if.equal]
 </div>
-				]]></content:encoded>
-		<excerpt:encoded><![CDATA[
-				
-								]]></excerpt:encoded>
-		<wp:post_id>374</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-14 04:30:59]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-14 04:30:59]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[label]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title>number</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=375</link>
-		<pubDate>Wed, 14 Feb 2018 04:30:59 +0000</pubDate>
-		<dc:creator><![CDATA[]]></dc:creator>
-		<guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=375</guid>
-		<description></description>
-		<content:encoded><![CDATA[				
-				//************ Build the Args *************************//
+        ]]></content:encoded>
+    <excerpt:encoded><![CDATA[
+        
+                ]]></excerpt:encoded>
+    <wp:post_id>374</wp:post_id>
+    <wp:post_date><![CDATA[2018-02-14 04:30:59]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-02-14 04:30:59]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[label]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            </item>
+          <item>
+    <title>number</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=375</link>
+    <pubDate>Wed, 14 Feb 2018 04:30:59 +0000</pubDate>
+    <dc:creator><![CDATA[]]></dc:creator>
+    <guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=375</guid>
+    <description></description>
+    <content:encoded><![CDATA[        
+        //************ Build the Args *************************//
 
 [module.set attr]
-	[loop.@attr module.attr][aw2.get @attr.key/]="[aw2.get @attr.item/]" $spacer [/loop.@attr]
+  [loop.@attr module.attr][aw2.get @attr.key/]="[aw2.get @attr.item/]" $spacer [/loop.@attr]
 [/module.set]
 [php.str_replace p1="$spacer" p2=" " p3="{module.attr}" set="module.attr_string"/]
 
@@ -578,148 +578,148 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 [module.set control_classes.new='input-group' not_empty='{module.addon_text}' /]
 
 <div class="form-group">
-	[if.not_empty module.label]
-	<div class='[module.get label_classes.space /]'>
-		<label for="[module.get id /]">[module.get label /][if.equal lhs="{module.required}" rhs="yes"]<span class='text-danger'>*</span>[/if.equal]</label>
-	</div>			
-	[/if.not_empty]
-	
-	[if.equal lhs='{module.args.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
-	<div class="[module.get control_classes.space /] input-field">
-		[if.not_empty module.prepend_icon]
-			<span class="input-group-addon">
-				<i class="fa [module.get prepend_icon /]"></i>
-			</span>
-		[/if.not_empty]
-		[if.not_empty module.prepend_inline_icon]
-			<i class="fa [module.get prepend_inline_icon /]"></i>
-		[/if.not_empty]
-		[if.not_empty module.append_inline_icon]
-			<i class="fa [module.get append_inline_icon /]"></i>
-		[/if.not_empty]
-		[if.not_empty module.addon_text]
-			<span class="input-group-addon">
-				 [module.get addon_text /]
-			</span>
-		[/if.not_empty]
-		
-		<input 
-			id="[module.get id /]" 
-			name="[module.get id /]" 
-			type="number" 
-			placeholder="[module.get placeholder default='{module.label}'/]" 
-			class="form-control input-md [module.get class /] number-only" 
-			value='[module.get value /]'  
-			[if.not_empty module.min]
-			  min="[module.get min/]"
-			  msg-min="<i class='icon icon-warning'></i> Please select a value that is no less than [module.get min /]."
-			 [/if.not_empty]
-			[if.not_empty module.max]
-			  max="[module.get max/]"
-			  msg-max="<i class='icon icon-warning'></i> Please select a value that is no more than [module.get max /]."
-			[/if.not_empty]
-			
-			[if.equal lhs="{module.required}" rhs="yes"]
-			  required	
-			  msg-required="<i class='icon icon-warning'></i> [module.get label /] is required!"
-			[/if.equal]
-			
-			[if.equal lhs="{module.readonly}" rhs="yes"]readonly[/if.equal]		
-				
-			[module.get attr_string/] 
-		/>
-		
-		[if.not_empty module.append_icon]
-			<span class="input-group-addon">
-				<i class="fa [module.get append_icon /]"></i>
-			</span>
-		[/if.not_empty]
-	</div>
-		<i class="info-block">[module.get help-block /]</i>
-	<div class="help-block"></div>
-	
-	[if.equal lhs='{module.args.form_type}' rhs='horizontal']</div>[/if.equal]
-	
+  [if.not_empty module.label]
+  <div class='[module.get label_classes.space /]'>
+    <label for="[module.get id /]">[module.get label /][if.equal lhs="{module.required}" rhs="yes"]<span class='text-danger'>*</span>[/if.equal]</label>
+  </div>      
+  [/if.not_empty]
+  
+  [if.equal lhs='{module.args.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
+  <div class="[module.get control_classes.space /] input-field">
+    [if.not_empty module.prepend_icon]
+      <span class="input-group-addon">
+        <i class="fa [module.get prepend_icon /]"></i>
+      </span>
+    [/if.not_empty]
+    [if.not_empty module.prepend_inline_icon]
+      <i class="fa [module.get prepend_inline_icon /]"></i>
+    [/if.not_empty]
+    [if.not_empty module.append_inline_icon]
+      <i class="fa [module.get append_inline_icon /]"></i>
+    [/if.not_empty]
+    [if.not_empty module.addon_text]
+      <span class="input-group-addon">
+         [module.get addon_text /]
+      </span>
+    [/if.not_empty]
+    
+    <input 
+      id="[module.get id /]" 
+      name="[module.get id /]" 
+      type="number" 
+      placeholder="[module.get placeholder default='{module.label}'/]" 
+      class="form-control input-md [module.get class /] number-only" 
+      value='[module.get value /]'  
+      [if.not_empty module.min]
+        min="[module.get min/]"
+        msg-min="<i class='icon icon-warning'></i> Please select a value that is no less than [module.get min /]."
+       [/if.not_empty]
+      [if.not_empty module.max]
+        max="[module.get max/]"
+        msg-max="<i class='icon icon-warning'></i> Please select a value that is no more than [module.get max /]."
+      [/if.not_empty]
+      
+      [if.equal lhs="{module.required}" rhs="yes"]
+        required  
+        msg-required="<i class='icon icon-warning'></i> [module.get label /] is required!"
+      [/if.equal]
+      
+      [if.equal lhs="{module.readonly}" rhs="yes"]readonly[/if.equal]   
+        
+      [module.get attr_string/] 
+    />
+    
+    [if.not_empty module.append_icon]
+      <span class="input-group-addon">
+        <i class="fa [module.get append_icon /]"></i>
+      </span>
+    [/if.not_empty]
+  </div>
+    <i class="info-block">[module.get help-block /]</i>
+  <div class="help-block"></div>
+  
+  [if.equal lhs='{module.args.form_type}' rhs='horizontal']</div>[/if.equal]
+  
 </div>
-				]]></content:encoded>
-		<excerpt:encoded><![CDATA[
-				
-								]]></excerpt:encoded>
-		<wp:post_id>375</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-14 04:30:59]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-14 04:30:59]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[number]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title>otp</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=376</link>
-		<pubDate>Wed, 14 Feb 2018 04:30:59 +0000</pubDate>
-		<dc:creator><![CDATA[]]></dc:creator>
-		<guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=376</guid>
-		<description></description>
-		<content:encoded><![CDATA[
-				
-				[templates.add main]
+        ]]></content:encoded>
+    <excerpt:encoded><![CDATA[
+        
+                ]]></excerpt:encoded>
+    <wp:post_id>375</wp:post_id>
+    <wp:post_date><![CDATA[2018-02-14 04:30:59]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-02-14 04:30:59]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[number]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            </item>
+          <item>
+    <title>otp</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=376</link>
+    <pubDate>Wed, 14 Feb 2018 04:30:59 +0000</pubDate>
+    <dc:creator><![CDATA[]]></dc:creator>
+    <guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=376</guid>
+    <description></description>
+    <content:encoded><![CDATA[
+        
+        [templates.add main]
   [form_control.text id="mobile_number" label='Mobile Number' required=yes value="" attr="{module.attr}" args="{module.args}" addon_text = "+91"/]  
   
    <div class="form-group otpblock ">
-   		<div class="[module.get args.bs3_label_class /] control-label">	
-			<label for="mobile_verification_code">
-				Mobile Verification Code<span class="brand-danger"> *</span>
-			</label>
+      <div class="[module.get args.bs3_label_class /] control-label"> 
+      <label for="mobile_verification_code">
+        Mobile Verification Code<span class="brand-danger"> *</span>
+      </label>
             </div>
-			<div class="[module.get args.bs3_control_class /]">
-				<button type="button" class="btn btn-primary btn-sm send_otp" axn='otp.send' bind=click route='[module.get generate_route /]' >Send OTP Code</button>
-				<table>
-				  <tr>
-				    <td><input class="form-control hidden otp number" id="mobile_verification_code" name="mobile_verification_code" type="text" required style="width:100px;margin-right:10px;" placeholder="OTP"/></td>
-				    <td><button type="button" class="btn btn-primary btn-sm verify_otp hidden"  axn='otp.verify' bind=click route='[module.get verify_route /]' style="margin-right:10px;">Verify</button><button type="button" class="btn btn-primary btn-sm resend_otp hidden" axn='otp.send' bind=click route='[module.get generate_route /]' >Resend</button></td>
-				    
-				  </tr>
-				</table>
+      <div class="[module.get args.bs3_control_class /]">
+        <button type="button" class="btn btn-primary btn-sm send_otp" axn='otp.send' bind=click route='[module.get generate_route /]' >Send OTP Code</button>
+        <table>
+          <tr>
+            <td><input class="form-control hidden otp number" id="mobile_verification_code" name="mobile_verification_code" type="text" required style="width:100px;margin-right:10px;" placeholder="OTP"/></td>
+            <td><button type="button" class="btn btn-primary btn-sm verify_otp hidden"  axn='otp.verify' bind=click route='[module.get verify_route /]' style="margin-right:10px;">Verify</button><button type="button" class="btn btn-primary btn-sm resend_otp hidden" axn='otp.send' bind=click route='[module.get generate_route /]' >Resend</button></td>
+            
+          </tr>
+        </table>
 
-				<span class="help-block otpshow"></span>
-			</div>
-	 </div>
+        <span class="help-block otpshow"></span>
+      </div>
+   </div>
 [/templates.add]   
 
-				]]></content:encoded>
-		<excerpt:encoded><![CDATA[
-				
-								]]></excerpt:encoded>
-		<wp:post_id>376</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-14 04:30:59]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-14 04:30:59]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[otp]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title>password</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=377</link>
-		<pubDate>Wed, 14 Feb 2018 04:30:59 +0000</pubDate>
-		<dc:creator><![CDATA[]]></dc:creator>
-		<guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=377</guid>
-		<description></description>
-		<content:encoded><![CDATA[				
-				//************ Build the Args *************************//
+        ]]></content:encoded>
+    <excerpt:encoded><![CDATA[
+        
+                ]]></excerpt:encoded>
+    <wp:post_id>376</wp:post_id>
+    <wp:post_date><![CDATA[2018-02-14 04:30:59]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-02-14 04:30:59]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[otp]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            </item>
+          <item>
+    <title>password</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=377</link>
+    <pubDate>Wed, 14 Feb 2018 04:30:59 +0000</pubDate>
+    <dc:creator><![CDATA[]]></dc:creator>
+    <guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=377</guid>
+    <description></description>
+    <content:encoded><![CDATA[        
+        //************ Build the Args *************************//
 
 [module.set attr]
-	[loop.@ctr module.attr][aw2.get @ctr.loop.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
+  [loop.@ctr module.attr][aw2.get @ctr.loop.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
 [/module.set]
 [aw2.get function.str_replace p1="$spacer" p2=" " p3="{module.attr}" set="module.attr_string"/]
 
@@ -739,77 +739,77 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 [module.set control_classes.new='input-group' not_empty='{module.button_text}' /]
 
 <div class="form-group">
-	[if.not_empty module.label]
-	<div class='[module.get label_classes.space /]'>
-		<label for="[module.get id /]">[module.get label /][if.equal lhs="{module.required}" rhs="yes"]<span class='text-danger'>*</span>[/if.equal]</label>
-	</div>			
-	[/if.not_empty]
-	
-	[if.equal lhs='{module.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
-	<div class="[module.get control_classes.space /]">
-		[if.not_empty module.prepend_icon]
-			<span class="input-group-addon">
-				<i class="fa [module.get prepend_icon /]"></i>
-			</span>
-		[/if.not_empty]
-		[if.not_empty module.prepend_inline_icon]
-			<i class="fa [module.get prepend_inline_icon /]"></i>
-		[/if.not_empty]
-		[if.not_empty module.append_inline_icon]
-			<i class="fa [module.get append_inline_icon /]"></i>
-		[/if.not_empty]
-		
-		<input 
-			id="[module.get id /]" 
-			name="[module.get id /]" 
-			type="password" 
-			placeholder="[module.get placeholder default='{module.label}'/]" 
-			class="form-control input-md [aw2.get module.class /]" 
-			value='[module.get value /]'  
-			[if.equal lhs="{module.required}" rhs="yes"]required[/if.equal]
-			[if.equal lhs="{module.readonly}" rhs="yes"]readonly[/if.equal]		
-			msg-required="<i class='icon icon-warning'></i> [module.get label /] is required!"
-			[module.get attr_string/] 
-			
-		/>
-		
-		[if.not_empty module.append_icon]
-			<span class="input-group-addon">
-				<i class="fa [module.get append_icon /]"></i>
-			</span>
-		[/if.not_empty]
-	</div>
-	<div class="help-block"></div>
-	
-	[if.equal rhs='{module.form_type}' rhs='horizontal']</div>[/if.equal]
-	
+  [if.not_empty module.label]
+  <div class='[module.get label_classes.space /]'>
+    <label for="[module.get id /]">[module.get label /][if.equal lhs="{module.required}" rhs="yes"]<span class='text-danger'>*</span>[/if.equal]</label>
+  </div>      
+  [/if.not_empty]
+  
+  [if.equal lhs='{module.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
+  <div class="[module.get control_classes.space /]">
+    [if.not_empty module.prepend_icon]
+      <span class="input-group-addon">
+        <i class="fa [module.get prepend_icon /]"></i>
+      </span>
+    [/if.not_empty]
+    [if.not_empty module.prepend_inline_icon]
+      <i class="fa [module.get prepend_inline_icon /]"></i>
+    [/if.not_empty]
+    [if.not_empty module.append_inline_icon]
+      <i class="fa [module.get append_inline_icon /]"></i>
+    [/if.not_empty]
+    
+    <input 
+      id="[module.get id /]" 
+      name="[module.get id /]" 
+      type="password" 
+      placeholder="[module.get placeholder default='{module.label}'/]" 
+      class="form-control input-md [aw2.get module.class /]" 
+      value='[module.get value /]'  
+      [if.equal lhs="{module.required}" rhs="yes"]required[/if.equal]
+      [if.equal lhs="{module.readonly}" rhs="yes"]readonly[/if.equal]   
+      msg-required="<i class='icon icon-warning'></i> [module.get label /] is required!"
+      [module.get attr_string/] 
+      
+    />
+    
+    [if.not_empty module.append_icon]
+      <span class="input-group-addon">
+        <i class="fa [module.get append_icon /]"></i>
+      </span>
+    [/if.not_empty]
+  </div>
+  <div class="help-block"></div>
+  
+  [if.equal rhs='{module.form_type}' rhs='horizontal']</div>[/if.equal]
+  
 </div>
-				]]></content:encoded>
-		<excerpt:encoded><![CDATA[
-				
-								]]></excerpt:encoded>
-		<wp:post_id>377</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-14 04:30:59]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-14 04:30:59]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[password]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title>radio</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=378</link>
-		<pubDate>Wed, 14 Feb 2018 04:30:59 +0000</pubDate>
-		<dc:creator><![CDATA[]]></dc:creator>
-		<guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=378</guid>
-		<description></description>
-		<content:encoded><![CDATA[				
-				//** get taxonomy query  **//
+        ]]></content:encoded>
+    <excerpt:encoded><![CDATA[
+        
+                ]]></excerpt:encoded>
+    <wp:post_id>377</wp:post_id>
+    <wp:post_date><![CDATA[2018-02-14 04:30:59]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-02-14 04:30:59]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[password]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            </item>
+          <item>
+    <title>radio</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=378</link>
+    <pubDate>Wed, 14 Feb 2018 04:30:59 +0000</pubDate>
+    <dc:creator><![CDATA[]]></dc:creator>
+    <guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=378</guid>
+    <description></description>
+    <content:encoded><![CDATA[        
+        //** get taxonomy query  **//
 [templates.add get_taxonomy_options]
   
   [template.set row /]
@@ -858,7 +858,7 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 //************ Build the Args *************************//
 
 [module.set attr]
-	[loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
+  [loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
 [/module.set]
 [php.str_replace p1="$spacer" p2=" " p3="{module.attr}" set="module.attr_string"/]
 
@@ -876,16 +876,16 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 
 [module.set radio_type="mt-radio-inline" cond="{module.radio_type}" equal="inline"/]
 [module.set outline="mt-radio-outline" cond="{module.outline}" equal="yes"/]
-	<div class="form-group">
-		[if.not_empty module.label]
-		<div class='[module.get label_classes.space /]'>
-			<label for="[module.get id /]">[module.get label /][if.equal lhs="{module.required}" rhs="yes"]<span class='text-danger'>*</span>[/if.equal]</label>
-		</div>			
-		[/if.not_empty]
-		
-		[if.equal lhs='{module.args.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
-		<div class="[module.get control_classes.space /] [module.get radio_type default='mt-radio-list'/]">
-			[loop.@option module.options_array]
+  <div class="form-group">
+    [if.not_empty module.label]
+    <div class='[module.get label_classes.space /]'>
+      <label for="[module.get id /]">[module.get label /][if.equal lhs="{module.required}" rhs="yes"]<span class='text-danger'>*</span>[/if.equal]</label>
+    </div>      
+    [/if.not_empty]
+    
+    [if.equal lhs='{module.args.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
+    <div class="[module.get control_classes.space /] [module.get radio_type default='mt-radio-list'/]">
+      [loop.@option module.options_array]
               [if.not_empty @option.item.value]
                 [if.true @option.first]
                   [module.set value="{@option.item.value}" not_empty="{module.value}" /]  
@@ -905,43 +905,43 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
                     <span></span>
                 </label>
               [/if.not_empty]
-			[/loop.@option]
-		</div>
-		
-		<div class="help-block"></div>
-		
-		[if.equal lhs='{module.args.form_type}' rhs='horizontal']</div>
-		  <div class="col-md-12"></div>
-		[/if.equal]
-		
-	</div>				]]></content:encoded>
-		<excerpt:encoded><![CDATA[
-				
-								]]></excerpt:encoded>
-		<wp:post_id>378</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-14 04:30:59]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-14 04:30:59]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[radio]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title>section</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=379</link>
-		<pubDate>Wed, 14 Feb 2018 04:30:59 +0000</pubDate>
-		<dc:creator><![CDATA[]]></dc:creator>
-		<guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=379</guid>
-		<description></description>
-		<content:encoded><![CDATA[
-				
-				[templates.add main]
-	[module.get toggle default="yes" set=template.toggle/]
+      [/loop.@option]
+    </div>
+    
+    <div class="help-block"></div>
+    
+    [if.equal lhs='{module.args.form_type}' rhs='horizontal']</div>
+      <div class="col-md-12"></div>
+    [/if.equal]
+    
+  </div>        ]]></content:encoded>
+    <excerpt:encoded><![CDATA[
+        
+                ]]></excerpt:encoded>
+    <wp:post_id>378</wp:post_id>
+    <wp:post_date><![CDATA[2018-02-14 04:30:59]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-02-14 04:30:59]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[radio]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            </item>
+          <item>
+    <title>section</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=379</link>
+    <pubDate>Wed, 14 Feb 2018 04:30:59 +0000</pubDate>
+    <dc:creator><![CDATA[]]></dc:creator>
+    <guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=379</guid>
+    <description></description>
+    <content:encoded><![CDATA[
+        
+        [templates.add main]
+  [module.get toggle default="yes" set=template.toggle/]
     [module.get icon_open default="icon-expand-less" set=template.icon_open /]
     [module.get icon_close default="icon-expand-more" set=template.icon_close /]
     [module.get title set=template.header /]
@@ -954,12 +954,12 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
     
     [template.set collapse_class="" /]
     [if.equal lhs="{template.open}" rhs="no"]
-    	[template.set default_icon="{template.icon_open} {template.icon_close}" /]
+      [template.set default_icon="{template.icon_open} {template.icon_close}" /]
         [template.set collapse_class="is-hidden" /]
     [/if.equal]
     
     [if.equal lhs="{template.toggle}" rhs="yes"]
-    	[template.set header]
+      [template.set header]
           <a role="button" class='[template.unique_id/]' href="#[template.unique_id/]">
             <i class="more-less [template.default_icon /] pull-right"></i>[module.title/]</a>
         [/template.set] 
@@ -975,7 +975,7 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
   </article>
   
     [if.equal lhs="{template.toggle}" rhs="yes"]
-    	<script type=spa/axn axn='core.run_script'>
+      <script type=spa/axn axn='core.run_script'>
         $('.[template.unique_id/].heading').click(function(e){
           e.preventDefault();
           $('.[template.unique_id/] i').toggleClass('[template.opposite_default_icon /]');
@@ -983,32 +983,32 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
         });
        </script>
     [/if.equal]      
-[/templates.add]  				]]></content:encoded>
-		<excerpt:encoded><![CDATA[
-				
-								]]></excerpt:encoded>
-		<wp:post_id>379</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-14 04:30:59]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-14 04:30:59]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[section]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title>select</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=380</link>
-		<pubDate>Wed, 14 Feb 2018 04:30:59 +0000</pubDate>
-		<dc:creator><![CDATA[]]></dc:creator>
-		<guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=380</guid>
-		<description></description>
-		<content:encoded><![CDATA[				
-				//** get taxonomy query  **//
+[/templates.add]          ]]></content:encoded>
+    <excerpt:encoded><![CDATA[
+        
+                ]]></excerpt:encoded>
+    <wp:post_id>379</wp:post_id>
+    <wp:post_date><![CDATA[2018-02-14 04:30:59]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-02-14 04:30:59]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[section]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            </item>
+          <item>
+    <title>select</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=380</link>
+    <pubDate>Wed, 14 Feb 2018 04:30:59 +0000</pubDate>
+    <dc:creator><![CDATA[]]></dc:creator>
+    <guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=380</guid>
+    <description></description>
+    <content:encoded><![CDATA[        
+        //** get taxonomy query  **//
 [templates.add get_taxonomy_options]
   [template.set row /]
   [if.not_empty template.term]
@@ -1054,21 +1054,21 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 [/templates.add]  
 
 [templates.add get_users_options]
-	[query.get_users set="template.users"]
- 	   {
-       [if.not_equal lhs="{template.user_role}" rhs="all"]	
-     			"role":"[template.get user_role /]"
+  [query.get_users set="template.users"]
+     {
+       [if.not_equal lhs="{template.user_role}" rhs="all"]  
+          "role":"[template.get user_role /]"
        [/if.not_equal] 
      }
-	[/query.get_users]	
+  [/query.get_users]  
     [loop.@ctr template.users]
-    	[template.set_array row.new label='{@ctr.item.display_name}' value='{@ctr.item.user_login}' /]
+      [template.set_array row.new label='{@ctr.item.display_name}' value='{@ctr.item.user_login}' /]
     [/loop.@ctr]    
-	[template.return template.row /]
+  [template.return template.row /]
 [/templates.add]
 
 [templates.add get_array_options]
-	
+  
   [loop.@options template.array_options]
     [template.set_array rs.new label="{@options.item}" value="{@options.key}" /] 
   [/loop.@options]
@@ -1077,7 +1077,7 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 [/templates.add]
 
 [template.set query not_empty="{module.posttype}"]
-       	SELECT post_name as value,post_title as label FROM `wp_posts` where `post_type`="[module.get posttype /]" and post_status='publish'
+        SELECT post_name as value,post_title as label FROM `wp_posts` where `post_type`="[module.get posttype /]" and post_status='publish'
        [/template.set]
 
 //** this is custom - start **//
@@ -1102,7 +1102,7 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 //************ Build the Args *************************//
 
 [module.set attr]
-	[loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
+  [loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
 [/module.set]
 [php.str_replace p1="$spacer" p2=" " p3="{module.attr}" set="module.attr_string"/]
 
@@ -1122,109 +1122,109 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 [module.set control_classes.new='input-group' not_empty='{module.append_icon}' /]
 [module.set control_classes.new='input-group' not_empty='{module.button_text}' /]
   
-	<div class="form-group row [module.get id /]-parent visibility-hidden">
-		[if.not_empty module.label]
-		<div class='[module.get label_classes.space /] col-12 no-padding'>
-			<label for="[module.get id /]">
-			 [module.get label /]
-			 [if.equal lhs="{module.required}" rhs="yes"]
-			   <span class='text-danger'>*</span>
-			 [/if.equal]
-			</label>
-		</div>			
-		[/if.not_empty]
-		
-		[module.set opt]		
-		  [if.not_equal lhs="{module.multiple}" rhs="yes"]
-			<option disabled selected value="">[module.get default_option_text default="Nothing Selected" /]</option>
-			[/if.not_equal]
-		[/module.set]
-	
-		
-		[if.equal lhs={module.args.form_type} rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
-		
-		<div class="[module.get control_classes.space /] width-100">
-        	[module.set select_picker='{unique_number}' /]
-			<select 
-				id="[module.get id /]" 
-				[if.equal lhs="{module.multiple}" rhs="yes"]
-					name="[module.get id /][]"
-				[/if.equal]
-				[if.else]
-					name="[module.get id /]"
-				[/if.else]				
-				[if.equal lhs="{module.multiple}" rhs="yes"]multiple="multiple"[/if.equal]
-				class="form-control selectpicker [aw2.get module.select_picker /] [aw2.get module.class /]"					
-				[if.equal lhs="{module.required}" rhs="yes"]required[/if.equal] 
-				[module.get attr_string/]
-				placeholder="[module.get placeholder default='{module.label}'/]" 
-				msg-required="<i class='icon icon-warning'></i> [module.get label /] is required!"> 
-			
-		[module.get opt cond="{module.default_option}" not_equal="no"/]
-		[module.set group=""/]
-			[loop.@ctr module.options_array]
-				[if.not_empty @ctr.item.group]
-					[if.not_equal lhs="{@ctr.item.group}" rhs="{module.group}"]
-					  [do.not_empty cond="{module.group}" not_equal=""]
-						 </optgroup>
-						[/do.not_empty]
-						<optgroup label="[aw2.get @ctr.item.group/]">
-					[/if.not_equal] 
-				  [module.set pre][aw2.get @ctr.item.group/]:[/module.set] 
-				[/if.not_empty]
-				
-				<option value="[aw2.get @ctr.item.value /]" [if.contains haystack="{module.value}" needle="{@ctr.item.value}"]selected[/if.contains] class="[aw2.get @ctr.item.class /]">[aw2.get @ctr.item.label default='{@ctr.item.name}'/]</option>
-				
-				[if.not_empty @ctr.item.group]			
-					 [aw2.get @ctr.item.group set=module.group/]
-				    [if.true @ctr.last]</optgroup>[/if.true]
-				 [/if.not_empty]
-		[/loop.@ctr]
-			</select>
-		</div>
-		<div class="help-block"></div>
-		
-		[if.equal lhs='{module.args.form_type}' rhs='horizontal']
-		 </div><div class="col-md-12"></div>
-		[/if.equal]
+  <div class="form-group row [module.get id /]-parent visibility-hidden">
+    [if.not_empty module.label]
+    <div class='[module.get label_classes.space /] col-12 no-padding'>
+      <label for="[module.get id /]">
+       [module.get label /]
+       [if.equal lhs="{module.required}" rhs="yes"]
+         <span class='text-danger'>*</span>
+       [/if.equal]
+      </label>
+    </div>      
+    [/if.not_empty]
+    
+    [module.set opt]    
+      [if.not_equal lhs="{module.multiple}" rhs="yes"]
+      <option disabled selected value="">[module.get default_option_text default="Nothing Selected" /]</option>
+      [/if.not_equal]
+    [/module.set]
+  
+    
+    [if.equal lhs={module.args.form_type} rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
+    
+    <div class="[module.get control_classes.space /] width-100">
+          [module.set select_picker='{unique_number}' /]
+      <select 
+        id="[module.get id /]" 
+        [if.equal lhs="{module.multiple}" rhs="yes"]
+          name="[module.get id /][]"
+        [/if.equal]
+        [if.else]
+          name="[module.get id /]"
+        [/if.else]        
+        [if.equal lhs="{module.multiple}" rhs="yes"]multiple="multiple"[/if.equal]
+        class="form-control selectpicker [aw2.get module.select_picker /] [aw2.get module.class /]"         
+        [if.equal lhs="{module.required}" rhs="yes"]required[/if.equal] 
+        [module.get attr_string/]
+        placeholder="[module.get placeholder default='{module.label}'/]" 
+        msg-required="<i class='icon icon-warning'></i> [module.get label /] is required!"> 
+      
+    [module.get opt cond="{module.default_option}" not_equal="no"/]
+    [module.set group=""/]
+      [loop.@ctr module.options_array]
+        [if.not_empty @ctr.item.group]
+          [if.not_equal lhs="{@ctr.item.group}" rhs="{module.group}"]
+            [do.not_empty cond="{module.group}" not_equal=""]
+             </optgroup>
+            [/do.not_empty]
+            <optgroup label="[aw2.get @ctr.item.group/]">
+          [/if.not_equal] 
+          [module.set pre][aw2.get @ctr.item.group/]:[/module.set] 
+        [/if.not_empty]
+        
+        <option value="[aw2.get @ctr.item.value /]" [if.contains haystack="{module.value}" needle="{@ctr.item.value}"]selected[/if.contains] class="[aw2.get @ctr.item.class /]">[aw2.get @ctr.item.label default='{@ctr.item.name}'/]</option>
+        
+        [if.not_empty @ctr.item.group]      
+           [aw2.get @ctr.item.group set=module.group/]
+            [if.true @ctr.last]</optgroup>[/if.true]
+         [/if.not_empty]
+    [/loop.@ctr]
+      </select>
+    </div>
+    <div class="help-block"></div>
+    
+    [if.equal lhs='{module.args.form_type}' rhs='horizontal']
+     </div><div class="col-md-12"></div>
+    [/if.equal]
        
-		
+    
     <script type=spa/axn axn=core.run_script js_files='https://cdn.getawesomestudio.com/lib/jquery.sumoselect/3.0.2/jquery.sumoselect.min.js'>
      $('.selectpicker.[aw2.get module.select_picker /]').SumoSelect({search: [module.search default=true /], searchText: 'Search Here', selectAll: [module.selectall default=false /]});
      $('.[module.get id /]-parent').removeClass('visibility-hidden');
     </script> 
   <style>.selectpicker .child{text-indent: 15px;}</style>
-	</div>
-				]]></content:encoded>
-		<excerpt:encoded><![CDATA[
-				
-								]]></excerpt:encoded>
-		<wp:post_id>380</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-14 04:30:59]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-14 04:30:59]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[select]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title>select_period</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=381</link>
-		<pubDate>Wed, 14 Feb 2018 04:30:59 +0000</pubDate>
-		<dc:creator><![CDATA[]]></dc:creator>
-		<guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=381</guid>
-		<description></description>
-		<content:encoded><![CDATA[
-				
-				//************ Build the Args *************************//
+  </div>
+        ]]></content:encoded>
+    <excerpt:encoded><![CDATA[
+        
+                ]]></excerpt:encoded>
+    <wp:post_id>380</wp:post_id>
+    <wp:post_date><![CDATA[2018-02-14 04:30:59]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-02-14 04:30:59]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[select]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            </item>
+          <item>
+    <title>select_period</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=381</link>
+    <pubDate>Wed, 14 Feb 2018 04:30:59 +0000</pubDate>
+    <dc:creator><![CDATA[]]></dc:creator>
+    <guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=381</guid>
+    <description></description>
+    <content:encoded><![CDATA[
+        
+        //************ Build the Args *************************//
 
 [module.set attr]
-	[loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
+  [loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
 [/module.set]
 [aw2.get function.str_replace p1="$spacer" p2=" " p3="{module.attr}" set="module.attr_string"/]
 
@@ -1276,18 +1276,18 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 [module.set_array options_array.new value="year:last_year" label="Last Year" optgroup="Year"/]
 
 
-	<div class="form-group">
-		[if.not_empty module.label]
-		<div class='[aw2.get module.label_classes.space /]'>
-			<label for="[module.get id /]">[module.get label /][if.equal lhs="{module.required}" rhs="yes"]<span class='text-danger'>*</span>[/if.equal]</label>
-		</div>			
-		[/if.not_empty]
-		[if.equal lhs='{module.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal]
+  <div class="form-group">
+    [if.not_empty module.label]
+    <div class='[aw2.get module.label_classes.space /]'>
+      <label for="[module.get id /]">[module.get label /][if.equal lhs="{module.required}" rhs="yes"]<span class='text-danger'>*</span>[/if.equal]</label>
+    </div>      
+    [/if.not_empty]
+    [if.equal lhs='{module.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal]
         [module.set value={template.val} c.not_empty='template.val'/]
-		<div class="[module.get control_classes.space /]">
-			<select id="[module.get id /]" name="[module.get id /]" class="form-control selectpicker ">
-				<option value="">Select Period</option>
-				[loop.@ctr module.options_array]
+    <div class="[module.get control_classes.space /]">
+      <select id="[module.get id /]" name="[module.get id /]" class="form-control selectpicker ">
+        <option value="">Select Period</option>
+        [loop.@ctr module.options_array]
                     [if.not_empty @ctr.item.optgroup]
                         [if.not_equal lhs="{@ctr.item.optgroup}" rhs="{module.optgroup}"]
                           [do.not_empty cond="{module.optgroup}" not_equal=""]
@@ -1303,47 +1303,47 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
                         [/if.equal]
                     <option value="[aw2.get @ctr.item.value /]" [if.contains haystack="{module.value}" needle="{@ctr.item.value}"]selected[/if.contains] class="[aw2.get @ctr.item.class /]"  [module.temp_opt_attr /]  [if.contains haystack="{module.disabled}" needle="{@ctr.item.value}"] disabled[/if.contains]>[aw2.get @ctr.item.label default='{@ctr.item.name}'/]</option>
 
-                    [if.not_empty @ctr.item.optgroup]			
+                    [if.not_empty @ctr.item.optgroup]     
                          [aw2.get @ctr.item.optgroup set=module.optgroup/]
                         [if.true @ctr.last]</optgroup>[/if.true]
                      [/if.not_empty]
-            	[/loop.@ctr]
-			</select>
-		</div>
-		<div class="help-block"></div>
-		
-		[if.equal lhs='{module.form_type}' rhs='horizontal']</div>[/if.equal]
-		
-	</div>
-				]]></content:encoded>
-		<excerpt:encoded><![CDATA[
-				
-								]]></excerpt:encoded>
-		<wp:post_id>381</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-14 04:30:59]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-14 04:30:59]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[select_period]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title>text</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=382</link>
-		<pubDate>Wed, 14 Feb 2018 04:30:59 +0000</pubDate>
-		<dc:creator><![CDATA[]]></dc:creator>
-		<guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=382</guid>
-		<description></description>
-		<content:encoded><![CDATA[				
-				//************ Build the Args *************************//
+              [/loop.@ctr]
+      </select>
+    </div>
+    <div class="help-block"></div>
+    
+    [if.equal lhs='{module.form_type}' rhs='horizontal']</div>[/if.equal]
+    
+  </div>
+        ]]></content:encoded>
+    <excerpt:encoded><![CDATA[
+        
+                ]]></excerpt:encoded>
+    <wp:post_id>381</wp:post_id>
+    <wp:post_date><![CDATA[2018-02-14 04:30:59]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-02-14 04:30:59]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[select_period]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            </item>
+          <item>
+    <title>text</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=382</link>
+    <pubDate>Wed, 14 Feb 2018 04:30:59 +0000</pubDate>
+    <dc:creator><![CDATA[]]></dc:creator>
+    <guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=382</guid>
+    <description></description>
+    <content:encoded><![CDATA[        
+        //************ Build the Args *************************//
 
 [module.set attr]
-	[loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
+  [loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
 [/module.set]
 [php.str_replace p1="$spacer" p2=" " p3="{module.attr}" set="module.attr_string"/]
 
@@ -1366,88 +1366,212 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 [module.set control_classes.new='input-group' not_empty='{module.addon_text}' /]
   
 <div class="form-group row [module.get form-control-class /]">
-	[if.not_empty module.label]
-	<div class='[module.get label_classes.space /] col-12 no-padding'>
-		<label for="[module.get id /]">[module.get label /][if.equal lhs="{module.required}" rhs="yes"]<span class='text-danger'>*</span>[/if.equal]</label>
-	</div>			
-	[/if.not_empty]
-	
-	[if.equal lhs='{module.args.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
-	<div class="[module.get control_classes.space /] col-12 no-padding">
-	  [if.not_empty module.addon_text]
-			<span class="input-group-addon">
-			 [module.get addon_text /]
-			</span>
-		[/if.not_empty]
-		[if.not_empty module.prepend_icon]
-			<span class="input-group-addon">
-				<i class="fa [module.get prepend_icon /]"></i>
-			</span>
-		[/if.not_empty]
-		[if.not_empty module.prepend_inline_icon]
-			<i class="fa [module.get prepend_inline_icon /]"></i>
-		[/if.not_empty]
-		[if.not_empty module.append_inline_icon]
-			<i class="fa [module.get append_inline_icon /]"></i>
-		[/if.not_empty]
-		
-		<input 
-			id="[module.get id /]" 
-			name="[module.get id /]" 
-			type="text" 
-			placeholder="[module.get placeholder default='{module.label}'/]" 
-			class="form-control input-md [module.get class /]" 
-			value='[module.get value /]'  
-			[if.equal lhs="{module.required}" rhs="yes"]required[/if.equal]
-			[if.equal lhs="{module.readonly}" rhs="yes"]readonly[/if.equal]				
-			[module.get attr_string/] 
-			msg-required="<i class='icon icon-warning'></i> [module.get label /] is required!"
-		/>
-		
-		[if.not_empty module.append_icon]
-			<span class="input-group-addon">
-				<i class="fa [module.get append_icon /]"></i>
-			</span>
-		[/if.not_empty]
-	</div>
-	<i class="info-block">[module.get help-block /]</i>
-	<div class="help-block"></div>
-		
-	[if.equal lhs='{module.args.form_type}' rhs='horizontal']
-	   </div>
-	  <div class="col-md-12"></div>
-	[/if.equal]
-	
-</div>				]]></content:encoded>
-		<excerpt:encoded><![CDATA[
-				
-								]]></excerpt:encoded>
-		<wp:post_id>382</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-14 04:30:59]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-14 04:30:59]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[text]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title>text_action</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=383</link>
-		<pubDate>Wed, 14 Feb 2018 04:30:59 +0000</pubDate>
-		<dc:creator><![CDATA[]]></dc:creator>
-		<guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=383</guid>
-		<description></description>
-		<content:encoded><![CDATA[
-				
-				//************ Build the Args *************************//
+  [if.not_empty module.label]
+  <div class='[module.get label_classes.space /] col-12 no-padding'>
+    <label for="[module.get id /]">[module.get label /][if.equal lhs="{module.required}" rhs="yes"]<span class='text-danger'>*</span>[/if.equal]</label>
+  </div>      
+  [/if.not_empty]
+  
+  [if.equal lhs='{module.args.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
+  <div class="[module.get control_classes.space /] col-12 no-padding">
+    [if.not_empty module.addon_text]
+      <span class="input-group-addon">
+       [module.get addon_text /]
+      </span>
+    [/if.not_empty]
+    [if.not_empty module.prepend_icon]
+      <span class="input-group-addon">
+        <i class="fa [module.get prepend_icon /]"></i>
+      </span>
+    [/if.not_empty]
+    [if.not_empty module.prepend_inline_icon]
+      <i class="fa [module.get prepend_inline_icon /]"></i>
+    [/if.not_empty]
+    [if.not_empty module.append_inline_icon]
+      <i class="fa [module.get append_inline_icon /]"></i>
+    [/if.not_empty]
+    
+    <input 
+      id="[module.get id /]" 
+      name="[module.get id /]" 
+      type="text" 
+      placeholder="[module.get placeholder default='{module.label}'/]" 
+      class="form-control input-md [module.get class /]" 
+      value='[module.get value /]'  
+      [if.equal lhs="{module.required}" rhs="yes"]required[/if.equal]
+      [if.equal lhs="{module.readonly}" rhs="yes"]readonly[/if.equal]       
+      [module.get attr_string/] 
+      msg-required="<i class='icon icon-warning'></i> [module.get label /] is required!"
+    />
+    
+    [if.not_empty module.append_icon]
+      <span class="input-group-addon">
+        <i class="fa [module.get append_icon /]"></i>
+      </span>
+    [/if.not_empty]
+  </div>
+  <i class="info-block">[module.get help-block /]</i>
+  <div class="help-block"></div>
+    
+  [if.equal lhs='{module.args.form_type}' rhs='horizontal']
+     </div>
+    <div class="col-md-12"></div>
+  [/if.equal]
+  
+</div>        ]]></content:encoded>
+    <excerpt:encoded><![CDATA[
+        
+                ]]></excerpt:encoded>
+    <wp:post_id>382</wp:post_id>
+    <wp:post_date><![CDATA[2018-02-14 04:30:59]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-02-14 04:30:59]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[text]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            </item>
+
+    <item>
+    <title>text-url</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=382</link>
+    <pubDate>Wed, 14 Feb 2018 04:30:59 +0000</pubDate>
+    <dc:creator><![CDATA[]]></dc:creator>
+    <guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=382</guid>
+    <description></description>
+    <content:encoded><![CDATA[        
+        //************ Build the Args *************************//
+
+//************ Build the Args *************************//
+[if.not_empty module.link_class]
+  [css.style]
+    .[module.get link_class /]{
+      position: absolute;
+      top: 40px;
+      padding: 0.9rem;
+      right: 15px;
+      z-index: 1;
+    }
+  [/css.style]
+[/if.not_empty]
 
 [module.set attr]
-	[loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
+  [loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
+[/module.set]
+[php.str_replace p1="$spacer" p2=" " p3="{module.attr}" set="module.attr_string"/]
+
+[module.set label_classes.bs3='input-group' cond='{module.args.form_type}' not_equal='default' /]
+[module.set label_classes.bs3='col-md-3' cond='{module.args.form_type}' equal='horizontal' /]
+[module.set label_classes.bs3='{module.label_class}' not_empty='{module.label_class}' /]
+[module.set label_classes.bs3='{module.args.bs3_label_class}' not_empty='{module.args.bs3_label_class}' /]  
+
+[module.set label_classes.new='control-label' cond='{module.args.form_type}' equal='horizontal' /]
+
+[module.set col.bs3='col-md-9' cond='{module.args.form_type}' equal='horizontal' /]
+[module.set col.bs3='{module.control_class}' not_empty='{module.control_class}' /]
+[module.set col.bs3='{module.args.bs3_control_class}' not_empty='{module.args.bs3_control_class}' /]  
+
+[module.set control_classes.new='input-icon left' not_empty='{module.prepend_inline_icon}' /]
+[module.set control_classes.new='input-icon right' not_empty='{module.append_inline_icon}' /]
+[module.set control_classes.new='input-group' not_empty='{module.prepend_icon}' /]
+[module.set control_classes.new='input-group' not_empty='{module.append_icon}' /]
+[module.set control_classes.new='input-group' not_empty='{module.button_text}' /]
+[module.set control_classes.new='input-group' not_empty='{module.addon_text}' /]
+  
+<div class="form-group [module.get class /] [module.get id /]">
+  [if.not_empty module.label]
+  <div class='[module.get label_classes.space /] col-12'>
+    <label for="[module.get id /]">[module.get label /][if.equal lhs="{module.required}" rhs="yes"]<span class='text-danger'>*</span>[/if.equal]</label>
+  </div>      
+  [/if.not_empty]
+  
+  [if.equal lhs='{module.args.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
+  <div class="[module.get control_classes.space /] col-12">
+    [if.not_empty module.addon_text]
+      <span class="input-group-addon">
+       [module.get addon_text /]
+      </span>
+    [/if.not_empty]
+    [if.not_empty module.prepend_icon]
+      <span class="input-group-addon">
+        <i class="fa [module.get prepend_icon /]"></i>
+      </span>
+    [/if.not_empty]
+    [if.not_empty module.prepend_inline_icon]
+      <i class="fa [module.get prepend_inline_icon /]"></i>
+    [/if.not_empty]
+    [if.not_empty module.append_inline_icon]
+      <i class="fa [module.get append_inline_icon /]"></i>
+    [/if.not_empty]
+    
+    <input 
+      id="[module.get id /]" 
+      name="[module.get id /]" 
+      type="text" 
+      placeholder="[module.get placeholder default='{module.label}'/]" 
+      class="form-control input-md" 
+      value='[module.get value /]'  
+      [if.equal lhs="{module.required}" rhs="yes"]required[/if.equal]
+      [if.equal lhs="{module.readonly}" rhs="yes"]readonly[/if.equal]       
+      [module.get attr_string/] 
+      msg-required="<i class='fa fa-exclamation-triangle icon icon-warning'></i> [module.get label /] is required!"
+    />
+    
+    [if.not_empty module.append_icon]
+      <span class="input-group-addon">
+        <i class="fa [module.get append_icon /]"></i>
+      </span>
+    [/if.not_empty]
+  </div>
+  <i class="info-block">[module.get help-block /]</i>
+  <div class="help-block"></div>
+  
+  [if.not_empty module.link_text]
+    <a href="[module.link_href /]" class="[module.link_class /]" > [module.link_text /] </a>
+  [/if.not_empty]
+    
+  [if.equal lhs='{module.args.form_type}' rhs='horizontal']
+     </div>
+    <div class="col-md-12"></div>
+  [/if.equal]
+  
+</div>                ]]></content:encoded>
+    <excerpt:encoded><![CDATA[
+        
+                ]]></excerpt:encoded>
+    <wp:post_id>382</wp:post_id>
+    <wp:post_date><![CDATA[2018-02-14 04:30:59]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-02-14 04:30:59]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[text]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            
+                            </item>
+
+
+          <item>
+    <title>text_action</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=383</link>
+    <pubDate>Wed, 14 Feb 2018 04:30:59 +0000</pubDate>
+    <dc:creator><![CDATA[]]></dc:creator>
+    <guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=383</guid>
+    <description></description>
+    <content:encoded><![CDATA[
+        
+        //************ Build the Args *************************//
+
+[module.set attr]
+  [loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
 [/module.set]
 [php.str_replace p1="$spacer" p2=" " p3="{module.attr}" set="module.attr_string"/]
 
@@ -1467,80 +1591,80 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 [module.set control_classes.new='input-group' not_empty='{module.button_text}' /]
 
 <div class="form-group">
-	[if.not_empty module.label]
-	<div class='[module.get label_classes.space /]'>
-		<label for="[module.get id /]">[module.get label /][if.equal lhs="{module.required}" rhs="yes"]<span class='text-danger'>*</span>[/if.equal]</label>
-	</div>			
-	[/if.not_empty]
-	
-	[if.equal lhs='{module.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
-	<div class="[module.control_classes.space /]">
-		[if.not_empty module.prepend_icon]
-			<span class="input-group-addon">
-				<i class="fa [module.prepend_icon /]"></i>
-			</span>
-		[/if.not_empty]
-		[if.not_empty module.prepend_inline_icon]
-			<i class="fa [module.prepend_inline_icon /]"></i>
-		[/if.not_empty]
-		[if.not_empty module.append_inline_icon]
-			<i class="fa [module.append_inline_icon /]"></i>
-		[/if.not_empty]
+  [if.not_empty module.label]
+  <div class='[module.get label_classes.space /]'>
+    <label for="[module.get id /]">[module.get label /][if.equal lhs="{module.required}" rhs="yes"]<span class='text-danger'>*</span>[/if.equal]</label>
+  </div>      
+  [/if.not_empty]
+  
+  [if.equal lhs='{module.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
+  <div class="[module.control_classes.space /]">
+    [if.not_empty module.prepend_icon]
+      <span class="input-group-addon">
+        <i class="fa [module.prepend_icon /]"></i>
+      </span>
+    [/if.not_empty]
+    [if.not_empty module.prepend_inline_icon]
+      <i class="fa [module.prepend_inline_icon /]"></i>
+    [/if.not_empty]
+    [if.not_empty module.append_inline_icon]
+      <i class="fa [module.append_inline_icon /]"></i>
+    [/if.not_empty]
 
-		<input 
-			id="[module.get id /]" 
-			name="[module.get id /]" 
-			type="[module.get input_type default=text/]" 
-			placeholder="[module.get placeholder default='{module.label}'/]" 
-			class="form-control input-md [module.get class /]" 
-			value='[module.get value /]'  
-			[if.equal lhs={module.required} rhs="yes"]required[/if.equal]
-			[if.equal lhs="{module.readonly}" rhs="yes"]readonly[/if.equal]				
-			[module.get attr_string/] 
-		/>
-		<span class="input-group-btn">
+    <input 
+      id="[module.get id /]" 
+      name="[module.get id /]" 
+      type="[module.get input_type default=text/]" 
+      placeholder="[module.get placeholder default='{module.label}'/]" 
+      class="form-control input-md [module.get class /]" 
+      value='[module.get value /]'  
+      [if.equal lhs={module.required} rhs="yes"]required[/if.equal]
+      [if.equal lhs="{module.readonly}" rhs="yes"]readonly[/if.equal]       
+      [module.get attr_string/] 
+    />
+    <span class="input-group-btn">
         <button class="btn [module.get button_class default='btn-primary' /]" type="[module.get button_type default='button' /]">[module.get button_text /]</button>
     </span>
-		[if.not_empty module.append_icon]
-			<span class="input-group-addon">
-				<i class="fa [module.get append_icon /]"></i>
-			</span>
-		[/if.not_empty]
-	</div>
-	<div class="help-block"></div>
-	
-	[if.equal lhs='{module.form_type}' rhs='horizontal']</div>[/if.equal]
-	
+    [if.not_empty module.append_icon]
+      <span class="input-group-addon">
+        <i class="fa [module.get append_icon /]"></i>
+      </span>
+    [/if.not_empty]
+  </div>
+  <div class="help-block"></div>
+  
+  [if.equal lhs='{module.form_type}' rhs='horizontal']</div>[/if.equal]
+  
 </div>
-				]]></content:encoded>
-		<excerpt:encoded><![CDATA[
-				
-								]]></excerpt:encoded>
-		<wp:post_id>383</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-14 04:30:59]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-14 04:30:59]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[text_action]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title>textarea</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=384</link>
-		<pubDate>Wed, 14 Feb 2018 04:30:59 +0000</pubDate>
-		<dc:creator><![CDATA[]]></dc:creator>
-		<guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=384</guid>
-		<description></description>
-		<content:encoded><![CDATA[				
-				//************ Build the Args *************************//
+        ]]></content:encoded>
+    <excerpt:encoded><![CDATA[
+        
+                ]]></excerpt:encoded>
+    <wp:post_id>383</wp:post_id>
+    <wp:post_date><![CDATA[2018-02-14 04:30:59]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-02-14 04:30:59]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[text_action]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            </item>
+          <item>
+    <title>textarea</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=384</link>
+    <pubDate>Wed, 14 Feb 2018 04:30:59 +0000</pubDate>
+    <dc:creator><![CDATA[]]></dc:creator>
+    <guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=384</guid>
+    <description></description>
+    <content:encoded><![CDATA[        
+        //************ Build the Args *************************//
 
 [module.set attr]
-	[loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
+  [loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
 [/module.set]
 [php.str_replace p1="$spacer" p2=" " p3="{module.attr}" set="module.attr_string"/]
 
@@ -1565,72 +1689,72 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 
 //************ Is there a Post *************************//
 [if.not_empty module.post]
-	[module.get post.{module.post_field} set=module.value not_empty='{module.post_field}' /]
-	[module.get post.meta.{module.meta_key} set=module.value not_empty='{module.meta_key}' /]
-	[module.get post.taxonomy.slugs.{module.taxonomy}.comma set=module.value not_empty='{module.taxonomy}' /]
+  [module.get post.{module.post_field} set=module.value not_empty='{module.post_field}' /]
+  [module.get post.meta.{module.meta_key} set=module.value not_empty='{module.meta_key}' /]
+  [module.get post.taxonomy.slugs.{module.taxonomy}.comma set=module.value not_empty='{module.taxonomy}' /]
 [/if.not_empty]
 
 
-	<div class="form-group [module.get form-control-class /]">
-		[if.not_empty module.label]
-		<div class='[module.get label_classes.space /] no-padding'>
-			<label for="[module.get id /]">[module.get label /][if.equal lhs="{module.required}" rhs="yes"]<span class='text-danger'>*</span>[/if.equal]</label>
-		</div>			
-		[/if.not_empty]
-		
-	[if.equal lhs='{module.args.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
-	<div class="[module.get control_classes.space /]">
-						
-			<textarea 
-				id="[module.get id /]" 
-				name="[module.get id /]"  
-				placeholder="[module.get placeholder /]" 
-				class="form-control input-md [module.get class /]" 
-				[if.not_empty module.rows]rows="[module.get rows /]"[/if.not_empty]
+  <div class="form-group [module.get form-control-class /]">
+    [if.not_empty module.label]
+    <div class='[module.get label_classes.space /] no-padding'>
+      <label for="[module.get id /]">[module.get label /][if.equal lhs="{module.required}" rhs="yes"]<span class='text-danger'>*</span>[/if.equal]</label>
+    </div>      
+    [/if.not_empty]
+    
+  [if.equal lhs='{module.args.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
+  <div class="[module.get control_classes.space /]">
+            
+      <textarea 
+        id="[module.get id /]" 
+        name="[module.get id /]"  
+        placeholder="[module.get placeholder /]" 
+        class="form-control input-md [module.get class /]" 
+        [if.not_empty module.rows]rows="[module.get rows /]"[/if.not_empty]
                 [if.not_empty module.cols]cols="[module.get cols /]"[/if.not_empty]
-				[if.equal lhs="{module.required}" rhs="yes"]required[/if.equal]
-				[if.equal lhs="{module.readonly}" rhs="yes"]readonly[/if.equal]
-				[module.get attr_string/] 
-					msg-required="<i class='icon icon-warning'></i> [module.get label /] is required!"
-			>[module.get value /]</textarea>
-			
-		</div>
+        [if.equal lhs="{module.required}" rhs="yes"]required[/if.equal]
+        [if.equal lhs="{module.readonly}" rhs="yes"]readonly[/if.equal]
+        [module.get attr_string/] 
+          msg-required="<i class='icon icon-warning'></i> [module.get label /] is required!"
+      >[module.get value /]</textarea>
+      
+    </div>
         
-		<i class="info-block">[module.get help-block /]</i>
-		<div class="help-block"></div>
-		
-		[if.equal lhs='{module.form_type}' rhs='horizontal']
-        	</div>
+    <i class="info-block">[module.get help-block /]</i>
+    <div class="help-block"></div>
+    
+    [if.equal lhs='{module.form_type}' rhs='horizontal']
+          </div>
             <div class="col-md-12"></div>
         [/if.equal]
-		
-	</div>				]]></content:encoded>
-		<excerpt:encoded><![CDATA[
-				
-								]]></excerpt:encoded>
-		<wp:post_id>384</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-14 04:30:59]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-14 04:30:59]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[textarea]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title>top-menu</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=385</link>
-		<pubDate>Wed, 14 Feb 2018 04:31:00 +0000</pubDate>
-		<dc:creator><![CDATA[]]></dc:creator>
-		<guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=385</guid>
-		<description></description>
-		<content:encoded><![CDATA[
-				
-				 [templates.add main]
+    
+  </div>        ]]></content:encoded>
+    <excerpt:encoded><![CDATA[
+        
+                ]]></excerpt:encoded>
+    <wp:post_id>384</wp:post_id>
+    <wp:post_date><![CDATA[2018-02-14 04:30:59]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-02-14 04:30:59]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[textarea]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            </item>
+          <item>
+    <title>top-menu</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=385</link>
+    <pubDate>Wed, 14 Feb 2018 04:31:00 +0000</pubDate>
+    <dc:creator><![CDATA[]]></dc:creator>
+    <guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=385</guid>
+    <description></description>
+    <content:encoded><![CDATA[
+        
+         [templates.add main]
   
     [loop.@menu template.menu]
       [if.empty item.children]
@@ -1656,36 +1780,36 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
       
     [/loop.@menu]  
     
-[/templates.add]				]]></content:encoded>
-		<excerpt:encoded><![CDATA[
-				
-								]]></excerpt:encoded>
-		<wp:post_id>385</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-14 04:31:00]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-14 04:31:00]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[top-menu]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title>trix_editor</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=386</link>
-		<pubDate>Wed, 14 Feb 2018 04:31:00 +0000</pubDate>
-		<dc:creator><![CDATA[]]></dc:creator>
-		<guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=386</guid>
-		<description></description>
-		<content:encoded><![CDATA[
-				
-				//************ Build the Args *************************//
+[/templates.add]        ]]></content:encoded>
+    <excerpt:encoded><![CDATA[
+        
+                ]]></excerpt:encoded>
+    <wp:post_id>385</wp:post_id>
+    <wp:post_date><![CDATA[2018-02-14 04:31:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-02-14 04:31:00]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[top-menu]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            </item>
+          <item>
+    <title>trix_editor</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=386</link>
+    <pubDate>Wed, 14 Feb 2018 04:31:00 +0000</pubDate>
+    <dc:creator><![CDATA[]]></dc:creator>
+    <guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=386</guid>
+    <description></description>
+    <content:encoded><![CDATA[
+        
+        //************ Build the Args *************************//
 
 [module.set attr]
-	[loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
+  [loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
 [/module.set]
 [aw2.get function.str_replace p1="$spacer" p2=" " p3="{module.attr}" set="module.attr_string"/]
 
@@ -1706,9 +1830,9 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 
 //************ Is there a Post *************************//
 [if.not_empty module.post]
-	[module.get post.{module.post_field} set=module.value not_empty='{module.post_field}' /]
-	[module.get post.meta.{module.meta_key} set=module.value not_empty='{module.meta_key}' /]
-	[module.get post.taxonomy.slugs.{module.taxonomy}.comma set=module.value not_empty='{module.taxonomy}' /]
+  [module.get post.{module.post_field} set=module.value not_empty='{module.post_field}' /]
+  [module.get post.meta.{module.meta_key} set=module.value not_empty='{module.meta_key}' /]
+  [module.get post.taxonomy.slugs.{module.taxonomy}.comma set=module.value not_empty='{module.taxonomy}' /]
 [/if.not_empty]
 
 
@@ -1716,13 +1840,13 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
       [if.not_empty module.label]
       <div class='[module.get label_classes.space /]'>
           <label for="[module.get id /]">[module.get label /][if.equal lhs="{module.required}" rhs="yes"]<span class='text-danger'>*</span>[/if.equal]</label>
-      </div>			
+      </div>      
       [/if.not_empty]
 
       [if.equal lhs='{module.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
       <div class="[module.get control_classes.space /] col-12 col-md-8">
           <textarea id="[module.get id /]" name="[module.get id /]" class="is-none">
-          	[module.get value /]
+            [module.get value /]
           </textarea>
           <trix-editor input="[module.get id /]" style="min-height:300px;overflow-y: scroll;background:#ffffff"></trix-editor>
           <script type="spa/axn" axn='trix_editor.init'></script>
@@ -1731,36 +1855,36 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
       <div class="help-block"></div>
 
       [if.equal lhs='{module.form_type}' rhs='horizontal']</div>[/if.equal]
-  </div>				]]></content:encoded>
-		<excerpt:encoded><![CDATA[
-				
-								]]></excerpt:encoded>
-		<wp:post_id>386</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-14 04:31:00]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-14 04:31:00]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[trix_editor]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title>url</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=387</link>
-		<pubDate>Wed, 14 Feb 2018 04:31:00 +0000</pubDate>
-		<dc:creator><![CDATA[]]></dc:creator>
-		<guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=387</guid>
-		<description></description>
-		<content:encoded><![CDATA[
-				
-				//************ Build the Args *************************//
+  </div>        ]]></content:encoded>
+    <excerpt:encoded><![CDATA[
+        
+                ]]></excerpt:encoded>
+    <wp:post_id>386</wp:post_id>
+    <wp:post_date><![CDATA[2018-02-14 04:31:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-02-14 04:31:00]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[trix_editor]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            </item>
+          <item>
+    <title>url</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=387</link>
+    <pubDate>Wed, 14 Feb 2018 04:31:00 +0000</pubDate>
+    <dc:creator><![CDATA[]]></dc:creator>
+    <guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=387</guid>
+    <description></description>
+    <content:encoded><![CDATA[
+        
+        //************ Build the Args *************************//
 
 [module.set attr]
-	[loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
+  [loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
 [/module.set]
 [aw2.get function.str_replace p1="$spacer" p2=" " p3="{module.attr}" set="module.attr_string"/]
 
@@ -1780,80 +1904,80 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 [module.set control_classes.new='input-group' not_empty='{module.button_text}' /]
 
 <div class="form-group">
-	[if.not_empty module.label]
-	<div class='[module.get label_classes.space /]'>
-		<label for="[module.get id /]">[module.get label /][if.equal lhs="{module.required}" rhs="yes"]<span class='text-danger'>*</span>[/if.equal]</label>
-	</div>			
-	[/if.not_empty]
-	
-	[if.equal lhs='{module.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
-	<div class="[aw2.get module.control_classes.space /]">
-		[if.not_empty module.prepend_icon]
-			<span class="input-group-addon">
-				<i class="fa [module.get prepend_icon /]"></i>
-			</span>
-		[/if.not_empty]
-		[if.not_empty module.prepend_inline_icon]
-			<i class="fa [module.get prepend_inline_icon /]"></i>
-		[/if.not_empty]
-		[if.not_empty module.append_inline_icon]
-			<i class="fa [module.get append_inline_icon /]"></i>
-		[/if.not_empty]
-		
-		<input 
-			id="[module.get id /]" 
-			name="[module.get id /]" 
-			type="url" 
-			placeholder="[module.get placeholder default='{module.label}'/]" 
-			class="form-control input-md [module.get class /]" 
-			value='[module.get value /]'  
-			[if.equal lhs="{module.required}" rhs="yes"]required[/if.equal]
-			[if.equal lhs="{module.readonly}" rhs="yes"]readonly[/if.equal]				
-			[aw2.get module.attr_string/] 
-		/>
-		
-		[if.not_empty module.append_icon]
-			<span class="input-group-addon">
-				<i class="fa [module.get append_icon /]"></i>
-			</span>
-		[/if.not_empty]
-	</div>
-	<div class="help-block"></div>
-	
-	[if.equal lhs='{module.form_type}' rhs='horizontal']</div>[/if.equal]
-	
+  [if.not_empty module.label]
+  <div class='[module.get label_classes.space /]'>
+    <label for="[module.get id /]">[module.get label /][if.equal lhs="{module.required}" rhs="yes"]<span class='text-danger'>*</span>[/if.equal]</label>
+  </div>      
+  [/if.not_empty]
+  
+  [if.equal lhs='{module.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
+  <div class="[aw2.get module.control_classes.space /]">
+    [if.not_empty module.prepend_icon]
+      <span class="input-group-addon">
+        <i class="fa [module.get prepend_icon /]"></i>
+      </span>
+    [/if.not_empty]
+    [if.not_empty module.prepend_inline_icon]
+      <i class="fa [module.get prepend_inline_icon /]"></i>
+    [/if.not_empty]
+    [if.not_empty module.append_inline_icon]
+      <i class="fa [module.get append_inline_icon /]"></i>
+    [/if.not_empty]
+    
+    <input 
+      id="[module.get id /]" 
+      name="[module.get id /]" 
+      type="url" 
+      placeholder="[module.get placeholder default='{module.label}'/]" 
+      class="form-control input-md [module.get class /]" 
+      value='[module.get value /]'  
+      [if.equal lhs="{module.required}" rhs="yes"]required[/if.equal]
+      [if.equal lhs="{module.readonly}" rhs="yes"]readonly[/if.equal]       
+      [aw2.get module.attr_string/] 
+    />
+    
+    [if.not_empty module.append_icon]
+      <span class="input-group-addon">
+        <i class="fa [module.get append_icon /]"></i>
+      </span>
+    [/if.not_empty]
+  </div>
+  <div class="help-block"></div>
+  
+  [if.equal lhs='{module.form_type}' rhs='horizontal']</div>[/if.equal]
+  
 </div>
-				]]></content:encoded>
-		<excerpt:encoded><![CDATA[
-				
-								]]></excerpt:encoded>
-		<wp:post_id>387</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-14 04:31:00]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-14 04:31:00]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[url]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title>panel</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=399799</link>
-		<pubDate>Thu, 22 Feb 2018 04:46:12 +0000</pubDate>
-		<dc:creator><![CDATA[]]></dc:creator>
-		<guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=399799</guid>
-		<description></description>
-		<content:encoded><![CDATA[
-				
-				[templates.add main]
+        ]]></content:encoded>
+    <excerpt:encoded><![CDATA[
+        
+                ]]></excerpt:encoded>
+    <wp:post_id>387</wp:post_id>
+    <wp:post_date><![CDATA[2018-02-14 04:31:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-02-14 04:31:00]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[url]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            </item>
+          <item>
+    <title>panel</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=399799</link>
+    <pubDate>Thu, 22 Feb 2018 04:46:12 +0000</pubDate>
+    <dc:creator><![CDATA[]]></dc:creator>
+    <guid isPermaLink="false">https://dev6.loantap.in/?post_type=form_control&#038;p=399799</guid>
+    <description></description>
+    <content:encoded><![CDATA[
+        
+        [templates.add main]
 [module.set panel_id="{token}" /] 
 <div class="panel-group" role="tablist" aria-multiselectable="true">
   [loop.@panel module.panels]
-  	[module.set heading_bg="" /]
+    [module.set heading_bg="" /]
     [module.set heading_bg="style='background-color:{@panel.item.heading_bg};'" not_empty="{@panel.item.heading_bg}"/]
      [templates.panel not_empty="{@panel.item.title}"/]
      [templates.label not_empty="{@panel.item.label}"/]
@@ -1861,7 +1985,7 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 </div>
    
    <script type=spa/axn axn='core.run_script'>
-   		function [module.panel_id/](e) {
+      function [module.panel_id/](e) {
           $(e.target)
               .prev('.panel-heading')
               .find(".more-less")
@@ -1899,31 +2023,31 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
               </div>
           </div>
       </div>
-[/templates.add]				]]></content:encoded>
-		<excerpt:encoded><![CDATA[
-				
-								]]></excerpt:encoded>
-		<wp:post_id>399799</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-22 04:46:12]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-22 04:46:12]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[panel]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title>alert</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=762557</link>
-		<pubDate>Wed, 25 Sep 2019 11:36:14 +0000</pubDate>
-		<dc:creator><![CDATA[sapna]]></dc:creator>
-		<guid isPermaLink="false">http://nxt.wpoets.com/?post_type=form_control&#038;p=762557</guid>
-		<description></description>
-		<content:encoded><![CDATA[[templates.add main]
+[/templates.add]        ]]></content:encoded>
+    <excerpt:encoded><![CDATA[
+        
+                ]]></excerpt:encoded>
+    <wp:post_id>399799</wp:post_id>
+    <wp:post_date><![CDATA[2018-02-22 04:46:12]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-02-22 04:46:12]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[panel]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            </item>
+          <item>
+    <title>alert</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=762557</link>
+    <pubDate>Wed, 25 Sep 2019 11:36:14 +0000</pubDate>
+    <dc:creator><![CDATA[sapna]]></dc:creator>
+    <guid isPermaLink="false">http://nxt.wpoets.com/?post_type=form_control&#038;p=762557</guid>
+    <description></description>
+    <content:encoded><![CDATA[[templates.add main]
   [module.set panel_id="{token}" /] 
   <div class="alert [module.get alert_class /]" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
@@ -1939,32 +2063,32 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
     }, "[module.get time_out default='6000' /]");
   </script>
 [/templates.add]]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>762557</wp:post_id>
-		<wp:post_date><![CDATA[2019-09-25 11:36:14]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2019-09-25 11:36:14]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[alert]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-		<wp:meta_value><![CDATA[3]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title>trumbowyg_editor</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=854990</link>
-		<pubDate>Wed, 16 Oct 2019 06:46:53 +0000</pubDate>
-		<dc:creator><![CDATA[sapna]]></dc:creator>
-		<guid isPermaLink="false">http://nxt.wpoets.com/?post_type=form_control&#038;p=854990</guid>
-		<description></description>
-		<content:encoded><![CDATA[<script type="spa/axn" axn=core.run_script> 
+    <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+    <wp:post_id>762557</wp:post_id>
+    <wp:post_date><![CDATA[2019-09-25 11:36:14]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2019-09-25 11:36:14]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[alert]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            <wp:postmeta>
+    <wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+    <wp:meta_value><![CDATA[3]]></wp:meta_value>
+    </wp:postmeta>
+              </item>
+          <item>
+    <title>trumbowyg_editor</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=854990</link>
+    <pubDate>Wed, 16 Oct 2019 06:46:53 +0000</pubDate>
+    <dc:creator><![CDATA[sapna]]></dc:creator>
+    <guid isPermaLink="false">http://nxt.wpoets.com/?post_type=form_control&#038;p=854990</guid>
+    <description></description>
+    <content:encoded><![CDATA[<script type="spa/axn" axn=core.run_script> 
     spa.trumbowyg = {};
   spa.trumbowyg.prerequisites = {};
   spa.trumbowyg.prerequisites.js_files = 'https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.23.0/trumbowyg.min.js,https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.23.0/plugins/upload/trumbowyg.upload.min.js,https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.23.0/plugins/table/trumbowyg.table.min.js,https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.23.0/plugins/history/trumbowyg.history.min.js,https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.23.0/plugins/fontsize/trumbowyg.fontsize.min.js,https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.23.0/plugins/colors/trumbowyg.colors.min.js,https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.23.0/plugins/cleanpaste/trumbowyg.cleanpaste.min.js,https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.23.0/plugins/template/trumbowyg.template.min.js,https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.23.0/plugins/indent/trumbowyg.indent.min.js,https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.23.0/plugins/preformatted/trumbowyg.preformatted.min.js';
@@ -1972,7 +2096,7 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 
   spa.trumbowyg.init = function(o) {}
   spa.trumbowyg.run = function(o) {
-  		//alert("als");
+      //alert("als");
       var editor = o.el.attr('editor');
       var upload_path = o.el.attr('upload_url');
 
@@ -1987,7 +2111,7 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
           },
           btns: [
               ['strong', 'em', 'del'],
-  						['unorderedList', 'orderedList'],
+              ['unorderedList', 'orderedList'],
               ['indent', 'outdent'],
               ['link'],
               ['image'],
@@ -2015,11 +2139,11 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
           },
           autogrow: true
       }).on('tbwchange', function(){
-      		$("#[module.get textarea_name /]").empty().html($(editor).trumbowyg('html'));
-      		//console.log($(this).val());
+          $("#[module.get textarea_name /]").empty().html($(editor).trumbowyg('html'));
+          //console.log($(this).val());
         });
         [aw2.get token set='template.editor_token' /]
-      	$(editor).trumbowyg('html', $(".[template.editor_token /]").html());
+        $(editor).trumbowyg('html', $(".[template.editor_token /]").html());
   }
 
 </script>
@@ -2028,50 +2152,50 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 <div class="[template.editor_token /]" placeholder="[module.get placeholder /]">[module.get content /]</div> 
 <script type="spa/axn" axn='trumbowyg.run' editor=".[template.editor_token /]" upload_url='[aw2.get app.path]/modules/upload-images'></script>
   
-	<textarea name="[module.get textarea_name /]" 
-  					id="[module.get textarea_name /]" 
+  <textarea name="[module.get textarea_name /]" 
+            id="[module.get textarea_name /]" 
             [if.equal lhs="{module.required}" rhs="yes"]required[/if.equal]
             msg-required="<i class='icon icon-warning'></i> [module.get label /] is required!"
             style="display:none;"></textarea>
     <i class="info-block">[module.get help-block /]</i>
-	<div class="help-block"></div>        
+  <div class="help-block"></div>        
 </div>]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>854990</wp:post_id>
-		<wp:post_date><![CDATA[2019-10-16 06:46:53]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2019-10-16 06:46:53]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[trumbowyg_editor]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-		<wp:meta_value><![CDATA[3]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title>multi</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=854992</link>
-		<pubDate>Wed, 16 Oct 2019 06:47:48 +0000</pubDate>
-		<dc:creator><![CDATA[sapna]]></dc:creator>
-		<guid isPermaLink="false">http://nxt.wpoets.com/?post_type=form_control&#038;p=854992</guid>
-		<description></description>
-		<content:encoded><![CDATA[[templates.add label_url]
-	[if.equal  lhs="" rhs="{template.intial_data.count}"]
-  	[template.set_array intial_data.new label="" url="" /]
-	[/if.equal]
+    <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+    <wp:post_id>854990</wp:post_id>
+    <wp:post_date><![CDATA[2019-10-16 06:46:53]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2019-10-16 06:46:53]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[trumbowyg_editor]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            <wp:postmeta>
+    <wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+    <wp:meta_value><![CDATA[3]]></wp:meta_value>
+    </wp:postmeta>
+              </item>
+          <item>
+    <title>multi</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=854992</link>
+    <pubDate>Wed, 16 Oct 2019 06:47:48 +0000</pubDate>
+    <dc:creator><![CDATA[sapna]]></dc:creator>
+    <guid isPermaLink="false">http://nxt.wpoets.com/?post_type=form_control&#038;p=854992</guid>
+    <description></description>
+    <content:encoded><![CDATA[[templates.add label_url]
+  [if.equal  lhs="" rhs="{template.intial_data.count}"]
+    [template.set_array intial_data.new label="" url="" /]
+  [/if.equal]
 
       <div class="multi-url-section" data-name="[template.get name /]">
-      	[loop.@eachUrl template.intial_data]
-         	[template.set class="child-url" /]
-        	[if.equal lhs="{aw2.get @eachUrl.index}" rhs="1"]
-         		[template.set class="master-url" /]
-					[/if.equal]
+        [loop.@eachUrl template.intial_data]
+          [template.set class="child-url" /]
+          [if.equal lhs="{aw2.get @eachUrl.index}" rhs="1"]
+            [template.set class="master-url" /]
+          [/if.equal]
          <div class="row [template.get class /]">
           <div class="col-11 col-md-5 no-padding-right-md">
             <div class="form-group row">
@@ -2087,22 +2211,22 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
             </div>
           </div>
           <div class="col-1 no-padding is-flex align-items-center">
-          	[if.equal lhs="{aw2.get @eachUrl.index}" rhs="1"]
-            	<span class="add-more-url">
-              	[plot.icon.add-new color="gray" /]
+            [if.equal lhs="{aw2.get @eachUrl.index}" rhs="1"]
+              <span class="add-more-url">
+                [plot.icon.add-new color="gray" /]
               </span>
             [/if.equal]
             [if.else]
-            	<span class="remove-url">[plot.icon.remove color="gray" /]</span>
+              <span class="remove-url">[plot.icon.remove color="gray" /]</span>
             [/if.else]
-					</div>
+          </div>
         </div>
         [/loop.@eachUrl]
       </div>
 [/templates.add]
 
 [templates.add label_url_script]
-	<script type="spa/axn" axn=core.run_script>
+  <script type="spa/axn" axn=core.run_script>
     $(".add-more-url").on("click",function(event){
       $parent_section = $(event.target).closest('.multi-url-section');
       $name = ($parent_section).data('name');
@@ -2123,10 +2247,10 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
         <div class="col-12">
           <div class="form-group files">
             <p class="text-center width-100 no-margin">Drop files anywhere to upload  
-            	<span class="font-size-smaller gray pad-1">or </span>
+              <span class="font-size-smaller gray pad-1">or </span>
               <span class="br gray-lighter-bg pad-x-4 pad-y-2 is-inline-block"> select Files </span></p>
-            	<input name="[template.get name /][]" type="file" placeholder="Attachment" 
-            			 	 class="input-md file-input-attachment pointer" multiple [template.get is_required /] /> 		
+              <input name="[template.get name /][]" type="file" placeholder="Attachment" 
+                     class="input-md file-input-attachment pointer" multiple [template.get is_required /] />    
           </div>
           <div class="uploaded-files width-100 clearfix"></div>
         </div>
@@ -2135,28 +2259,28 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 [/templates.add]
 
 [templates.add file_upload_script]
-	<script type="spa/axn" axn=core.run_script>    
+  <script type="spa/axn" axn=core.run_script>    
     var files_array = new Array(); // decalre file array to save uploaded files in input
-		$('input[type="file"]').change(function(e){
-    	
-    	files_array = e.target.files; // assign files to array
+    $('input[type="file"]').change(function(e){
+      
+      files_array = e.target.files; // assign files to array
       console.log(files_array);
       var file_list = $(this).parents('.files').siblings('.uploaded-files');
       file_list.html(""); // make existing list as null in HTML div
       $.each(files_array,function (index, value){
-        file_list.append('<div data-name="'+value.name+'" id="'+index+'" class="br-5 font-size-smallest gray-white-bg mar-b-2 pad-x-4 pad-y-1 ">'+ value.name	+' <span class="remove-upload float-right pointer"><b>x</b></span> <div>');
+        file_list.append('<div data-name="'+value.name+'" id="'+index+'" class="br-5 font-size-smallest gray-white-bg mar-b-2 pad-x-4 pad-y-1 ">'+ value.name +' <span class="remove-upload float-right pointer"><b>x</b></span> <div>');
        
       });
     });
     
     $(document).on('click','.remove-upload',function(e) {
-    	e.preventDefault();
+      e.preventDefault();
       console.log(files_array.length);
       files_array = $.makeArray(files_array);
       //console.log(files_array);
-    	var fileName = $(this).parent().data("name");
+      var fileName = $(this).parent().data("name");
       for(i = 0; i < files_array.length; ++ i){
-        	if(files_array[i].name == fileName){
+          if(files_array[i].name == fileName){
               // remove the one element at the index where we get a match
               files_array.splice(i, 1);
               console.log(files_array.length);
@@ -2168,32 +2292,32 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 </script>
 [/templates.add]
 ]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>854992</wp:post_id>
-		<wp:post_date><![CDATA[2019-10-16 06:47:48]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2019-10-16 06:47:48]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[multi]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-		<wp:meta_value><![CDATA[3]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title>select_box</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=854996</link>
-		<pubDate>Wed, 16 Oct 2019 06:50:01 +0000</pubDate>
-		<dc:creator><![CDATA[sapna]]></dc:creator>
-		<guid isPermaLink="false">http://nxt.wpoets.com/?post_type=form_control&#038;p=854996</guid>
-		<description></description>
-		<content:encoded><![CDATA[<div class="form-group row [module.get id /]-parent visibility-hidden">
+    <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+    <wp:post_id>854992</wp:post_id>
+    <wp:post_date><![CDATA[2019-10-16 06:47:48]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2019-10-16 06:47:48]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[multi]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            <wp:postmeta>
+    <wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+    <wp:meta_value><![CDATA[3]]></wp:meta_value>
+    </wp:postmeta>
+              </item>
+          <item>
+    <title>select_box</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=854996</link>
+    <pubDate>Wed, 16 Oct 2019 06:50:01 +0000</pubDate>
+    <dc:creator><![CDATA[sapna]]></dc:creator>
+    <guid isPermaLink="false">http://nxt.wpoets.com/?post_type=form_control&#038;p=854996</guid>
+    <description></description>
+    <content:encoded><![CDATA[<div class="form-group row [module.get id /]-parent visibility-hidden">
 
   [if.not_empty module.label]
     <label for="[module.get id /]">
@@ -2252,23 +2376,23 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 
   <div class="help-block"></div>
 
-	[template.set ajax_ticket='{token}' /]
+  [template.set ajax_ticket='{token}' /]
   [session_ticket.create main={template.ajax_ticket} time=40 set="template.tckt" /]
   [session_ticket.set_activity {template.ajax_ticket} service='common.select2-ajax-handler.{module.option_type}' app='plot' /]
 
   [session_ticket.get {template.ajax_ticket}.dump /]
   
   <script type=spa/axn axn=core.run_script js_files='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js'>
-     	$('.selectpicker.[aw2.get module.select_picker /]').select2({
-     		placeholder: "Select [module.label default='here..' /]",
+      $('.selectpicker.[aw2.get module.select_picker /]').select2({
+        placeholder: "Select [module.label default='here..' /]",
         allowClear: true,
         [if.yes module.tags]
-        	tags:true,
+          tags:true,
         [/if.yes]
         [if.empty module.options_array]
           ajax: {
             url: '[php.site_url /]/t/[template.ajax_ticket /]',
-        		delay: 500,
+            delay: 500,
             dataType: 'json',
             cache: true,
             data: function (params) {
@@ -2283,7 +2407,7 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
           /*
             to remove the select group name after new ajax request.
             templateResult this parameter is only needed for hierarchical data.
-            mension the key in haystack if you create custom handler in select2-ajax-handler in hierarchical manner	
+            mension the key in haystack if you create custom handler in select2-ajax-handler in hierarchical manner 
           */
           [if.contains haystack='taxonomy_hierarchical' needle='{module.option_type}']
             ,
@@ -2301,8 +2425,8 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
         [/if.empty]
       });
       [if.not_empty module.preselected]
-      	[loop.@term module.preselected.comma]
-        	[query.get_term_by taxonomy='{module.id}' field='slug' value='{@term.item}' set=template.term /]
+        [loop.@term module.preselected.comma]
+          [query.get_term_by taxonomy='{module.id}' field='slug' value='{@term.item}' set=template.term /]
           var newOption = new Option("[template.term.name /]", "[template.term.slug /]", true, true);
           $('.[aw2.get module.select_picker /]').append(newOption);
         [/loop.@term]
@@ -2310,67 +2434,67 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
       [/if.not_empty]
       $('.[module.get id /]-parent').removeClass('visibility-hidden');
   </script>
-	
+  
 </div>]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>854996</wp:post_id>
-		<wp:post_date><![CDATA[2019-10-16 06:50:01]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2019-10-16 06:50:01]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[select_box]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-		<wp:meta_value><![CDATA[3]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title>select2</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=854999</link>
-		<pubDate>Wed, 16 Oct 2019 06:50:50 +0000</pubDate>
-		<dc:creator><![CDATA[sapna]]></dc:creator>
-		<guid isPermaLink="false">http://nxt.wpoets.com/?post_type=form_control&#038;p=854999</guid>
-		<description></description>
-		<content:encoded><![CDATA[<div class="form-group row [module.get id /]-parent visibility-hidden">
-		[if.not_empty module.label]
-		<div class='[module.get label_classes.space /] col-12'>
-			<label for="[module.get id /]">
-			 [module.get label /]
-			 [if.equal lhs="{module.required}" rhs="yes"]
-			   <span class='text-danger'>*</span>
-			 [/if.equal]
-			</label>
-		</div>
-		[/if.not_empty]
+    <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+    <wp:post_id>854996</wp:post_id>
+    <wp:post_date><![CDATA[2019-10-16 06:50:01]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2019-10-16 06:50:01]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[select_box]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            <wp:postmeta>
+    <wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+    <wp:meta_value><![CDATA[3]]></wp:meta_value>
+    </wp:postmeta>
+              </item>
+          <item>
+    <title>select2</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=854999</link>
+    <pubDate>Wed, 16 Oct 2019 06:50:50 +0000</pubDate>
+    <dc:creator><![CDATA[sapna]]></dc:creator>
+    <guid isPermaLink="false">http://nxt.wpoets.com/?post_type=form_control&#038;p=854999</guid>
+    <description></description>
+    <content:encoded><![CDATA[<div class="form-group row [module.get id /]-parent visibility-hidden">
+    [if.not_empty module.label]
+    <div class='[module.get label_classes.space /] col-12'>
+      <label for="[module.get id /]">
+       [module.get label /]
+       [if.equal lhs="{module.required}" rhs="yes"]
+         <span class='text-danger'>*</span>
+       [/if.equal]
+      </label>
+    </div>
+    [/if.not_empty]
     
     [module.set opt]
-		  [if.not_equal lhs="{module.multiple}" rhs="yes"]
-      	//**<option disabled selected value="" class='is-none'>[module.get default_option_text default="Nothing Selected" /]</option>**//
+      [if.not_equal lhs="{module.multiple}" rhs="yes"]
+        //**<option disabled selected value="" class='is-none'>[module.get default_option_text default="Nothing Selected" /]</option>**//
         <option></option>
-			[/if.not_equal]
-		[/module.set]
-		<div class="[module.get control_classes.space /] width-100">
-        	[module.set select_picker='{unique_number}' /]
-			<select 
-				id="[module.get id /]-[module.get select_picker /]" 
-				[if.equal lhs="{module.multiple}" rhs="yes"]
-					name="[module.get id /][]"
-				[/if.equal]
-				[if.else]
-					name="[module.get id /]"
-				[/if.else]
-				[if.equal lhs="{module.multiple}" rhs="yes"]multiple = 'multiple'[/if.equal]
-				class="form-control selectpicker [aw2.get module.select_picker /] [aw2.get module.class /] select2-[module.get id /]"
-				[if.equal lhs="{module.required}" rhs="yes"]required[/if.equal] 
-				[module.get attr_string/]
-				placeholder="[module.get placeholder default='{module.label}'/]"
-  		>
+      [/if.not_equal]
+    [/module.set]
+    <div class="[module.get control_classes.space /] width-100">
+          [module.set select_picker='{unique_number}' /]
+      <select 
+        id="[module.get id /]-[module.get select_picker /]" 
+        [if.equal lhs="{module.multiple}" rhs="yes"]
+          name="[module.get id /][]"
+        [/if.equal]
+        [if.else]
+          name="[module.get id /]"
+        [/if.else]
+        [if.equal lhs="{module.multiple}" rhs="yes"]multiple = 'multiple'[/if.equal]
+        class="form-control selectpicker [aw2.get module.select_picker /] [aw2.get module.class /] select2-[module.get id /]"
+        [if.equal lhs="{module.required}" rhs="yes"]required[/if.equal] 
+        [module.get attr_string/]
+        placeholder="[module.get placeholder default='{module.label}'/]"
+      >
         [module.get opt cond="{module.default_option}" not_equal="no"/]
         [module.set group=""/]
         [loop.@ctr module.options_array]
@@ -2391,23 +2515,23 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
               [if.true @ctr.last]</optgroup>[/if.true]
            [/if.not_empty]
         [/loop.@ctr]
-    	</select>
-		</div>
-		<div class="help-block"></div>
+      </select>
+    </div>
+    <div class="help-block"></div>
     
     [template.set ajax_ticket='{token}' /]
     [session_ticket.create main={template.ajax_ticket} time=40 set="template.tckt" /]
     [session_ticket.set_activity {template.ajax_ticket} service='common.select2-ajax-handler.{module.option_type}' app='hrm-manage' /]
     
     <script type=spa/axn axn=core.run_script
-    	js_files='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js'>
-     	$('.selectpicker.[aw2.get module.select_picker /]').select2({
-     		placeholder: "Select [module.label default='here..' /]",
+      js_files='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js'>
+      $('.selectpicker.[aw2.get module.select_picker /]').select2({
+        placeholder: "Select [module.label default='here..' /]",
         allowClear: true,
         [if.empty module.options_array]
           ajax: {
             url: '[php.site_url /]/t/[template.get ajax_ticket /]',
-        		delay: 500,
+            delay: 500,
             dataType: 'json',
             cache: true,
             data: function (params) {
@@ -2421,7 +2545,7 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
           /*
             to remove the select group name after new ajax request.
             templateResult this parameter is only needed for hierarchical data.
-            mension the key in haystack if you create custom handler in select2-ajax-handler in hierarchical manner	
+            mension the key in haystack if you create custom handler in select2-ajax-handler in hierarchical manner 
           */
           [if.contains haystack='taxonomy_hierarchical' needle='{module.option_type}']
             ,
@@ -2439,8 +2563,8 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
         [/if.empty]
       });
       [if.not_empty module.preselected]
-      	[loop.@term module.preselected.comma]
-        	[query.get_term_by taxonomy='{module.id}' field='slug' value='{@term.item}' set=template.term /]
+        [loop.@term module.preselected.comma]
+          [query.get_term_by taxonomy='{module.id}' field='slug' value='{@term.item}' set=template.term /]
           var newOption = new Option("[template.term.name /]", "[template.term.slug /]", true, true);
           $('.[aw2.get module.select_picker /]').append(newOption);
         [/loop.@term]
@@ -2448,37 +2572,37 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
       [/if.not_empty]
       $('.[module.get id /]-parent').removeClass('visibility-hidden');
     </script>
-	</div>]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>854999</wp:post_id>
-		<wp:post_date><![CDATA[2019-10-16 06:50:50]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2019-10-16 06:50:50]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[select2]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-		<wp:meta_value><![CDATA[3]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title>time</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=860485</link>
-		<pubDate>Fri, 15 Nov 2019 06:12:57 +0000</pubDate>
-		<dc:creator><![CDATA[wpoid_web]]></dc:creator>
-		<guid isPermaLink="false">http://nxt.wpoets.com/?post_type=form_control&#038;p=858986</guid>
-		<description></description>
-		<content:encoded><![CDATA[				
-				//************ Build the Args *************************//
+  </div>]]></content:encoded>
+    <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+    <wp:post_id>854999</wp:post_id>
+    <wp:post_date><![CDATA[2019-10-16 06:50:50]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2019-10-16 06:50:50]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[select2]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            <wp:postmeta>
+    <wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+    <wp:meta_value><![CDATA[3]]></wp:meta_value>
+    </wp:postmeta>
+              </item>
+          <item>
+    <title>time</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=860485</link>
+    <pubDate>Fri, 15 Nov 2019 06:12:57 +0000</pubDate>
+    <dc:creator><![CDATA[wpoid_web]]></dc:creator>
+    <guid isPermaLink="false">http://nxt.wpoets.com/?post_type=form_control&#038;p=858986</guid>
+    <description></description>
+    <content:encoded><![CDATA[        
+        //************ Build the Args *************************//
 
 [module.set attr]
-	[loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
+  [loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
 [/module.set]
 [php.str_replace p1="$spacer" p2=" " p3="{module.attr}" set="module.attr_string"/]
 
@@ -2501,92 +2625,92 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 [module.set control_classes.new='input-group' not_empty='{module.addon_text}' /]
   
 <div class="form-group row [module.get form-control-class /]">
-	[if.not_empty module.label]
-	<div class='[module.get label_classes.space /] col-12 no-padding'>
-		<label for="[module.get id /]">[module.get label /][if.equal lhs="{module.required}" rhs="yes"]<span class='text-danger'>*</span>[/if.equal]</label>
-	</div>			
-	[/if.not_empty]
-	
-	[if.equal lhs='{module.args.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
-	<div class="[module.get control_classes.space /] col-12 no-padding">
-	  [if.not_empty module.addon_text]
-			<span class="input-group-addon">
-			 [module.get addon_text /]
-			</span>
-		[/if.not_empty]
-		[if.not_empty module.prepend_icon]
-			<span class="input-group-addon">
-				<i class="fa [module.get prepend_icon /]"></i>
-			</span>
-		[/if.not_empty]
-		[if.not_empty module.prepend_inline_icon]
-			<i class="fa [module.get prepend_inline_icon /]"></i>
-		[/if.not_empty]
-		[if.not_empty module.append_inline_icon]
-			<i class="fa [module.get append_inline_icon /]"></i>
-		[/if.not_empty]
-		
-		<input 
-			id="[module.get id /]" 
-			name="[module.get id /]" 
-			type="time" 
-			placeholder="[module.get placeholder default='{module.label}'/]" 
-			class="form-control input-md [module.get class /]" 
-			value='[module.get value /]'  
-			[if.equal lhs="{module.required}" rhs="yes"]required[/if.equal]
-			[if.equal lhs="{module.readonly}" rhs="yes"]readonly[/if.equal]				
-			[module.get attr_string/] 
-			msg-required="<i class='icon icon-warning'></i> [module.get label /] is required!"
-		/>
-		
-		[if.not_empty module.append_icon]
-			<span class="input-group-addon">
-				<i class="fa [module.get append_icon /]"></i>
-			</span>
-		[/if.not_empty]
-	</div>
-	<i class="info-block">[module.get help-block /]</i>
-	<div class="help-block"></div>
-		
-	[if.equal lhs='{module.args.form_type}' rhs='horizontal']
-	   </div>
-	  <div class="col-md-12"></div>
-	[/if.equal]
-	
-</div>				]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>860485</wp:post_id>
-		<wp:post_date><![CDATA[2019-11-15 06:12:57]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2019-11-15 06:12:57]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[time]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-		<wp:meta_value><![CDATA[5]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-		<wp:meta_value><![CDATA[5]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title>hhmm_duration</title>
-		<link>https://wpoets.com/?post_type=form_control&#038;p=860587</link>
-		<pubDate>Sat, 23 Nov 2019 07:12:22 +0000</pubDate>
-		<dc:creator><![CDATA[wpoid_web]]></dc:creator>
-		<guid isPermaLink="false">https://www.wpoets.com/?post_type=form_control&#038;p=860587</guid>
-		<description></description>
-		<content:encoded><![CDATA[//************ Build the Args *************************//
+  [if.not_empty module.label]
+  <div class='[module.get label_classes.space /] col-12 no-padding'>
+    <label for="[module.get id /]">[module.get label /][if.equal lhs="{module.required}" rhs="yes"]<span class='text-danger'>*</span>[/if.equal]</label>
+  </div>      
+  [/if.not_empty]
+  
+  [if.equal lhs='{module.args.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
+  <div class="[module.get control_classes.space /] col-12 no-padding">
+    [if.not_empty module.addon_text]
+      <span class="input-group-addon">
+       [module.get addon_text /]
+      </span>
+    [/if.not_empty]
+    [if.not_empty module.prepend_icon]
+      <span class="input-group-addon">
+        <i class="fa [module.get prepend_icon /]"></i>
+      </span>
+    [/if.not_empty]
+    [if.not_empty module.prepend_inline_icon]
+      <i class="fa [module.get prepend_inline_icon /]"></i>
+    [/if.not_empty]
+    [if.not_empty module.append_inline_icon]
+      <i class="fa [module.get append_inline_icon /]"></i>
+    [/if.not_empty]
+    
+    <input 
+      id="[module.get id /]" 
+      name="[module.get id /]" 
+      type="time" 
+      placeholder="[module.get placeholder default='{module.label}'/]" 
+      class="form-control input-md [module.get class /]" 
+      value='[module.get value /]'  
+      [if.equal lhs="{module.required}" rhs="yes"]required[/if.equal]
+      [if.equal lhs="{module.readonly}" rhs="yes"]readonly[/if.equal]       
+      [module.get attr_string/] 
+      msg-required="<i class='icon icon-warning'></i> [module.get label /] is required!"
+    />
+    
+    [if.not_empty module.append_icon]
+      <span class="input-group-addon">
+        <i class="fa [module.get append_icon /]"></i>
+      </span>
+    [/if.not_empty]
+  </div>
+  <i class="info-block">[module.get help-block /]</i>
+  <div class="help-block"></div>
+    
+  [if.equal lhs='{module.args.form_type}' rhs='horizontal']
+     </div>
+    <div class="col-md-12"></div>
+  [/if.equal]
+  
+</div>        ]]></content:encoded>
+    <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+    <wp:post_id>860485</wp:post_id>
+    <wp:post_date><![CDATA[2019-11-15 06:12:57]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2019-11-15 06:12:57]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[time]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            <wp:postmeta>
+    <wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+    <wp:meta_value><![CDATA[5]]></wp:meta_value>
+    </wp:postmeta>
+              <wp:postmeta>
+    <wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+    <wp:meta_value><![CDATA[5]]></wp:meta_value>
+    </wp:postmeta>
+              </item>
+          <item>
+    <title>hhmm_duration</title>
+    <link>https://wpoets.com/?post_type=form_control&#038;p=860587</link>
+    <pubDate>Sat, 23 Nov 2019 07:12:22 +0000</pubDate>
+    <dc:creator><![CDATA[wpoid_web]]></dc:creator>
+    <guid isPermaLink="false">https://www.wpoets.com/?post_type=form_control&#038;p=860587</guid>
+    <description></description>
+    <content:encoded><![CDATA[//************ Build the Args *************************//
 
 [module.set attr]
-	[loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
+  [loop.@ctr module.attr][aw2.get @ctr.key/]="[aw2.get @ctr.item/]" $spacer [/loop.@ctr]
 [/module.set]
 [php.str_replace p1="$spacer" p2=" " p3="{module.attr}" set="module.attr_string"/]
 
@@ -2609,60 +2733,60 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
 [module.set control_classes.new='input-group' not_empty='{module.addon_text}' /]
   
 <div class="form-group row [module.get form-control-class /]">
-	[if.not_empty module.label]
-	<div class='[module.get label_classes.space /] col-12 no-padding'>
-		<label for="[module.get id /]">[module.get label /][if.equal lhs="{module.required}" rhs="yes"]<span class='text-danger'>*</span>[/if.equal]</label>
-	</div>			
-	[/if.not_empty]
-	
-	[if.equal lhs='{module.args.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
-	<div class="[module.get control_classes.space /] col-12 no-padding">
-	  [if.not_empty module.addon_text]
-			<span class="input-group-addon">
-			 [module.get addon_text /]
-			</span>
-		[/if.not_empty]
-		[if.not_empty module.prepend_icon]
-			<span class="input-group-addon">
-				<i class="fa [module.get prepend_icon /]"></i>
-			</span>
-		[/if.not_empty]
-		[if.not_empty module.prepend_inline_icon]
-			<i class="fa [module.get prepend_inline_icon /]"></i>
-		[/if.not_empty]
-		[if.not_empty module.append_inline_icon]
-			<i class="fa [module.get append_inline_icon /]"></i>
-		[/if.not_empty]
-		
-		<input 
-			id="[module.get id /]" 
-			name="[module.get id /]" 
-			type="text" 
-			placeholder="[module.get placeholder default='{module.label}'/]" 
-			class="form-control input-md [module.get class /]" 
-			value='[module.get value /]'  
-			[if.equal lhs="{module.required}" rhs="yes"]required[/if.equal]
-			[if.equal lhs="{module.readonly}" rhs="yes"]readonly[/if.equal]				
-			[module.get attr_string/] 
-			msg-required="<i class='icon icon-warning'></i> [module.get label /] is required!"
-		/>
-		
-		[if.not_empty module.append_icon]
-			<span class="input-group-addon">
-				<i class="fa [module.get append_icon /]"></i>
-			</span>
-		[/if.not_empty]
-	</div>
-	<i class="info-block">[module.get help-block /]</i>
-	<div class="help-block"></div>
-		
-	[if.equal lhs='{module.args.form_type}' rhs='horizontal']
-	   </div>
-	  <div class="col-md-12"></div>
-	[/if.equal]
-	
+  [if.not_empty module.label]
+  <div class='[module.get label_classes.space /] col-12 no-padding'>
+    <label for="[module.get id /]">[module.get label /][if.equal lhs="{module.required}" rhs="yes"]<span class='text-danger'>*</span>[/if.equal]</label>
+  </div>      
+  [/if.not_empty]
+  
+  [if.equal lhs='{module.args.form_type}' rhs='horizontal']<div class="[module.get col.space/]"> [/if.equal] 
+  <div class="[module.get control_classes.space /] col-12 no-padding">
+    [if.not_empty module.addon_text]
+      <span class="input-group-addon">
+       [module.get addon_text /]
+      </span>
+    [/if.not_empty]
+    [if.not_empty module.prepend_icon]
+      <span class="input-group-addon">
+        <i class="fa [module.get prepend_icon /]"></i>
+      </span>
+    [/if.not_empty]
+    [if.not_empty module.prepend_inline_icon]
+      <i class="fa [module.get prepend_inline_icon /]"></i>
+    [/if.not_empty]
+    [if.not_empty module.append_inline_icon]
+      <i class="fa [module.get append_inline_icon /]"></i>
+    [/if.not_empty]
+    
+    <input 
+      id="[module.get id /]" 
+      name="[module.get id /]" 
+      type="text" 
+      placeholder="[module.get placeholder default='{module.label}'/]" 
+      class="form-control input-md [module.get class /]" 
+      value='[module.get value /]'  
+      [if.equal lhs="{module.required}" rhs="yes"]required[/if.equal]
+      [if.equal lhs="{module.readonly}" rhs="yes"]readonly[/if.equal]       
+      [module.get attr_string/] 
+      msg-required="<i class='icon icon-warning'></i> [module.get label /] is required!"
+    />
+    
+    [if.not_empty module.append_icon]
+      <span class="input-group-addon">
+        <i class="fa [module.get append_icon /]"></i>
+      </span>
+    [/if.not_empty]
+  </div>
+  <i class="info-block">[module.get help-block /]</i>
+  <div class="help-block"></div>
+    
+  [if.equal lhs='{module.args.form_type}' rhs='horizontal']
+     </div>
+    <div class="col-md-12"></div>
+  [/if.equal]
+  
   <script type="spa/axn" axn="core.run_script" cdn_js_files='bootstrap-duration-picker/bootstrap-duration-picker.js' cdn_css_files='bootstrap-duration-picker/bootstrap-duration-picker.css'>
-  	   $('#[module.get id /]').durationPicker({
+       $('#[module.get id /]').durationPicker({
           showSeconds: false,
           showDays: false,
           onChanged: function (newVal) {
@@ -2671,36 +2795,39 @@ class="btn [module.get class default=' btn-primary btn-md'/]">[if.not_empty modu
         });
   </script>
   
-</div>				]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>860587</wp:post_id>
-		<wp:post_date><![CDATA[2019-11-23 07:12:22]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2019-11-23 07:12:22]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[hhmm_duration]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[form_control]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-		<wp:meta_value><![CDATA[5]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_old_date]]></wp:meta_key>
-		<wp:meta_value><![CDATA[2019-11-22]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_old_slug]]></wp:meta_key>
-		<wp:meta_value><![CDATA[duration]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-				</channel>
+</div>        ]]></content:encoded>
+
+
+
+    <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+    <wp:post_id>860587</wp:post_id>
+    <wp:post_date><![CDATA[2019-11-23 07:12:22]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2019-11-23 07:12:22]]></wp:post_date_gmt>
+    <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+    <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+    <wp:post_name><![CDATA[hhmm_duration]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[form_control]]></wp:post_type>
+    <wp:post_password><![CDATA[]]></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+                            <wp:postmeta>
+    <wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+    <wp:meta_value><![CDATA[5]]></wp:meta_value>
+    </wp:postmeta>
+              <wp:postmeta>
+    <wp:meta_key><![CDATA[_wp_old_date]]></wp:meta_key>
+    <wp:meta_value><![CDATA[2019-11-22]]></wp:meta_value>
+    </wp:postmeta>
+              <wp:postmeta>
+    <wp:meta_key><![CDATA[_wp_old_slug]]></wp:meta_key>
+    <wp:meta_value><![CDATA[duration]]></wp:meta_value>
+    </wp:postmeta>
+              </item>
+        </channel>
 </rss>
-	
+  
 <!--
 Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
 
